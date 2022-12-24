@@ -42,7 +42,7 @@ function Header() {
            <Link to="/mybooks" className='header__link'>
             <div className='header__optionBookmark'>
                 <FaBookmark/>
-                <span>0</span>
+                <span className='header__Bookcount'>0</span>
 
 
             </div>
