@@ -2,7 +2,12 @@ import React from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
+import { useStateValue } from './StateProvider' 
+
 function Header() {
+
+    const [{ basket }] = useStateValue();
+
   return (
     <nav className="header">
         {/*logo on the left -> img */}
@@ -42,7 +47,7 @@ function Header() {
            <Link to="/mybooks" className='header__link'>
             <div className='header__optionBookmark'>
                 <FaBookmark/>
-                <span className='header__Bookcount'>0</span>
+                <span className='header__Bookcount'>{basket?.length}</span>
 
 
             </div>

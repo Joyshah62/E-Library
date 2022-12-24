@@ -1,6 +1,22 @@
 import React from 'react';
 import "./Book.css";
+import { useStateValue } from './StateProvider';
 function Book({ id, title, price, rating, image,link }) {
+
+    const [{ basket }, dispatch] = useStateValue();
+
+    const addToBasket = () =>{
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id:id,
+                title:title,
+                image:image,
+                rating:rating,
+                link:link
+            },
+        })
+    }
 
   return (
     <div className='book'>
@@ -21,7 +37,7 @@ function Book({ id, title, price, rating, image,link }) {
             </div>
         </div>
         <img src={image} alt=""/>
-        <button className='add_to_mybook'>Add to MyBooks</button>
+        <button onClick={addToBasket} className='add_to_mybook'>Add to MyBooks</button>
         <a href={link} target="_blank" rel="noreferrer">
         <button className='download__book'>Download</button>
         </a>
