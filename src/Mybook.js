@@ -19,11 +19,12 @@ function Mybook() {
         ) : (
             <div>
                 <h2 className='mybook__title'>Your Library</h2>
-                {basket.map(item => (
+                {basket?.map(item => (
                     <CheckoutBook
                     id={item.id}
                     title={item.title}
                     image={item.image}
+                    price={item.price}
                     rating={item.rating}
                     link={item.link}
                     />
