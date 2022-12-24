@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import "./Book.css";
-function Book({ id, title, price, rating, image }) {
+function Book({ id, title, price, rating, image,link }) {
+
   return (
     <div className='book'>
         <div className='book__info'>
@@ -21,10 +22,12 @@ function Book({ id, title, price, rating, image }) {
         </div>
         <img src={image} alt=""/>
         <button className='add_to_mybook'>Add to MyBooks</button>
-        <div href="https://www.amazon.in/DO-EPIC-SHIT-Ankur-Warikoo/dp/9391165486">
-          <button className='download__book'>Download Book</button>
-         </div>
+        <a href={link} target="_blank" rel="noreferrer">
+        <button className='download__book'>Download</button>
+        </a>
     </div>
+
+    
   )
 }
 
