@@ -54,7 +54,7 @@ function Login() {
                 see our Privacy Notice, our Cookies Notice and our interest-Based Ads 
                 Notice.
             </p>
-            <button onClick={register} className="login__RegisterButton">Create your Amazon Account</button>
+            <button onClick={register} className="login__RegisterButton">Create your Account</button>
 
         </div>
 
