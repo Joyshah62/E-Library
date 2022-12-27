@@ -3,10 +3,18 @@ import "./Header.css"
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
 import { useStateValue } from './StateProvider' 
+import { auth } from './firebase'
+import Login from './Login'
 
 function Header() {
 
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }] = useStateValue();
+
+    const login = () => {
+        if(user) {
+          auth.signOut();
+        }
+      }
 
   return (
     <nav className="header">
@@ -24,7 +32,16 @@ function Header() {
         </div>
 
         {/* 3 links */}
+
+        
+
         <div className='header__nav'>
+
+        <Link to= {!user && "/login"} className="header__link">
+              <div onClick={login} className="header__option">
+                <span className='button'>{user ? 'Sign Out' : 'Sign In'}</span>
+              </div>
+            </Link>
 
            <Link to="/" className='header__link'>
             <div className='header__option'>
