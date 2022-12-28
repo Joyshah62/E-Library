@@ -27,6 +27,7 @@ function Mybook() {
                     price={item.price}
                     rating={item.rating}
                     link={item.link}
+                    author={item.author}
                     />
 
                 ))}

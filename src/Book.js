@@ -14,7 +14,7 @@ function Book({ id, title, price, rating, image,link,author }) {
                 image:image,
                 rating:rating,
                 link:link,
-                author:author
+                author:author,
             },
         })
     }
