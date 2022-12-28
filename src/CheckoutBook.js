@@ -30,7 +30,7 @@ function CheckoutBook({id, title,author, image, link, rating,download}) {
                 ))
             }
         </div>
-        <a href={link} target="_blank" rel="noreferrer">
+        <a href={download} target="_blank" rel="noreferrer">
         <button className='download__book'>Download Book</button>
         </a>
 
