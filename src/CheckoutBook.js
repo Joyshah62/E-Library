@@ -2,7 +2,7 @@ import React from 'react'
 import "./CheckoutBook.css";
 import { useStateValue } from './StateProvider';
 
-function CheckoutBook({id, title,author, image, link, rating}) {
+function CheckoutBook({id, title,author, image, link, rating,download}) {
     const [{ basket }, dispatch] = useStateValue();
 
 

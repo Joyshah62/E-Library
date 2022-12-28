@@ -28,6 +28,7 @@ function Mybook() {
                     rating={item.rating}
                     link={item.link}
                     author={item.author}
+                    download={item.download}
                     />
 
                 ))}
