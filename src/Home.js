@@ -14,7 +14,8 @@ function Home() {
         <div className="home__row">
         <Book
         id="1"
-        title="Rich Dad Poor Dad"
+        title="Book: Rich Dad Poor Dad"
+        author="Author: Robert Kiyosaki"
         price={190}
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/81PuKheA8xL._AC_UL600_SR600,400_.jpg"
@@ -22,7 +23,8 @@ function Home() {
         />
         <Book
         id="2"
-        title="Atomic Habits"
+        title="Book: Atomic Habits"
+        author="Author: James Clear"
         price={430}
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg"
@@ -30,7 +32,8 @@ function Home() {
         />
         <Book
         id="3"
-        title="It Starts With Us"
+        title="Book: It Starts With Us"
+        author="Author: Colleen Hoover"
         price={195}
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/81FummIc2eL._AC_UL600_SR600,400_.jpg"
@@ -38,7 +41,8 @@ function Home() {
         />
         <Book
         id="4"
-        title="The 48 Laws of Power"
+        title="Book: The 48 Laws of Power"
+        author="Author: Robert Greene"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41KY-NORo9L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
@@ -51,7 +55,8 @@ function Home() {
 
         <Book
         id="5"
-        title="Dark Psychology"
+        title="Book: Dark Psychology"
+        author="Author: James Williams"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41JPhsbd3pL._SX312_BO1,204,203,200_.jpg"
@@ -60,7 +65,8 @@ function Home() {
 
         <Book
         id="6"
-        title="Do Epic Shit"
+        title="Book: Do Epic Shit"
+        author="Author: Ankur Warikoo"
         price={300}
         rating={5}  
         image="https://m.media-amazon.com/images/I/61kRkfsIMUL.jpg"
@@ -69,14 +75,16 @@ function Home() {
         />
         <Book
         id="7"
-        title="Harry Potter"
+        title="Book: Harry Potter"
+        author="Author: J.K. Rowling"
         price={199}
         rating={5}  
         image="https://99booksstore.com/uploaded_files/product/464279588.webp"
         link="https://drive.google.com/file/d/19yq-tpfTIg1YkElWvuvNcFHXX8NlQTST/view?usp=share_link"/>
         <Book
         id="8"
-        title="Ikigai"
+        title="Book: Ikigai"
+        author="Author: Rector Garcia"
         price={329}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51xwGSNX-EL._SX356_BO1,204,203,200_.jpg"
@@ -90,7 +98,8 @@ function Home() {
 
         <Book
         id="9"
-        title="Something I Never Told You"
+        title="Book: Something I Never Told You"
+        author="Author: Shravya Bhinder"
         price={159}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51Xjv4IzydL._SX322_BO1,204,203,200_.jpg"
@@ -98,7 +107,8 @@ function Home() {
 
       <Book
         id="10"
-        title="That Night"
+        title="Book: That Night"
+        author="Author: Nidhi Upadhyay"
         price={169}
         rating={4}  
         image="https://m.media-amazon.com/images/I/41kRkqIt6aL._SX322_BO1,204,203,200_.jpg"
@@ -107,7 +117,8 @@ function Home() {
 
         <Book
         id="11"
-        title="It Ends With Us: A Novel"
+        title="Book: It Ends With Us: A Novel"
+        author="Author: Colleen Hoover"
         price={230}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51Zu0ZwT0jL._SX320_BO1,204,203,200_.jpg"
@@ -116,7 +127,8 @@ function Home() {
         />
         <Book
         id="12"
-        title="The Psychology of Money"
+        title="Book: The Psychology of Money"
+        author="Author: Morgan Housel"
         price={169}
         rating={5}  
         image="https://m.media-amazon.com/images/I/41r6F2LRf8L._SX323_BO1,204,203,200_.jpg"
@@ -129,7 +141,8 @@ function Home() {
 
         <Book
         id="13"
-        title="The Freedom Manifesto"
+        title="Book: The Freedom Manifesto"
+        author="Author: Karan Bajaj"
         price={223}
         rating={4}  
         image="https://m.media-amazon.com/images/I/419hlQBPe6L.jpg"
@@ -137,7 +150,8 @@ function Home() {
 
         <Book
         id="14"
-        title="You Only Live Once"
+        title="Book: You Only Live Once"
+        author="Author: Stuti Changle"
         price={141}
         rating={4}  
         image="https://m.media-amazon.com/images/I/413OgI8KzuL._SX322_BO1,204,203,200_.jpg"
@@ -145,7 +159,8 @@ function Home() {
 
       <Book
         id="15"
-        title="The Blue Umbrella"
+        title="Book: The Blue Umbrella"
+        author="Author: Ruskin Bond"
         price={94}
         rating={4}  
         image="https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg"
@@ -154,7 +169,8 @@ function Home() {
 
         <Book
         id="16"
-        title="The Subtle Art of Not Giving a F*ck"
+        title="Book: The Subtle Art of Not Giving a F*ck"
+        author="Author: Mark Manson"
         price={272}
         rating={4}  
         image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
