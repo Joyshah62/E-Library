@@ -158,7 +158,7 @@ function Home() {
         price={272}
         rating={4}  
         image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
-        link="https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/ref=sr_1_3?crid=3KZSAKV92NNA4&keywords=the+art+of+not+giving+a+fcuk+book&qid=1672240461&sprefix=the+art+of+not+%2Caps%2C305&sr=8-3"
+        link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
         />
         
         
