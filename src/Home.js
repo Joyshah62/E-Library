@@ -71,7 +71,7 @@ function Home() {
         link="https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link"/>
         <Book
         id="8"
-        title="It Starts With Us"
+        title="Dark Psychology"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41JPhsbd3pL._SX312_BO1,204,203,200_.jpg"
