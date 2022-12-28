@@ -26,16 +26,14 @@ function Home() {
         price={199}
         rating={5}  
         image="https://99booksstore.com/uploaded_files/product/464279588.webp"
-        link="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/ref=sr_1_3?keywords=harry+potter&qid=1671895140&sr=8-3"
-        />
+        link="https://drive.google.com/file/d/19yq-tpfTIg1YkElWvuvNcFHXX8NlQTST/view?usp=share_link"/>
         <Book
         id="3"
         title="Ikigai"
         price={329}
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/814L+vq01mL._AC_UL600_SR600,400_.jpg"
-        link="https://www.amazon.in/Ikigai-Japanese-Alternative-Practical-Handbook/dp/1803180668/ref=sr_1_1_sspa?crid=28EBIIZ65TSQM&keywords=ikigai&qid=1671895170&sprefix=ikigai%2Caps%2C307&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
-        />
+        link="https://drive.google.com/file/d/1SkNy7_9t0i15lE8-8Db1HKEKHMg_v8aS/view?usp=share_link"/>
 
         
         </div>
@@ -64,6 +62,20 @@ function Home() {
         image="https://images-eu.ssl-images-amazon.com/images/I/81FummIc2eL._AC_UL600_SR600,400_.jpg"
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
         />
+        <Book
+        id="7"
+        title="The 48 Laws of Power"
+        price={195}
+        rating={4}  
+        image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41KY-NORo9L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link="https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link"/>
+        <Book
+        id="8"
+        title="It Starts With Us"
+        price={195}
+        rating={4}  
+        image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51andXe56rL.jpg"
+        link="https://drive.google.com/file/d/10dmzg0vn8aqSH8LnJn-p4HUEGx2fJ0yZ/view?usp=share_link"/>
 
         
         </div>
