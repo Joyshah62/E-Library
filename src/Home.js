@@ -74,7 +74,7 @@ function Home() {
         title="It Starts With Us"
         price={195}
         rating={4}  
-        image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51andXe56rL.jpg"
+        image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41JPhsbd3pL._SX312_BO1,204,203,200_.jpg"
         link="https://drive.google.com/file/d/10dmzg0vn8aqSH8LnJn-p4HUEGx2fJ0yZ/view?usp=share_link"/>
 
         
