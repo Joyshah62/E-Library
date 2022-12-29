@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
@@ -15,6 +15,7 @@ function Header() {
           auth.signOut();
         }
       }
+
 
   return (
     <nav className="header">

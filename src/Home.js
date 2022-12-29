@@ -20,7 +20,7 @@ function Home() {
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/81PuKheA8xL._AC_UL600_SR600,400_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
-        download=""
+        download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
         />
         <Book
         id="2"
@@ -30,7 +30,7 @@ function Home() {
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg"
         link="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?keywords=atomic+habits&qid=1671895226&sprefix=Atomic+%2Caps%2C285&sr=8-1"
-        download=""
+        download="https://drive.google.com/file/d/1dpM7_-DMX4aA4Zof3hX5El6huRf60Qga/view?usp=share_link"
         />
         <Book
         id="3"
@@ -40,7 +40,7 @@ function Home() {
         rating={4}  
         image="https://images-eu.ssl-images-amazon.com/images/I/81FummIc2eL._AC_UL600_SR600,400_.jpg"
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
-        download=""
+        download="https://drive.google.com/file/d/1UTz5zdhjK8q6DrfHSBoyJpcBobzH_KML/view?usp=share_link"
         />
         <Book
         id="4"
@@ -115,7 +115,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51Xjv4IzydL._SX322_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/ref=sr_1_5?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-5"
-        download=""
+        download="https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=share_link"
         />
 
       <Book
@@ -148,7 +148,7 @@ function Home() {
         rating={5}  
         image="https://m.media-amazon.com/images/I/41r6F2LRf8L._SX323_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/ref=sr_1_20?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-20"
-        download=""
+        download="https://drive.google.com/file/d/1eON81N0iW0UCvDw8pOYTtVSaqD_XvRGg/view?usp=share_link"
         />
        
         
@@ -175,7 +175,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/413OgI8KzuL._SX322_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/ref=sr_1_14?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-14"
-        download=""
+        download="https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link"
         />
 
       <Book
@@ -186,7 +186,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
-        download=""
+        download="https://drive.google.com/file/d/1nk72vBJrYfdTG75xoLF5vdPIWyhHeRt9/view?usp=share_link"
         />
 
 
@@ -198,7 +198,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
-        download=""
+        download="https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link"
         />
         
         
