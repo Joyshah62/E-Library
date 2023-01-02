@@ -72,13 +72,13 @@ function Home() {
 
         <Book
         id="6"
-        title="Book: Do Epic Shit"
-        author="Author: Ankur Warikoo"
-        price={300}
-        rating={5}  
-        image="https://m.media-amazon.com/images/I/61kRkfsIMUL.jpg"
-        link="https://www.amazon.in/DO-EPIC-SHIT-Ankur-Warikoo/dp/9391165486/ref=sr_1_3?keywords=do+epic+shit&qid=1671881040&sprefix=do+epic+%2Caps%2C262&sr=8-3"
-        download=""
+        title="Book: The Godfather"
+        author="Author: Mario Puzo"
+        price={1000}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41pSXiKR39L.jpg"
+        link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
+        download="https://drive.google.com/file/d/1Jl4SwitUKMJyBRrN6d_WY5U5FWbTYybm/view?usp=share_link"
         />
         <Book
         id="7"
@@ -120,25 +120,25 @@ function Home() {
 
       <Book
         id="10"
-        title="Book: That Night"
-        author="Author: Nidhi Upadhyay"
-        price={169}
+        title="Book: To Kill a Mockingbird"
+        author="Author: Harper Lee"
+        price={165}
         rating={4}  
-        image="https://m.media-amazon.com/images/I/41kRkqIt6aL._SX322_BO1,204,203,200_.jpg"
-        link="https://www.amazon.in/That-Night-Friends-Haunting-Secret/dp/0143451871/ref=sr_1_6?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-6"
-        download=""
+        image="https://m.media-amazon.com/images/I/51Z9p5AecCL._SX307_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_3?keywords=to+kill+a+mockingbird&qid=1672682182&sprefix=to+kill+a+%2Caps%2C1001&sr=8-3"
+        download="https://drive.google.com/file/d/1N1Rvog-_HZJpAS3QAxiFP6RpIQp3I6pd/view?usp=share_link"
         />
 
 
         <Book
         id="11"
-        title="Book: It Ends With Us: A Novel"
-        author="Author: Colleen Hoover"
+        title="Book: The Shining"
+        author="Author: Stephen King"
         price={230}
         rating={4}  
-        image="https://m.media-amazon.com/images/I/51Zu0ZwT0jL._SX320_BO1,204,203,200_.jpg"
-        link="https://www.amazon.in/Ends-Us-Novel-Colleen-Hoover/dp/1501110365/ref=sr_1_4?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-4"
-        download=""
+        image="https://m.media-amazon.com/images/I/41nTTMoaxiL._SX320_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/ref=sr_1_2?keywords=the+shining+by+stephen+king&qid=1672682337&sprefix=the+shinin%2Caps%2C1491&sr=8-2"
+        download="https://drive.google.com/file/d/1DKxLpyW-DsbYQ6dSkddIWgRsDDKULbwM/view?usp=share_link"
         />
         <Book
         id="12"
@@ -158,13 +158,13 @@ function Home() {
 
         <Book
         id="13"
-        title="Book: The Freedom Manifesto"
-        author="Author: Karan Bajaj"
-        price={223}
-        rating={4}  
-        image="https://m.media-amazon.com/images/I/419hlQBPe6L.jpg"
-        link="https://www.amazon.in/Freedom-Manifesto-Rules-Live-Calling-ebook/dp/B0BFJP92NL/ref=sr_1_1_sspa?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
-        download=""
+        title="Book: Shawshank Redemption"
+        author="Author: Frank Darabont"
+        price={289}
+        rating={5}  
+        image="https://m.media-amazon.com/images/I/51ALMvQGyWL._SX369_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
+        download="https://drive.google.com/file/d/1fuHfvGm6NQvunvx6tiNVnNEZp6PAOBmy/view?usp=share_link"
         />
 
         <Book
