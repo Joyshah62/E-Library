@@ -1,44 +1,44 @@
 .book__price{
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .book__rating{
-    display: flex;
+  display: flex;
 }
 
 .book__info{
-    height: 100px;
-    margin-bottom: 15px;
+  height: 100px;
+  margin-bottom: 15px;
 }
 
 .add_to_mybook{
-    background-color: #f0c14b;
-    border: 1px solid;
-    border: #a88734 #9c7e31 #846a29;
+  background-color: #f0c14b;
+  border: 1px solid;
+  border: #a88734 #9c7e31 #846a29;
 }
 
 .download__book{
-    background-color: #f0c14b;
-    border: 1px solid;
-    border: #a88734 #9c7e31 #846a29;
-    margin-top: 10px;
+  background-color: #f0c14b;
+  border: 1px solid;
+  border: #a88734 #9c7e31 #846a29;
+  margin-top: 10px;
 }
 
 /* Book Image Starts */
 
 .book{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  max-height: 400px;
-  min-width: 100px;
-  margin: 10px;
-  padding: 20px;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-  transition: ease-in-out 0.5s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+max-height: 400px;
+min-width: 100px;
+margin: 10px;
+padding: 20px;
+width: 100%;
+background-color: white;
+z-index: 1;
+transition: ease-in-out 0.5s;
 }
 
 .book:hover{
@@ -52,19 +52,19 @@ filter: grayscale(0) blur(1px);
 }
 
 .book > img{
-  width: 100%;
-  max-height: 200px;
-  object-fit: contain;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  transition: ease-in-out 0.5s;
-  filter: grayscale(0);
+width: 100%;
+max-height: 200px;
+object-fit: contain;
+margin-bottom: 15px;
+margin-top: 20px;
+transition: ease-in-out 0.5s;
+filter: grayscale(0);
 }
 
 .book:hover > img {
-  transform: scale(1.05);
-  transition: ease-in-out 0.5s;
-  filter: grayscale(0);
+transform: scale(1.05);
+transition: ease-in-out 0.5s;
+filter: grayscale(0);
 }
 
 /* Book Image Ends */
@@ -73,86 +73,86 @@ filter: grayscale(0) blur(1px);
 /* add to MyBooks Starts */
 
 .icon-btn {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #cdcdcd;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    transition: width 0.2s ease-in-out;
-  }
-  .add-btn:hover {
-    width: 120px;
-  }
-  .add-btn::before,
-  .add-btn::after {
-    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 10px;
-    top: calc(50% - 2px);
-    background: red;
-  }
-  .add-btn::after {
-    right: 14px;
-    overflow: hidden;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-  }
-  .add-btn::before {
-    left: 14px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-  .icon-btn:focus {
-    outline: none;
-  }
-  .btn-txt {
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .add-btn:hover::before,
-  .add-btn:hover::after {
-    width: 4px;
-    border-radius: 2px;
-  }
-  .add-btn:hover .btn-txt {
-    opacity: 1;
-  }
-  .add-icon::after,
-  .add-icon::before {
-    transition: all 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 2px;
-    top: calc(50% - 10px);
-    background: red;
-    overflow: hidden;
-  }
-  .add-icon::before {
-    left: 22px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-  .add-icon::after {
-    right: 22px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-  }
-  .add-btn:hover .add-icon::before {
-    left: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-  }
-  .add-btn:hover .add-icon::after {
-    right: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-  }
-  
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+}
+.add-btn:hover {
+  width: 120px;
+}
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: red;
+}
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: red;
+  overflow: hidden;
+}
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
 
 /* Add to MyBooks Ends */
 
