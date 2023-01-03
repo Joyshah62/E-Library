@@ -43,6 +43,7 @@ function Book({ id, title, price, rating, image,link,author,download}) {
         <button className="icon-btn add-btn" onClick={addToBasket}>
         <div className="add-icon"></div>
         <div className="btn-txt">Add</div>
+        
         </button>
 
         
