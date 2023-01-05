@@ -81,11 +81,10 @@ transition: ease-in-out 0.5s;
 .book:hover{
 transform: scale(1.03);
 transition: ease-in-out 0.5s;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /* .book:hover img:not(:hover){
-filter: grayscale(0) blur(1px);
+filter: grayscale(0) blur(0px);
 } */
 
 .book > img{
