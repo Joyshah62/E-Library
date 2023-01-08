@@ -50,11 +50,27 @@ function Header() {
             </div>
            </Link>
 
+           <Link to="/mybooks" className='header__link'>
+            <div className='header__option'>
+                <span className='button'>MyBooks</span>
+            </div>
+           </Link>
+
+           
            <Link to="/about" className='header__link'>
             <div className='header__option'>
                 <span className='button'>About</span>
             </div>
            </Link>
+           <Link to="/mybooks" className='header__link'>
+            <div className='header__optionBookmark'>
+                <FaBookmark/>
+                <span className='header__Bookcount'>{basket?.length}</span>
+
+
+            </div>
+           </Link>
+
         </div>
 
     </nav>

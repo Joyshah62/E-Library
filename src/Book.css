@@ -12,11 +12,11 @@
   
 }
 
-/* .add_to_mybook{
+.add_to_mybook{
   background-color: #f0c14b;
   border: 1px solid;
   border: #a88734 #9c7e31 #846a29;
-} */
+}
 
 .btn-5 {
    border-radius: 25px;
@@ -81,11 +81,12 @@ transition: ease-in-out 0.5s;
 .book:hover{
 transform: scale(1.03);
 transition: ease-in-out 0.5s;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-/* .book:hover img:not(:hover){
+.book:hover img:not(:hover){
 filter: grayscale(0) blur(0px);
-} */
+}
 
 .book > img{
 width: 100%;

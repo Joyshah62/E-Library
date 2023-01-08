@@ -57,6 +57,19 @@
 	text-indent: 15px;
 }
 
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
 .buttonDownload {
     -webkit-tap-highlight-color: transparent;
 }
@@ -101,6 +114,22 @@
 .buttonDownload svg {
     width: 15px;
     fill: #eee;
+}
+
+
+.buttonDownload:hover {
+    background: #84e423;
+}
+
+.buttonDownload:hover .text {
+    color: transparent;
+    text-decoration: underline #84e423;
+}
+
+.buttonDownload:hover .icon {
+    width: 95px;
+    border-left: none;
+    transform: translateX(0);
 }
 
 .buttonDownload:focus {
@@ -154,6 +183,20 @@
 .noselect svg {
 	width: 15px;
 	fill: #eee;
+}
+
+.noselect:hover {
+	background: #ff3636;
+}
+
+.noselect:hover .text {
+	color: transparent;
+}
+
+.noselect:hover .icon {
+	width: 120px;
+	border-left: none;
+	transform: translateX(0);
 }
 
 .noselect:focus {
