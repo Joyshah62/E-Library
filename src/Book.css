@@ -7,31 +7,68 @@
 }
 
 .book__info{
+
   height: 100px;
-  margin-bottom: 15px;
+  
 }
 
-.add_to_mybook{
+/* .add_to_mybook{
   background-color: #f0c14b;
   border: 1px solid;
   border: #a88734 #9c7e31 #846a29;
-}
+} */
 
-.download__book{
-  background-color: #f0c14b;
-  border: 1px solid;
-  border: #a88734 #9c7e31 #846a29;
+.btn-5 {
+   border-radius: 25px;
   margin-top: 10px;
+  background: #e8716b;
+  color: #fff;
+  line-height: 25px;
+  width: 80px;
+  padding: 0;
+  border: none;
+}
+.btn-5:hover {
+  background: transparent;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9, 
+    -4px -4px 5px 0px #fff9, 
+    7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #80669d;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 /* Book Image Starts */
 
 .book{
+
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-end;
-max-height: 400px;
+max-height: 800px;
 min-width: 100px;
 margin: 10px;
 padding: 20px;
@@ -47,9 +84,9 @@ transition: ease-in-out 0.5s;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.book:hover img:not(:hover){
+/* .book:hover img:not(:hover){
 filter: grayscale(0) blur(1px);
-}
+} */
 
 .book > img{
 width: 100%;

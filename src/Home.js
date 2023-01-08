@@ -1,13 +1,18 @@
 import React from 'react'
 import "./Home.css";
 import Book from './Book';
+import Carousel from './Carousel';
+import { countries } from './Data';
 function Home() {
   return (
     <div className='home'>
-        <img className='home__image'
+        {/* <img className='home__image'
         src='https://img.freepik.com/premium-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg?w=2000'
         alt=''
-        />
+        /> */}
+        {/* <div>
+          <Carousel images={countries}/>
+        </div> */}
 
         {/* product id, title, price, rating, image */}
         
@@ -18,7 +23,7 @@ function Home() {
         author="Author: Robert Kiyosaki"
         price={190}
         rating={4}  
-        image="https://images-eu.ssl-images-amazon.com/images/I/81PuKheA8xL._AC_UL600_SR600,400_.jpg"
+        image="https://m.media-amazon.com/images/I/51A88IvtjGL._SX331_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
         download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
         />
@@ -28,7 +33,7 @@ function Home() {
         author="Author: James Clear"
         price={430}
         rating={4}  
-        image="https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg"
+        image="https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?keywords=atomic+habits&qid=1671895226&sprefix=Atomic+%2Caps%2C285&sr=8-1"
         download="https://drive.google.com/file/d/1dpM7_-DMX4aA4Zof3hX5El6huRf60Qga/view?usp=share_link"
         />
@@ -38,7 +43,7 @@ function Home() {
         author="Author: Colleen Hoover"
         price={195}
         rating={4}  
-        image="https://images-eu.ssl-images-amazon.com/images/I/81FummIc2eL._AC_UL600_SR600,400_.jpg"
+        image="https://m.media-amazon.com/images/I/51W-r3VQlAL._SX320_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
         download="https://drive.google.com/file/d/1UTz5zdhjK8q6DrfHSBoyJpcBobzH_KML/view?usp=share_link"
         />

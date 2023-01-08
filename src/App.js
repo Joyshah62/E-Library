@@ -7,6 +7,9 @@ import Mybook from './Mybook';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import About from './About';
+import Carousel from './Carousel';
+import { countries } from './Data';
 
   function App() {
 
@@ -50,10 +53,12 @@ import { auth } from './firebase';
                     <Mybook/>
                   </Route>
                   <Route path="/about">
-                    <h1>About</h1>
+                    <Header/>
+                    <About/>
                   </Route>
                   <Route path="/">
                     <Header/>
+                    <Carousel images={countries}/>
                     <Home/>
                   </Route>
             </Switch>

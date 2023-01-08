@@ -40,16 +40,15 @@ function Book({ id, title, price, rating, image,link,author,download}) {
             </div>
         </div>
         <img src={image} alt=""/>
-        <button className="icon-btn add-btn" onClick={addToBasket}>
+        {/* <button className="icon-btn add-btn" onClick={addToBasket}>
         <div className="add-icon"></div>
-        <div className="btn-txt">Add</div>
-        
-        </button>
+        <div className="btn-txt">Add</div> */}
+        <button className='btn-5' onClick={addToBasket}>Add</button>
 
         
         <a href={link} target="_blank" rel="noreferrer">
             
-        <button className='download__book'>Buy Book</button>
+        <button className='btn-5'>Buy Book</button>
         </a>
     </div>
 
