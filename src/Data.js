@@ -1,18 +1,22 @@
 export const countries = [
     
+    {
+        image: "\\images\\1.png",
+        title: "bg0",
+    },
    
     {
-        image: "https://i.ibb.co/VNnKg8h/banner1.png",
-        title: "bg",
+        image: "\\images\\2.png",
+        title: "bg1",
     },
     
     {
-        image: "https://i.ibb.co/W5vMpG5/banner2.png",
+        image: "\\images\\3.png",
         title: "bg2",
     },
 
     {
-        image: "https://i.ibb.co/42fzCwY/banner3.png",
+        image: "\\images\\4.png",
         title: "bg3",
     },
     
