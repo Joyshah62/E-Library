@@ -12,13 +12,13 @@
 } */
 
 .carousel{
-    margin-right: auto;
+  margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
     display: flex;
     height: 400px;
-    width: 95%;
-    max-width: 1750px;
+    width: 98%;
+    max-width: 1800px;
 }
 
 .carousel_wrapper{
@@ -125,12 +125,10 @@
     display: inline-block;
     margin-left: 10px;
     cursor: pointer;
-    transition: ease-in-out 0.2s;
   }
   
   .pagination_dot:hover {
     transform: scale(1.2);
-    transition: ease-in-out 0.2s;
   }
   
   .pagination_dot-active {
