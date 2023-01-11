@@ -190,6 +190,9 @@ filter: grayscale(0);
   top: calc(50% - 2px);
 }
 
+
+/* Add to MyBooks Ends */
+
 .author__link{
   font-size: medium;
 }
@@ -198,10 +201,6 @@ filter: grayscale(0);
   text-decoration: none;
 }
 .link:hover {
-  color: red;
+  color: #e8716b;
   
 }
-
-
-/* Add to MyBooks Ends */
-
