@@ -19,18 +19,21 @@ function Home() {
         <div className="home__row">
         <Book
         id="1"
-        title="Book: Rich Dad Poor Dad"
-        author="Author: Robert Kiyosaki"
+        title="Rich Dad Poor Dad"
+        by="by "
+        author="Robert Kiyosaki"
         price={190}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51A88IvtjGL._SX331_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
         download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
         />
         <Book
         id="2"
-        title="Book: Atomic Habits"
-        author="Author: James Clear"
+        title="Atomic Habits"
+        by="by "
+        author="James Clear"
         price={430}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"
@@ -39,8 +42,9 @@ function Home() {
         />
         <Book
         id="3"
-        title="Book: It Starts With Us"
-        author="Author: Colleen Hoover"
+        title="It Starts With Us"
+        by="by "
+        author="Colleen Hoover"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51W-r3VQlAL._SX320_BO1,204,203,200_.jpg"
@@ -49,8 +53,9 @@ function Home() {
         />
         <Book
         id="4"
-        title="Book: The 48 Laws of Power"
-        author="Author: Robert Greene"
+        title="The 48 Laws of Power"
+        by="by "
+        author="Robert Greene"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41KY-NORo9L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
@@ -65,8 +70,9 @@ function Home() {
 
         <Book
         id="5"
-        title="Book: Dark Psychology"
-        author="Author: James Williams"
+        title="Dark Psychology"
+        by="by "
+        author="James Williams"
         price={195}
         rating={4}  
         image="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41JPhsbd3pL._SX312_BO1,204,203,200_.jpg"
@@ -77,8 +83,9 @@ function Home() {
 
         <Book
         id="6"
-        title="Book: The Godfather"
-        author="Author: Mario Puzo"
+        title="The Godfather"
+        by="by "
+        author="Mario Puzo"
         price={1000}
         rating={4}  
         image="https://m.media-amazon.com/images/I/41pSXiKR39L.jpg"
@@ -87,8 +94,9 @@ function Home() {
         />
         <Book
         id="7"
-        title="Book: Harry Potter"
-        author="Author: J.K. Rowling"
+        title="Harry Potter"
+        by="by "
+        author="J.K. Rowling"
         price={199}
         rating={5}  
         image="https://99booksstore.com/uploaded_files/product/464279588.webp"
@@ -97,8 +105,9 @@ function Home() {
         />
         <Book
         id="8"
-        title="Book: Ikigai"
-        author="Author: Rector Garcia"
+        title="Ikigai"
+        by="by "
+        author="Rector Garcia"
         price={329}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51xwGSNX-EL._SX356_BO1,204,203,200_.jpg"
@@ -114,8 +123,9 @@ function Home() {
 
         <Book
         id="9"
-        title="Book: Something I Never Told You"
-        author="Author: Shravya Bhinder"
+        title="Something I Never Told You"
+        by="by "
+        author="Shravya Bhinder"
         price={159}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51Xjv4IzydL._SX322_BO1,204,203,200_.jpg"
@@ -125,8 +135,9 @@ function Home() {
 
       <Book
         id="10"
-        title="Book: To Kill a Mockingbird"
-        author="Author: Harper Lee"
+        title="To Kill a Mockingbird"
+        by="by "
+        author="Harper Lee"
         price={165}
         rating={4}  
         image="https://m.media-amazon.com/images/I/51Z9p5AecCL._SX307_BO1,204,203,200_.jpg"
@@ -137,8 +148,9 @@ function Home() {
 
         <Book
         id="11"
-        title="Book: The Shining"
-        author="Author: Stephen King"
+        title="The Shining"
+        by="by "
+        author="Stephen King"
         price={230}
         rating={4}  
         image="https://m.media-amazon.com/images/I/41nTTMoaxiL._SX320_BO1,204,203,200_.jpg"
@@ -147,8 +159,9 @@ function Home() {
         />
         <Book
         id="12"
-        title="Book: The Psychology of Money"
-        author="Author: Morgan Housel"
+        title="The Psychology of Money"
+        by="by "
+        author="Morgan Housel"
         price={169}
         rating={5}  
         image="https://m.media-amazon.com/images/I/41r6F2LRf8L._SX323_BO1,204,203,200_.jpg"
@@ -163,8 +176,9 @@ function Home() {
 
         <Book
         id="13"
-        title="Book: Shawshank Redemption"
-        author="Author: Frank Darabont"
+        title="Shawshank Redemption"
+        by="by "
+        author="Frank Darabont"
         price={289}
         rating={5}  
         image="https://m.media-amazon.com/images/I/51ALMvQGyWL._SX369_BO1,204,203,200_.jpg"
@@ -174,8 +188,9 @@ function Home() {
 
         <Book
         id="14"
-        title="Book: You Only Live Once"
-        author="Author: Stuti Changle"
+        title="You Only Live Once"
+        by="by "
+        author="Stuti Changle"
         price={141}
         rating={4}  
         image="https://m.media-amazon.com/images/I/413OgI8KzuL._SX322_BO1,204,203,200_.jpg"
@@ -185,8 +200,9 @@ function Home() {
 
       <Book
         id="15"
-        title="Book: The Blue Umbrella"
-        author="Author: Ruskin Bond"
+        title="The Blue Umbrella"
+        by="by "
+        author="Ruskin Bond"
         price={94}
         rating={4}  
         image="https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg"
@@ -197,8 +213,9 @@ function Home() {
 
         <Book
         id="16"
-        title="Book: The Subtle Art of Not Giving a F*ck"
-        author="Author: Mark Manson"
+        title="The Subtle Art of Not Giving a F*ck"
+        by="by "
+        author="Mark Manson"
         price={272}
         rating={4}  
         image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
