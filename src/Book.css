@@ -193,3 +193,14 @@ filter: grayscale(0);
 
 /* Add to MyBooks Ends */
 
+.author__link{
+  font-size: medium;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  color: #e8716b;
+  
+}

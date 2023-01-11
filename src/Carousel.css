@@ -69,7 +69,22 @@
     pointer-events: visible;
 }
 
-.carousel_arrow_left,
+.carousel_arrow_left{
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+  padding-right: 2px;
+  cursor: pointer;
+}
 .carousel_arrow_right {
   position: absolute;
   font-size: 40px;
@@ -79,10 +94,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
+  padding-left: 2px;
   cursor: pointer;
 }
 

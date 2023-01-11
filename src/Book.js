@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Book.css";
 import { useStateValue } from './StateProvider';
-function Book({ id, title, price, rating, image,link,author,download}) {
+function Book({ id, title, price, rating, image,link,author,download,author_link,by}) {
 
     const [{ basket }, dispatch] = useStateValue();
 
@@ -23,8 +23,8 @@ function Book({ id, title, price, rating, image,link,author,download}) {
   return (
     <div className='book'>
         <div className='book__info'>
-        <p>{title}</p>
-        <p>{author}</p>
+        <p ><h3>{title}</h3></p>
+        <p className="author__link">{by}<a href={author_link} className="link" >{author}</a></p>
         <p className='book__price'>
             <small>₹</small>
             <strong>{price}</strong>
