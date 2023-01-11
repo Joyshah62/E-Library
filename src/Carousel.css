@@ -113,6 +113,7 @@
   
   .pagination_dot:hover {
     transform: scale(1.2);
+    transition: ease-in-out 0.5s;
   }
   
   .pagination_dot-active {
