@@ -14,7 +14,9 @@ const About = () => {
     <div className="row">
 
     <div className="column">
-      <div className="about-img"></div>
+      <div><img className={toggleTab === 1 ?"about-img1":""}></img></div>
+      <div><img className={toggleTab === 2 ?"about-img2":""}></img></div>
+      <div><img className={toggleTab === 3 ?"about-img3":""}></img></div>
     </div>
 
     <div className="column">

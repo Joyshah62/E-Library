@@ -125,6 +125,7 @@
     display: inline-block;
     margin-left: 10px;
     cursor: pointer;
+    transition: ease-in-out 0.5s;
   }
   
   .pagination_dot:hover {

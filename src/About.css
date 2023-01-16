@@ -25,15 +25,44 @@
     font-size: 14px;
     font-weight: 600;
 }
-.about-img{
+
+.about-img1{
     position: relative;
-    background-image: url("../public/images/img3.jpg");
+    background-image: url("../public/images/Hetpic.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 550px;
     width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
+
+.about-img2{
+    position: relative;
+    background-image: url("../public/images/Joypic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.about-img3{
+    position: relative;
+    background-image: url("../public/images/Rhythmpic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
 .content{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
