@@ -189,3 +189,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+.about__title{
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+}

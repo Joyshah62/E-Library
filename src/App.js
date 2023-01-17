@@ -10,6 +10,7 @@ import { auth } from './firebase';
 import About from './About';
 import Carousel from './Carousel';
 import { countries } from './Data';
+import FAQ from './FAQ';
 
   function App() {
 
@@ -54,6 +55,7 @@ import { countries } from './Data';
                   </Route>
                   <Route path="/about">
                     <Header/>
+                    <FAQ/>
                     <About/>
                   </Route>
                   <Route path="/">

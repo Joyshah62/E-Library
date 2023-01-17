@@ -8,9 +8,12 @@ const About = () => {
   }
   return (
     <Fragment>
-
+   
+    <div className='about__title'>
+      <h1>Meet the Developers</h1>
+    </div>
     <section className="about">
-
+    
     <div className="row">
 
     <div className="column">
@@ -26,19 +29,19 @@ const About = () => {
     <div className={toggleTab === 1 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(1)}
     >
-      <h2>About</h2>
+      <h2>Het</h2>
     </div>
 
     <div className={toggleTab === 2 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(2)}
     >
-      <h2>Skills</h2>
+      <h2>Joy</h2>
     </div>
 
     <div className={toggleTab === 3 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(3)}
     >
-      <h2>Experience</h2>
+      <h2>Rhythm</h2>
     </div>
       
     </div>
