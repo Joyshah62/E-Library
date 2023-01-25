@@ -28,7 +28,7 @@
 
 .about-img1{
     position: relative;
-    background-image: url("../public/images/Hetpic.png");
+    background-image: url("../public/images/Joypic.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -40,7 +40,7 @@
 
 .about-img2{
     position: relative;
-    background-image: url("../public/images/Joypic.png");
+    background-image: url("../public/images/Hetpic.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

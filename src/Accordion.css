@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Mate+SC&family=Raleway&family=Roboto:wght@500&family=Source+Sans+Pro:wght@300;600&family=Squada+One&display=swap");
 * {
-  margin: 0;
-  padding: 0%;
   box-sizing:border-box;
+  
 }
+
 
 .main-div {
     width: 100%;
     margin-top: 15px;
-    margin-right: 15px;
     margin-bottom: 15px;
     padding: 50px;
     background-color: rgb(255, 255, 255);
@@ -18,6 +17,7 @@
   }
 
   .accordion__heading {
+
     text-align: center;
     font-family: "Bitter", serif;
     text-transform: capitalize;
@@ -29,7 +29,8 @@
   }
 
   .main-heading {
-    display: flex;
+    
+    display:flex;
     margin-top: 30px;
     padding: 20px 0 20px 20px;
     background: #f1f4ff;
@@ -42,6 +43,7 @@
   }
   
   .main-heading h3 {
+    
     margin-left: 30px;
     font-family: "Mate SC", serif;
     color: #303243;
@@ -53,6 +55,7 @@
   }
   
   .main-heading p {
+   
     cursor: pointer;
     border-radius: 50%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -62,6 +65,7 @@
   }
   
   .answers {
+   
     padding: 30px 20px 40px 20px;
     font-family: "Raleway", sans-serif;
     font-size: 15px;

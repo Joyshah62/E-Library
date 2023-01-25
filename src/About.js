@@ -29,13 +29,13 @@ const About = () => {
     <div className={toggleTab === 1 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(1)}
     >
-      <h2>Het</h2>
+      <h2>Joy</h2>
     </div>
 
     <div className={toggleTab === 2 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(2)}
     >
-      <h2>Joy</h2>
+      <h2>Het</h2>
     </div>
 
     <div className={toggleTab === 3 ? "single-tab active-tab": "single-tab"}
