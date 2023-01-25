@@ -4,17 +4,14 @@ import './FAQ.css';
 const FAQ = () => {
   const [questions] = useState([
     {
-      question: 'What is React?',
-      answer: 'React is a JavaScript library for building user interfaces.'
+      question: 'How to download a book?',
+      answer: 'To download a book you have to click on the add button and to MyBooks page where you can preview and download the book.'
     },
     {
-      question: 'What are the benefits of using React?',
-      answer: 'React allows for building reusable UI components, efficient updates and rendering, and a strong developer community.'
+      question: 'Can you download a book without signing in?',
+      answer: 'No, You must sign in in order to download a book.'
     },
-    {
-      question: 'How do I get started with React?',
-      answer: 'You can start by reading the React documentation and experimenting with small projects.'
-    }
+  
   ]);
 
   return (

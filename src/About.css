@@ -1,6 +1,6 @@
 .about{
     padding: 6rem 3rem 5rem 3rem;
-    background: #f8f8f8;
+    background: rgb(255, 255, 255);
 }
 .row{
     display: flex;
@@ -13,7 +13,7 @@
     display: flex;   
 }
 .single-tab{
-    background: white;
+    background: #f5f5f5;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -64,7 +64,7 @@
 
 
 .content{
-    padding-top: 1.5rem;
+     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     display: none;
 }
@@ -192,6 +192,7 @@
 
 .about__title{
     text-align: center;
-    background-color: #f8f8f8;
+    font-family: "Bitter", serif;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }

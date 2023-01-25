@@ -11,6 +11,7 @@ import About from './About';
 import Carousel from './Carousel';
 import { countries } from './Data';
 import FAQ from './FAQ';
+import Accordion from './Accordion';
 
   function App() {
 
@@ -55,7 +56,7 @@ import FAQ from './FAQ';
                   </Route>
                   <Route path="/about">
                     <Header/>
-                    <FAQ/>
+                    <Accordion/>
                     <About/>
                   </Route>
                   <Route path="/">
