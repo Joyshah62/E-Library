@@ -29,6 +29,8 @@ function Home() {
         download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
         />
+        </div>
+        <div className="home__row">
         <Book
         id="2"
         title="Atomic Habits"
@@ -41,6 +43,8 @@ function Home() {
         download="https://drive.google.com/file/d/1dpM7_-DMX4aA4Zof3hX5El6huRf60Qga/view?usp=share_link"
         author_link="https://jamesclear.com/about"
         />
+        </div>
+        <div className="home__row">
         <Book
         id="3"
         title="It Starts With Us"
@@ -52,7 +56,8 @@ function Home() {
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
         download="https://drive.google.com/file/d/1UTz5zdhjK8q6DrfHSBoyJpcBobzH_KML/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Colleen_Hoover"
-        />
+        /></div>
+        <div className="home__row">
         <Book
         id="4"
         title="The 48 Laws of Power"
@@ -65,6 +70,7 @@ function Home() {
         download="https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Robert_Greene_(American_author)"
         />
+        
         
         </div>
 
@@ -83,6 +89,8 @@ function Home() {
         download="https://drive.google.com/file/d/10dmzg0vn8aqSH8LnJn-p4HUEGx2fJ0yZ/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/James_Williams"
         />
+        </div>
+        <div className="home__row">
 
 
         <Book
@@ -96,7 +104,8 @@ function Home() {
         link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
         download="https://drive.google.com/file/d/1Jl4SwitUKMJyBRrN6d_WY5U5FWbTYybm/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Mario_Puzo"
-        />
+        /></div>
+        <div className="home__row">
         <Book
         id="7"
         title="Harry Potter"
@@ -108,7 +117,8 @@ function Home() {
         link="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/ref=sr_1_2?keywords=harry+potter&qid=1672246382&sprefix=harry%2Caps%2C251&sr=8-2"
         download="https://drive.google.com/file/d/19yq-tpfTIg1YkElWvuvNcFHXX8NlQTST/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/J._K._Rowling"
-        />
+        /></div>
+        <div className="home__row">
         <Book
         id="8"
         title="Ikigai"
@@ -139,7 +149,8 @@ function Home() {
         link="https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/ref=sr_1_5?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-5"
         download="https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=share_link"
         author_link="https://www.goodreads.com/author/list/14810469.Shravya_Bhinder"
-        />
+        /></div>
+        <div className="home__row">
 
       <Book
         id="10"
@@ -152,7 +163,8 @@ function Home() {
         link="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_3?keywords=to+kill+a+mockingbird&qid=1672682182&sprefix=to+kill+a+%2Caps%2C1001&sr=8-3"
         download="https://drive.google.com/file/d/1N1Rvog-_HZJpAS3QAxiFP6RpIQp3I6pd/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Harper_Lee"
-        />
+        /></div>
+        <div className="home__row">
 
 
         <Book
@@ -166,7 +178,8 @@ function Home() {
         link="https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/ref=sr_1_2?keywords=the+shining+by+stephen+king&qid=1672682337&sprefix=the+shinin%2Caps%2C1491&sr=8-2"
         download="https://drive.google.com/file/d/1DKxLpyW-DsbYQ6dSkddIWgRsDDKULbwM/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Stephen_King"
-        />
+        /></div>
+        <div className="home__row">
         <Book
         id="12"
         title="The Psychology of Money"
@@ -196,7 +209,8 @@ function Home() {
         link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
         download="https://drive.google.com/file/d/1fuHfvGm6NQvunvx6tiNVnNEZp6PAOBmy/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
-        />
+        /></div>
+        <div className="home__row">
 
         <Book
         id="14"
@@ -209,7 +223,8 @@ function Home() {
         link="https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/ref=sr_1_14?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-14"
         download="https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link"
         author_link="https://hi-m-wikipedia-org.translate.goog/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF_%E0%A4%9A%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A5%87?_x_tr_sl=hi&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc"
-        />
+        /></div>
+        <div className="home__row">
 
       <Book
         id="15"
@@ -222,7 +237,8 @@ function Home() {
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
         download="https://drive.google.com/file/d/1nk72vBJrYfdTG75xoLF5vdPIWyhHeRt9/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Ruskin_Bond"
-        />
+        /></div>
+        <div className="home__row">
 
 
         <Book
@@ -237,8 +253,125 @@ function Home() {
         download="https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Mark_Manson"
         />
+        </div>
+        <div className="home__row">
+        <Book
+        id="17"
+        title="The Immortals of Meluha"
+        by="by "
+        author="Amish Tripathi"
+        price={220}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41moQrlKZKL._SX324_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Immortals-Meluha-Shiva-Trilogy-Book/dp/9356290520"
+        download="https://drive.google.com/file/d/1yD6QsypUk4_gGnpap5xbnHq4A40UqMvR/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Amish_Tripathi"
+        />
+        </div>
+
+        <div className="home__row">
+        <Book
+        id="18"
+        title="The Silence of The Lambs"
+        by="by "
+        author="Thomas Harris"
+        price={386}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/519n1y9Q9kL._SX321_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/ref=sr_1_1?keywords=the+silence+of+the+lambs+book&qid=1674450019&s=books&sprefix=the+silence+of%2Cstripbooks%2C318&sr=1-1"
+        download="https://drive.google.com/file/d/1RPms61m3Sie7FsCdFLNy96AsqQQk89R5/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Thomas_Harris"
+        />
+        </div>
         
+        <div className="home__row">
+        <Book
+        id="19"
+        title="A Strom of Swords"
+        by="by "
+        author="George R. R. Martin"
+        price={814}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51e6nhYq5TL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link="https://www.amazon.in/Storm-Swords-Song-Fire-Three/dp/055357342X/ref=sr_1_1?keywords=a+storm+of+swords&qid=1674450365&s=books&sprefix=a+storm+o%2Cstripbooks%2C289&sr=1-1"
+        download="https://drive.google.com/file/d/1XBd72OxxRXVuWCFbU2hpNlPIdFHm9t9K/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/George_R._R._Martin"
+        />
+        </div>
         
+        <div className="home__row">
+        <Book
+        id="20"
+        title="Fight Club"
+        by="by "
+        author="Chuck Palahniuk"
+        price={190}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51CbOKu34OL._SX324_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Fight-Club-Chuck-Palahniuk/dp/0099765217/ref=sr_1_1?keywords=fight+club&qid=1674450594&s=books&sprefix=fight+%2Cstripbooks%2C260&sr=1-1"
+        download="https://drive.google.com/file/d/1kwAkbyMuieLh0hXcvoozaIV778J513YL/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Chuck_Palahniuk"
+        />
+        </div>
+        
+        <div className="home__row">
+        <Book
+        id="21"
+        title=""
+        by="by "
+        author=""
+        price={190}
+        rating={4}  
+        image=""
+        link=""
+        download=""
+        author_link=""
+        />
+        </div>
+        
+        <div className="home__row">
+        <Book
+        id="22"
+        title=""
+        by="by "
+        author=""
+        price={190}
+        rating={4}  
+        image=""
+        link=""
+        download=""
+        author_link=""
+        />
+        </div>
+        
+        <div className="home__row">
+        <Book
+        id="23"
+        title=""
+        by="by "
+        author=""
+        price={190}
+        rating={4}  
+        image=""
+        link=""
+        download=""
+        author_link=""
+        />
+        </div>
+
+        <div className="home__row">
+        <Book
+        id="24"
+        title=""
+        by="by "
+        author=""
+        price={190}
+        rating={4}  
+        image=""
+        link=""
+        download=""
+        author_link=""
+        />
         </div>
 
         
