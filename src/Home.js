@@ -317,60 +317,60 @@ function Home() {
         <div className="home__row">
         <Book
         id="21"
-        title=""
+        title="No Country for Old Men"
         by="by "
-        author=""
+        author="Cormac McCarthy"
         price={190}
         rating={4}  
-        image=""
-        link=""
-        download=""
-        author_link=""
+        image="https://m.media-amazon.com/images/I/51U6-kcsIUL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link="https://www.amazon.in/Country-Old-Men-Vintage-International/dp/0375706674"
+        download="https://drive.google.com/file/d/1QAJmSOl5atV1TtL3mDE0aLJAUWs0wQpz/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Cormac_McCarthy"
         />
         </div>
         
         <div className="home__row">
         <Book
         id="22"
-        title=""
+        title="Schindler's List"
         by="by "
-        author=""
+        author="Thomas Keneally"
         price={190}
         rating={4}  
-        image=""
-        link=""
-        download=""
-        author_link=""
+        image="https://m.media-amazon.com/images/I/416HJgbykrL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link="https://www.amazon.in/Schindlers-List-Thomas-Keneally/dp/1982151048/ref=sr_1_3?crid=U96SHJXZ2P8&keywords=schindler+list&qid=1674994514&s=books&sprefix=schiendler+list%2Cstripbooks%2C312&sr=1-3"
+        download="https://drive.google.com/file/d/1TA4IRNhFajMYQp7Jar6NtREy3z7UzEs-/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Thomas_Keneally"
         />
         </div>
         
         <div className="home__row">
         <Book
         id="23"
-        title=""
+        title="The Maze Runner"
         by="by "
-        author=""
+        author="James Dashner"
         price={190}
         rating={4}  
-        image=""
-        link=""
-        download=""
-        author_link=""
+        image="https://m.media-amazon.com/images/I/51JZHD0ac2L._SX325_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Maze-Runner-James-Dashner/dp/9351033139/ref=sr_1_3?crid=2C3ZO9XB1ZZYM&keywords=maze+runner&qid=1674995066&s=books&sprefix=maze+runner%2Cstripbooks%2C415&sr=1-3"
+        download="https://drive.google.com/file/d/1C_K-TtXrdWoYyQepS9XgG2yU4B6yg5Aa/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/James_Dashner"
         />
         </div>
 
         <div className="home__row">
         <Book
         id="24"
-        title=""
+        title="V for Vendetta"
         by="by "
-        author=""
-        price={190}
+        author="Alan Moore"
+        price={2167}
         rating={4}  
-        image=""
-        link=""
-        download=""
-        author_link=""
+        image="https://m.media-amazon.com/images/I/41jW+y-RCuL._SX351_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/V-Vendetta-30th-Anniversary-Deluxe/dp/1401285007/ref=sr_1_2?keywords=v+for+vendetta&qid=1674995571&sprefix=v+for+vende%2Caps%2C267&sr=8-2"
+        download="https://drive.google.com/file/d/1fg2AYqBRSuIsejDyH1FBO0zLqXIpuGvc/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Alan_Moore"
         />
         </div>
 
