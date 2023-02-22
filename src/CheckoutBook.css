@@ -4,6 +4,10 @@
     margin-bottom: 20px;
 }
 
+.checkoutbook__price{
+    color: #111;
+}
+
 .checkoutbook__image{
     object-fit: contain;
     width: 180px;

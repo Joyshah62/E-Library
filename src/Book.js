@@ -12,6 +12,7 @@ function Book({ id, title, price, rating, image,link,author,download,author_link
                 id:id,
                 title:title,
                 image:image,
+                price:price,
                 rating:rating,
                 link:link,
                 author:author,
