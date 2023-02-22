@@ -17,6 +17,8 @@ A general purpose E-library that can be accessed by anyone from anywhere in the 
 ![Vagrant](https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=1563ff&color=1563ff)
 ![SNYK](https://img.shields.io/badge/snyk-100000?style=for-the-badge&logo=snyk&logoColor=white&labelColor=221f4a&color=221f4a)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dfac04c1-c0c0-4506-9b8b-4174faa24d4d/deploy-status)](https://app.netlify.com/sites/e-library-react/deploys)
+
 
 ## Available Scripts
 
