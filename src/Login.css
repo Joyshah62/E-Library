@@ -59,3 +59,97 @@
     border: 1px solid;
     margin-top: 10px;
 }
+
+.EmailBox{
+    position: relative;
+}
+
+.PassBox{
+    position: relative;
+}
+
+.EmailBox input
+{
+    position: relative;
+
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25) !important;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+}
+
+.PassBox input
+{
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25) !important;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+
+    position: relative;
+    margin-top: 13px;
+}
+
+
+.EmailBox span
+{
+    top: auto;
+    position: absolutes;
+    padding: 1px;
+    padding-left: 15px;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.EmailBox input:valid ~ span,
+.EmailBox input:focus ~ span
+{
+    color: #f0c14b;
+    transform: translateX(15vw) translateY(-1vh);
+    font-size: 0.90em;
+    padding: 0 15px;
+    background: white;
+    border-left: 1px solid #f0c14b;
+    border-right: 1px solid #f0c14b;
+}
+
+
+
+.PassBox span
+{
+    top: auto;
+    position: absolutes;
+    padding: 1px;
+    padding-left: 15px;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+
+.PassBox input:valid ~ span,
+.PassBox input:focus ~ span
+{
+    color: black;
+    transform: translateX(10px) translateY(6px);
+    font-size: 0.90em;
+    padding: 0 15px;
+    background: #f0c14b;
+    border-left: 1px solid #f0c14b;
+    border-right: 1px solid #f0c14b;
+
+} 

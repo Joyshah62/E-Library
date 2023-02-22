@@ -7,7 +7,6 @@
 }
 
 .book__info{
-
   height: 100px;
   
 }
@@ -19,7 +18,8 @@
 }
 
 .btn-5 {
-   border-radius: 25px;
+  cursor:pointer;
+  border-radius: 25px;
   margin-top: 10px;
   background: #e8716b;
   color: #fff;
@@ -28,6 +28,7 @@
   padding: 0;
   border: none;
 }
+
 .btn-5:hover {
   background: transparent;
   color: #000;
@@ -104,11 +105,89 @@ transition: ease-in-out 0.5s;
 filter: grayscale(0);
 }
 
+.author__link{
+  font-size: medium;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  color: #e8716b;
+  
+}
+
 /* Book Image Ends */
 
+/* Splash Add Button CSS Starts */
+/* 
+.add-btn1{
 
-/* add to MyBooks Starts */
+  margin-top: 10px;
+  line-height: 25px;
+  width: 80px;
+  padding: 0;
+  border: none;
 
+  position: relative;
+  background: #e8716b;
+  border-radius: 25px;
+  
+  color: white;
+  cursor:pointer;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.4s;
+}
+
+.add-btn1:hover {
+  background: transparent;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9, 
+    -4px -4px 5px 0px #fff9, 
+    7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+
+  transition-duration: 0.1s;
+}
+
+.add-btn1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  box-shadow: 0 0 10px 40px rgb(100, 26, 26);
+}
+
+.add-btn1:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.add-btn1:active {
+  top: 1px;
+} */
+
+/* Splash Add Button CSS Ends */
+
+
+
+/* OLD add to MyBooks Starts */
+/* 
 .icon-btn {
   width: 50px;
   height: 50px;
@@ -188,19 +267,7 @@ filter: grayscale(0);
   right: 15px;
   height: 4px;
   top: calc(50% - 2px);
-}
+} */
 
 
-/* Add to MyBooks Ends */
-
-.author__link{
-  font-size: medium;
-}
-.link{
-  color: black;
-  text-decoration: none;
-}
-.link:hover {
-  color: #e8716b;
-  
-}
+/* OLD Add to MyBooks Ends */

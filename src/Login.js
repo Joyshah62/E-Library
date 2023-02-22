@@ -42,11 +42,17 @@ function Login() {
         <div className="login__container">
             <h1>Sign in</h1>
             <form>
-                <h5>E-mail</h5>
-                <input value={email} onChange={event => setEmail(event.target.value)} type="text"/>
-                <h5>Password</h5>
-                <input value={password} onChange={event => setPassword(event.target.value)} type="password"/>
-                <button onClick={login} type="submit" className="login__signInButton">Sign in</button>
+                <div className='EmailBox'>
+                    <input value={email} onChange={event => setEmail(event.target.value)} type="text" required="required"/>
+                    <span>E-mail</span> 
+                </div>
+
+                <div className='PassBox'>
+                    <input className='PassBox' value={password} onChange={event => setPassword(event.target.value)} type="password" required="required"/>
+                    <span>Password</span> 
+                </div>
+
+                <button className='login__signInButton' onClick={login} type="submit">Sign in</button>
             </form>
 
             <p>
