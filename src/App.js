@@ -12,6 +12,14 @@ import Carousel from './Carousel';
 import { countries } from './Data';
 import FAQ from './FAQ';
 import Accordion from './Accordion';
+import Payment from './Payment';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+const promise = loadStripe
+(
+  "pk_test_51MeMGpSJQ6PAvITZSBJSJky24X5nCuJn79mx4qzj9Yg4u83jv56sIhu0BD9hntXKrwkhj4yvsz0rESU0D0uVNAJG00rxtSuvcP"
+)
 
   function App() {
 
@@ -58,6 +66,12 @@ import Accordion from './Accordion';
                     <Header/>
                     <Accordion/>
                     <About/>
+                  </Route>
+                  <Route path="/payment">
+                    <Header/>
+                    <Elements stripe={promise}>
+                    <Payment/>
+                    </Elements>
                   </Route>
                   <Route path="/">
                     <Header/>
