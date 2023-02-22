@@ -15,6 +15,7 @@ A general purpose E-library that can be accessed by anyone from anywhere in the 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![ReactRouter](https://img.shields.io/badge/react_router-100000?style=for-the-badge&logo=react-router&logoColor=FFFFFF&labelColor=d0021b&color=d0021b)
 ![Vagrant](https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=1563ff&color=1563ff)
+![SNYK](https://img.shields.io/badge/snyk-100000?style=for-the-badge&logo=snyk&logoColor=white&labelColor=221f4a&color=221f4a)
 
 
 ## Available Scripts
