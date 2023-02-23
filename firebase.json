@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "functions": [
     {
       "source": "functions",
@@ -14,4 +15,24 @@
       ]
     }
   ]
+=======
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+>>>>>>> cdff169f14801591e7cb1d5644e05bd9910eed5b
 }
