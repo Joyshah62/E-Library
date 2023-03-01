@@ -15,12 +15,12 @@ import Accordion from './Accordion';
 import Payment from './Payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
+import Orders from './Orders';
 
 const promise = loadStripe
 (
   "pk_test_51MeMGpSJQ6PAvITZSBJSJky24X5nCuJn79mx4qzj9Yg4u83jv56sIhu0BD9hntXKrwkhj4yvsz0rESU0D0uVNAJG00rxtSuvcP"
-)
-
+);
   function App() {
 
     const [{user}, dispatch] = useStateValue();
@@ -55,6 +55,10 @@ const promise = loadStripe
     <Router>
           <div className="app">
             <Switch>
+              <Route path="/orders">
+                <Header/>
+                <Orders/>
+              </Route>
                 <Route path="/login">
                   <Login/>
                   </Route>

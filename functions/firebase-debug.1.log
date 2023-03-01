@@ -1,0 +1,72 @@
+[debug] [2023-02-24T17:45:09.709Z] ----------------------------------------------------------------------
+[debug] [2023-02-24T17:45:09.715Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2023-02-24T17:45:09.717Z] CLI Version:   11.24.0
+[debug] [2023-02-24T17:45:09.717Z] Platform:      win32
+[debug] [2023-02-24T17:45:09.717Z] Node Version:  v19.2.0
+[debug] [2023-02-24T17:45:09.718Z] Time:          Fri Feb 24 2023 23:15:09 GMT+0530 (India Standard Time)
+[debug] [2023-02-24T17:45:09.718Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-24T17:45:09.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-24T17:45:09.869Z] > authorizing via signed-in user (joyshah2003@gmail.com)
+[debug] [2023-02-24T17:45:09.869Z] [iam] checking project e-library-83bb8 for permissions ["firebase.projects.get"]
+[debug] [2023-02-24T17:45:09.871Z] > refreshing access token with scopes: []
+[debug] [2023-02-24T17:45:09.874Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-24T17:45:09.874Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-24T17:45:10.246Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-24T17:45:10.247Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-24T17:45:10.269Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-library-83bb8:testIamPermissions [none]
+[debug] [2023-02-24T17:45:10.270Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-library-83bb8:testIamPermissions x-goog-quota-user=projects/e-library-83bb8
+[debug] [2023-02-24T17:45:10.271Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-library-83bb8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-24T17:45:11.949Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-library-83bb8:testIamPermissions 200
+[debug] [2023-02-24T17:45:11.950Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-library-83bb8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-24T17:45:11.972Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-24T17:45:12.016Z] defaultcredentials: writing to file C:\Users\Admin\AppData\Roaming\firebase\joyshah2003_gmail_com_application_default_credentials.json
+[debug] [2023-02-24T17:45:12.022Z] DEBUG: Setting GAC to C:\Users\Admin\AppData\Roaming\firebase\joyshah2003_gmail_com_application_default_credentials.json
+[debug] [2023-02-24T17:45:12.024Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-library-83bb8/adminSdkConfig [none]
+[debug] [2023-02-24T17:45:12.881Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-library-83bb8/adminSdkConfig 200
+[debug] [2023-02-24T17:45:12.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-library-83bb8/adminSdkConfig {"projectId":"e-library-83bb8","storageBucket":"e-library-83bb8.appspot.com"}
+[debug] [2023-02-24T17:45:12.938Z] [functions] Watching "D:\E-Library Project\e-library\functions" for Cloud Functions...
+[debug] [2023-02-24T17:45:12.965Z] Validating nodejs source
+[debug] [2023-02-24T17:45:16.551Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1",
+    "stripe": "^11.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-24T17:45:16.552Z] Building nodejs source
+[debug] [2023-02-24T17:45:16.553Z] Failed to find version of module node: reached end of search path D:\E-Library Project\e-library\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-02-24T17:45:16.569Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-24T17:45:16.592Z] Found firebase-functions binary at 'D:\E-Library Project\e-library\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-24T17:45:18.807Z] Serving at port 8960
+
+[debug] [2023-02-24T17:45:23.634Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-24T17:45:23.661Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-02-24T17:45:23.711Z] [functions] Loaded functions definitions from source: api.
+[debug] [2023-02-24T17:45:23.714Z] [functions[us-central1-api]] http function initialized (http://127.0.0.1:5000/e-library-83bb8/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 

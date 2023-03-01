@@ -6,7 +6,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
-import axios from 'axios';
+import axios from './axios';
+import { db } from './firebase';
 function Payment() {
 
 
@@ -27,7 +28,7 @@ function Payment() {
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
-                url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
             });
             setClientSecret(response.data.clientSecret)
         }
@@ -43,19 +44,33 @@ function Payment() {
 
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
-                card: elements.getElement(CardElement),
+                card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
+
+            db.collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            });
             
             setSucceeded(true);
             setError(null);
             setProcessing(false);
 
-            history.replace("/orders");
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
+
+            history.replace('/orders');
         })
     }
 
-    const handleChange = (event) => {
+    const handleChange = event => {
         setDisabled(event.empty);
         setError(event.error ? event.error.message : "");
     }

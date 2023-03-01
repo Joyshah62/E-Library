@@ -1,21 +1,4 @@
 {
-<<<<<<< HEAD
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint"
-      ]
-    }
-  ]
-=======
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
@@ -34,5 +17,4 @@
       }
     ]
   }
->>>>>>> cdff169f14801591e7cb1d5644e05bd9910eed5b
 }
