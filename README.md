@@ -60,9 +60,14 @@ You may also see any lint errors in the console.
 
 ### `vagrant up`
 
-Creates a containerized development evironment in Ubuntu/bionic64 that has XFCE4 Desktop Environment, Chrome Browser, VSCode, Sublime Text, NetBeans 8.2, docker, nodejs, PHP Apache, MongoDB, Mysql, Memcached and AWScli preinstalled.
+Creates a containerized development evironment in Ubuntu/bionic64.
+
+### `vagrant provision`
+
+Populates the ubuntu vm with XFCE4 Desktop Environment, Chrome Browser, VSCode, Sublime Text, NetBeans 8.2, docker, nodejs, PHP Apache, MongoDB, Mysql, Memcached and AWScli installation.
 
 
+<br />
 
 ## Contributors 
 
