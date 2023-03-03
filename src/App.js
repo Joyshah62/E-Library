@@ -16,6 +16,7 @@ import Payment from './Payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import Orders from './Orders';
+import { ToastContainer } from 'react-toastify';
 
 const promise = loadStripe
 (
@@ -84,6 +85,10 @@ const promise = loadStripe
                   </Route>
             </Switch>
           </div>
+          <ToastContainer style={{ marginTop: "45px" }} 
+              autoClose={1000}
+              theme="light"
+          />
     </Router>
     
   );

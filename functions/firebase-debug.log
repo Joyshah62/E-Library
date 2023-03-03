@@ -1344,3 +1344,4 @@ File: "D:\E-Library Project\e-library\functions\package.json" {"metadata":{"emul
 [info] i  functions: Finished "us-central1-api" in 1015.723ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1015.723ms"}}
 [debug] [2023-03-01T16:37:31.432Z] [worker-us-central1-api-b08da709-510c-4866-a8e2-6b4a71625b3c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-b08da709-510c-4866-a8e2-6b4a71625b3c]: IDLE"}}
 [debug] [2023-03-01T16:37:31.433Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-03-01T16:41:49.892Z] Received signal SIGHUP 1

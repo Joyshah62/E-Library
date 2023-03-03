@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Book.css";
 import { useStateValue } from './StateProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 function Book({ id, title, price, rating, image,link,author,download,author_link,by}) {
 
     const [{ basket }, dispatch] = useStateValue();
@@ -19,6 +21,7 @@ function Book({ id, title, price, rating, image,link,author,download,author_link
                 download:download,
             },
         })
+        toast("Added to MyBooks");
     }
 
   return (
@@ -45,12 +48,17 @@ function Book({ id, title, price, rating, image,link,author,download,author_link
         <div className="add-icon"></div>
         <div className="btn-txt">Add</div> */}
         <button className='btn-5' onClick={addToBasket}>Add</button>
-
         
-        <a href={link} target="_blank" rel="noreferrer">
+
+        <a href={download} target="_blank" rel="noreferrer"> 
+
+         <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button>
+        
+        </a>
+        {/* <a href={link} target="_blank" rel="noreferrer">
             
         <button className='btn-5'>Buy Book</button>
-        </a>
+        </a> */}
     </div>
 
     
