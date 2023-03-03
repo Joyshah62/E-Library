@@ -19,6 +19,9 @@ function Book({ id, title, price, rating, image,link,author,download,author_link
                 link:link,
                 author:author,
                 download:download,
+                author_link:author_link,
+                author:author,
+                by:by,
             },
         })
         toast("Added to MyBooks");

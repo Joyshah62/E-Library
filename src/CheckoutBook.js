@@ -2,7 +2,7 @@ import React from 'react'
 import "./CheckoutBook.css";
 import { useStateValue } from './StateProvider';
 
-function CheckoutBook({id, title,image,price, author ,link, rating,hideButton}) {
+function CheckoutBook({id, title,image,price, author ,author_link,by, rating,hideButton}) {
     const [{ basket }, dispatch] = useStateValue();
 
 
@@ -18,7 +18,8 @@ function CheckoutBook({id, title,image,price, author ,link, rating,hideButton}) 
         <img className="checkoutbook__image" src={image} alt=""/>
         <div className='checkoutbook__info'>
           <p className="checkoutbook__title">{title}</p>
-          <p className="checkoutbook__title">{author}</p>
+          <p className='author__link'>{by}<a href={author_link} className="link" >{author}</a></p>
+          
        
        <p className='checkoutbook__price'>
         <small>₹</small>

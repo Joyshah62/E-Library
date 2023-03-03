@@ -35,6 +35,8 @@ function Mybook() {
                     link={item.link}
                     author={item.author}
                     download={item.download}
+                    author_link={item.author_link}
+                    by={item.by}
                     />
 
                 ))}
