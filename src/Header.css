@@ -1,83 +1,84 @@
-.header{
+.header {
     background-color: #FFB4A2;
-    display:flex;
+    display: flex;
     align-items: center;
     position: Sticky;
     top: 0;
     z-index: 100;
 }
 
-.header__logo{
+.header__logo {
     width: 100px;
     object-fit: contain;
-   margin-top:5px;
-   margin-left:20px;
-   margin-right:20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.header__search{
+.header__search {
     display: flex;
     flex: 1;
 }
 
-.header__searchInput{
+.header__searchInput {
     height: 30px;
     padding: 10px;
-    border:none;
+    border: none;
     width: 100%;
 }
 
-.header__searchIcon{
+.header__searchIcon {
     padding: 5px;
     background-color: #1DF289;
     height: 30px !important;
     width: auto;
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     justify-content: space-evenly;
 }
 
 .button {
-    --c: #195163; /* the color */
-  
-    color: #0000;
-    background: 
-      linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%)) / 200%, 
-      linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) no-repeat,
-      var(--_c, #0000);
-    -webkit-background-clip: text, padding-box, padding-box;
-            background-clip: text, padding-box, padding-box;
-    transition: 0s, color .5s, background-color .5s;
-  }
+    --c: #195163;
+    /* the color */
 
-.button:hover{
+    color: #0000;
+    background:
+        linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%)) / 200%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) no-repeat,
+        var(--_c, #0000);
+    -webkit-background-clip: text, padding-box, padding-box;
+    background-clip: text, padding-box, padding-box;
+    transition: 0s, color .5s, background-color .5s;
+}
+
+.button:hover {
     color: #fff;
     --_c: var(--c);
     --_p: 100%;
     transition: 0.5s, color 0s .5s, background-color 0s .5s;
 }
 
-.header__link{
+.header__link {
     color: #195163;
     text-decoration: none;
 }
 
-.header__option{
+.header__option {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.header__optionBookmark{
+.header__optionBookmark {
     display: flex;
     align-items: center;
-    margin-top:2px;
+    margin-top: 2px;
 }
 
-.header__Bookcount{
+.header__Bookcount {
     margin-left: 3px;
     margin-right: 10px;
 }
