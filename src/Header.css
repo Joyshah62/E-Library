@@ -1,5 +1,6 @@
 .header {
-    background-color: #FFB4A2;
+    /* background-color: #FFB4A2; */
+    background-color: rgb(126, 231, 255);
     display: flex;
     align-items: center;
     position: Sticky;
@@ -8,7 +9,7 @@
 }
 
 .header__logo {
-    width: 100px;
+    width: 80px;
     object-fit: contain;
     margin-top: 5px;
     margin-left: 20px;

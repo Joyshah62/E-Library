@@ -21,7 +21,8 @@ function Header() {
     <nav className="header">
         {/*logo on the left -> img */}
         <Link to="/">
-        <img className='header__logo' src="https://www.concreteisbetter.com/wp-content/uploads/2019/10/elibrary2.png"
+        {/* <img className='header__logo' src="https://www.concreteisbetter.com/wp-content/uploads/2019/10/elibrary2.png" */}
+        <img className='header__logo' src="/images/ebooklogo.png"
         alt=''
         />
         </Link>
@@ -33,6 +34,11 @@ function Header() {
         </div>
 
         {/* 3 links */}
+        <Link to= {!user && "/login"} className="header__link">
+              <div onClick={login} className="header__option">
+                <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
+              </div>
+            </Link>
 
         
 
@@ -66,11 +72,11 @@ function Header() {
               </div>
             </Link> */}
 
-            <Link to= {!user && "/login"} className="header__link">
+            {/* <Link to= {!user && "/login"} className="header__link">
               <div onClick={login} className="header__option">
                 <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
               </div>
-            </Link>
+            </Link> */}
            
            
            {/* <Link to="/mybooks" className='header__link'>

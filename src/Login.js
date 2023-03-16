@@ -60,7 +60,7 @@ function Login() {
         <Link to="/">
             <img
                 className="login__logo"
-                src="https://www.concreteisbetter.com/wp-content/uploads/2019/10/elibrary2.png"
+                src="/images/ebooklogo.png"
                 alt=""
             />
         </Link>
