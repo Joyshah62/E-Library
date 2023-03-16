@@ -3,14 +3,7 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "contain"
-        ]
-      }
-    ]
+    "compat-api/css": "off"
   },
   "browserslist": [
     "defaults",

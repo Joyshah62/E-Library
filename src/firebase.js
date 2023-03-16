@@ -2,7 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
-const firebaseApp = firebase.initializeApp({
+export const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyBnHKU3yeuTZFWw2ZGErwLq31FDWXH8WQo",
     authDomain: "e-library-83bb8.firebaseapp.com",
     projectId: "e-library-83bb8",

@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
 import { useStateValue } from './StateProvider' 
-import { auth } from './firebase'
 import Login from './Login'
+import { firebaseApp, auth } from './firebase';
+
 
 function Header() {
+
+  const [currentUser, setCurrentUser] = useState();
+  useEffect(() => {
+    firebaseApp.auth().onAuthStateChanged((user) => {
+        setCurrentUser(user)
+    })
+}, [])
 
     const [{ basket, user }] = useStateValue();
 
@@ -34,15 +42,25 @@ function Header() {
         </div>
 
         {/* 3 links */}
-        <Link to= {!user && "/login"} className="header__link">
+
+        <div className='header__nav'>
+
+          
+        {currentUser && <>
+            <div id='imgDiv'>
+              <img id='userImg' src={currentUser.photoURL} /> 
+              <p id='greetImg'>Hi!</p>
+            </div>
+
+            <p id='userName'>{currentUser.displayName}</p>
+
+            </>}
+
+            <Link to= {!user && "/login"} className="header__link">
               <div onClick={login} className="header__option">
                 <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
               </div>
             </Link>
-
-        
-
-        <div className='header__nav'>
 
            <Link to="/" className='header__link'>
             <div className='header__option'>

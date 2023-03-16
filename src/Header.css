@@ -108,3 +108,58 @@
     transform: rotate(-360deg);
     z-index: 1;
 }
+
+#userName{
+    position: relative;
+    top: 40px;
+    right: 10px;
+    text-decoration: none;
+}
+
+
+#imgDiv:hover img{
+    position: relative;
+    top: 0px;
+    right: -40px;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    transform: rotateY(180deg);
+    filter: brightness(0%);
+    transition: ease-in-out 0.5s;
+    z-index: 0;
+}
+
+#greetImg{
+    font-size: 17px;
+    position: relative;
+    top: -35px;
+    right: -50px;
+    color: #1DF289;
+    transition: ease-in-out 0.5s;
+    z-index: -1;
+}
+
+#imgDiv:hover #greetImg{
+    font-size: 17px;
+    position: relative;
+    top: -35px;
+    right: -50px;
+    color: #1DF289;
+    visibility: visible;
+    
+    z-index: 2;
+    transition: ease-in-out 0.5s;
+
+}
+
+#imgDiv img{
+    position: relative;
+    top: 0px;
+    right: -40px;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+
+    transition: ease-in-out 0.5s;
+}
