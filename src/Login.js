@@ -1,8 +1,21 @@
 import React, { useState } from 'react'
 import "./Login.css";
-import { auth } from './firebase';
+import { auth, provider1 } from './firebase';
 import { Link, useHistory } from "react-router-dom";
+import { async, isReactNative } from '@firebase/util';
+import GoogleButton from 'react-google-button';
+import {StateContext} from './StateProvider';
+import { useStateValue } from './StateProvider' 
+
+
+
+
 function Login() {
+    const signin = () => {
+        auth.signInWithPopup(provider1).catch(alert);
+    }
+    const user = useStateValue();
+    const setError = useState("");
     const history = useHistory();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -29,6 +42,19 @@ function Login() {
         .catch((e) => alert(e.message));
     };
 
+        // const {googleSignIn} = StateContext();
+
+        // const handleGoogleSignIn = async () => {
+        //     // e.preventDefault();
+    
+        //     try{
+        //         await googleSignIn();
+        //         // navigation.navigate("/")
+        //     } catch (err){
+        //         console.log(err);
+        //     }
+        // }
+        
   return (
     <div className="login">
         <Link to="/">
@@ -42,14 +68,18 @@ function Login() {
         <div className="login__container">
             <h1>Sign in</h1>
             <form>
-                <div className='EmailBox'>
-                    <input value={email} onChange={event => setEmail(event.target.value)} type="text" required="required"/>
+                <div id='EmailBox'>
+                    <input value={email} onChange={event => setEmail(event.target.value)} type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="required"/>
                     <span>E-mail</span> 
-                </div>
+                <img src='/images/tickmark.png' id='EmailTick'></img>
 
-                <div className='PassBox'>
-                    <input className='PassBox' value={password} onChange={event => setPassword(event.target.value)} type="password" required="required"/>
+                </div>
+                
+                <div id='PassBox'>
+                    <input className='PassBox' value={password} onChange={event => setPassword(event.target.value)} type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required="required"/>
                     <span>Password</span> 
+                <img src='/images/tickmark.png' id='PassTick'></img>
+
                 </div>
 
                 <button className='login__signInButton' onClick={login} type="submit">Sign in</button>
@@ -62,6 +92,26 @@ function Login() {
             </p>
             <button onClick={register} className="login__RegisterButton">Create your Account</button>
 
+            {/* <div>
+                <button onClick={handleGoogleSignIn}></button> 
+
+                <GoogleButton
+                    className="g-btn"
+                    type="light"
+                    onClick={handleGoogleSignIn}>
+
+                </GoogleButton>
+            </div> */}
+            <center>
+        <Link to={user? '\'/\'>' : '\'/login\'>'} className='header__link'>
+            <div> 
+                <GoogleButton className=''
+                    theme="light"
+                    onClick={signin}>Sign in with Google
+                </GoogleButton>
+            </div>
+        </Link>
+        </center>
         </div>
 
     </div>

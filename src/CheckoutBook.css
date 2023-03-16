@@ -44,105 +44,6 @@
     font-weight: 800;
 }
 
-/* Download Button Start */
-
-.buttonDownload {
-	display: inline-block;
-	position: relative;
-	padding: 10px 25px;
-  
-	background-color: #4CC713;
-	color: white;
-  
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 0.9em;
-	text-align: center;
-	text-indent: 15px;
-}
-
-.buttonDownload:hover {
-	background-color: #333;
-	color: white;
-}
-
-.buttonDownload:before, .buttonDownload:after {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 15px;
-	top: 52%;
-}
-
-.buttonDownload {
-    -webkit-tap-highlight-color: transparent;
-}
-
-.buttonDownload {
-    margin: 10px 5px 5px 0px;
-    width: 140px;
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    background: #68a42b;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-    background: #39e01c;
-}
-
-.buttonDownload, .buttonDownload span {
-    transition: 200ms;
-}
-
-.buttonDownload .text {
-    font-style: none;
-    text-decoration: underline #39e01c;
-    transform: translateX(-17px);
-    color: white;
-    font-weight: bold;
-}
-
-.buttonDownload .icon {
-    position: absolute;
-    border-left: 1px solid #258045;
-    transform: translateX(82px);
-    height: 30px;
-    width: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttonDownload svg {
-    width: 15px;
-    fill: #eee;
-}
-
-
-.buttonDownload:hover {
-    background: #84e423;
-}
-
-.buttonDownload:hover .text {
-    color: transparent;
-    text-decoration: underline #84e423;
-}
-
-.buttonDownload:hover .icon {
-    width: 95px;
-    border-left: none;
-    transform: translateX(0);
-}
-
-.buttonDownload:focus {
-    outline: none;
-}
-
-/*Download Button Ends*/
-
-
 /*delete item button starts*/
 
 .noselect {
@@ -208,3 +109,110 @@
 }
 
 /*Delete Item Button ends*/
+
+
+/* Download Button Start */
+
+/* .buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+    text-decoration: none;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+    text-decoration: none;
+}
+
+.buttonDownload {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+
+}
+
+.buttonDownload {
+    margin: 10px 5px 5px 0px;
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #68a42b;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #39e01c;
+    text-decoration: none;
+}
+
+.buttonDownload, .buttonDownload span {
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.buttonDownload .text {
+    font-style: none;
+    text-decoration: underline #39e01c;
+    transform: translateX(-17px);
+    color: white;
+    font-weight: bold;
+}
+
+.buttonDownload .icon {
+    position: absolute;
+    border-left: 1px solid #258045;
+    transform: translateX(82px);
+    height: 30px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonDownload svg {
+    width: 15px;
+    fill: #eee;
+}
+
+
+.buttonDownload:hover {
+    background: #84e423;
+    text-decoration: none;
+}
+
+.buttonDownload:hover .text {
+    color: transparent;
+    text-decoration: underline #84e423;
+}
+
+.buttonDownload:hover .icon {
+    width: 95px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.buttonDownload:focus {
+    outline: none;
+    text-decoration: underline #84e423;
+} */
+
+/*Download Button Ends */

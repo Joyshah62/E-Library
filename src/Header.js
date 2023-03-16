@@ -38,38 +38,49 @@ function Header() {
 
         <div className='header__nav'>
 
-            <Link to= {!user && "/login"} className="header__link">
-              <div onClick={login} className="header__option">
-                <span className='button'>{user ? 'Logout' : 'Login'}</span>
-              </div>
-            </Link>
-
            <Link to="/" className='header__link'>
             <div className='header__option'>
-                <span className='button'>Home</span>
+                <span className='hdrbtn'>Home</span>
             </div>
            </Link>
 
-           <Link to="/mybooks" className='header__link'>
-            <div className='header__option'>
-                <span className='button'>MyBooks</span>
-            </div>
-           </Link>
-
-           
            <Link to="/about" className='header__link'>
             <div className='header__option'>
-                <span className='button'>About</span>
+                <span className='hdrbtn'>About</span>
             </div>
            </Link>
+
            <Link to="/mybooks" className='header__link'>
+            <div className='header__option'>
+                <span className='hdrbtn'>MyBooks</span>
+            </div>
+           </Link>
+
+            <Link to="/mybooks" className='header__link'>
+              <span className='header__Bookcount'>{basket?.length}</span>
+            </Link>
+
+            {/* <Link to= {!user && "/login"} className="header__link">
+              <div onClick={login} className="header__option">
+                <span className=''>{user ? <img className="userimg" src='images/UserIcon.png'></img> : <img className="userimg" src='images/UserIcon2.png'></img> }</span>
+              </div>
+            </Link> */}
+
+            <Link to= {!user && "/login"} className="header__link">
+              <div onClick={login} className="header__option">
+                <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
+              </div>
+            </Link>
+           
+           
+           {/* <Link to="/mybooks" className='header__link'>
             <div className='header__optionBookmark'>
-                <FaBookmark/>
-                <span className='header__Bookcount'>{basket?.length}</span>
+                {/* <FaBookmark/>
+                <span className='header__Bookcount'>{basket?.length}</span> 
 
 
             </div>
-           </Link>
+           </Link> */}
 
         </div>
 

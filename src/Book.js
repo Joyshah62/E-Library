@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Book.css";
+import "./Books.css";
+import "./CheckoutBook.css";
 import { useStateValue } from './StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -50,12 +52,14 @@ function Book({ id, title, price, rating, image, link, author, download, author_
             {/* <button className="icon-btn add-btn" onClick={addToBasket}>
         <div className="add-icon"></div>
         <div className="btn-txt">Add</div> */}
-            <button className='buttonDownload' onClick={addToBasket}>Add</button>
+            <button className='btn-5' onClick={addToBasket}>Add</button>
 
 
             <a href={download} target="_blank" rel="noreferrer">
 
-                <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button>
+            <button className="btn-5"><span className='text'>Download</span></button>
+
+            {/* <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button> */}
 
             </a>
             {/* <a href={link} target="_blank" rel="noreferrer">

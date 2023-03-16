@@ -60,18 +60,17 @@
     margin-top: 10px;
 }
 
-.EmailBox{
+#EmailBox{
     position: relative;
 }
 
-.PassBox{
+#PassBox{
     position: relative;
 }
 
-.EmailBox input
+#EmailBox input
 {
     position: relative;
-
     align-items: center;
     display: inline-flex;
     width: 100%;
@@ -84,7 +83,7 @@
     font-size: 1em;
 }
 
-.PassBox input
+#PassBox input
 {
     align-items: center;
     display: inline-flex;
@@ -101,24 +100,15 @@
     margin-top: 13px;
 }
 
-
-.EmailBox span
-{
-    top: auto;
-    position: absolutes;
-    padding: 1px;
-    padding-left: 15px;
-    pointer-events: none;
-    color: rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    transition: ease-in-out 0.3s;
-}
-
-.EmailBox input:valid ~ span,
-.EmailBox input:focus ~ span
+#EmailBox input:valid ~ span,
+#EmailBox input:focus ~ span,
+#PassBox input:valid ~ span,
+#PassBox input:focus ~ span
 {
     color: #f0c14b;
-    transform: translateX(15vw) translateY(-1vh);
+    top: -52px;
+    right: -10px;
+    /* transform: translateX(15px) translateY(20px);  */
     font-size: 0.90em;
     padding: 0 15px;
     background: white;
@@ -126,12 +116,29 @@
     border-right: 1px solid #f0c14b;
 }
 
-
-
-.PassBox span
+#EmailBox input:invalid ~ span,
+#PassBox input:invalid ~ span
 {
-    top: auto;
-    position: absolutes;
+    top: -52px;
+    right: -10px;
+    font-size: 0.90em;
+    padding: 0 15px;
+    background: white;
+    color: #f04b4b;
+    border-left: 1px solid #f04b4b;
+    border-right: 1px solid #f04b4b;
+}
+
+.Google-btn{
+    margin: 5px;
+}
+
+#EmailBox span
+{
+    top: -36px;
+    right: 0px;
+    /* top: auto; */
+    position: relative;
     padding: 1px;
     padding-left: 15px;
     pointer-events: none;
@@ -140,16 +147,67 @@
     transition: ease-in-out 0.3s;
 }
 
-
-.PassBox input:valid ~ span,
-.PassBox input:focus ~ span
+#PassBox span
 {
+    top: -36px;
+    right: 0px;
+    /* top: auto; */
+    position: relative;
+    padding: 1px;
+    padding-left: 15px;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+#EmailTick{
+    position: relative;
+    width: 0px;
+    top: -29px;
+    right: -160px;
+
+    transition: ease-in-out 0.3s;
+}
+
+#EmailBox input:valid ~ #EmailTick{
+    position: relative;
+    width: 20px;
+    top: -30px;
+    right: -160px;
+
+    transition: ease-in-out 0.3s;
+}
+
+#PassTick{
+    position: relative;
+    width: 0px;
+    top: -30px;
+    right: -110px;
+
+    transition: ease-in-out 0.3s;
+}
+
+#PassBox input:valid ~ #PassTick{
+    position: relative;
+    width: 20px;
+    top: -30px;
+    right: -110px;
+
+    transition: ease-in-out 0.3s;
+}
+
+/* #PassBox input:valid ~ span,
+#PassBox input:focus ~ span
+{
+    top: -51px;
+    right: -10px;
     color: black;
-    transform: translateX(10px) translateY(6px);
+    //transform: translateX(10px) translateY(6px);
     font-size: 0.90em;
     padding: 0 15px;
     background: #f0c14b;
     border-left: 1px solid #f0c14b;
     border-right: 1px solid #f0c14b;
 
-} 
+}  */
