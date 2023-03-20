@@ -31,7 +31,7 @@ function Subtotal() {
         />
 
 
-        <button onClick={e => history.push('/payment')} className="subtotal__button">
+        <button onClick={e => history.push('/payment')} className="button5">
             Proceed to Buy
         </button>
     </div>

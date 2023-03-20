@@ -2,6 +2,8 @@ import React from 'react';
 import "./Book.css";
 import "./Books.css";
 import "./CheckoutBook.css";
+import {FiDownload} from "react-icons/fi";
+import {RiSendPlaneFill} from "react-icons/ri";
 import { useStateValue } from './StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -52,16 +54,28 @@ function Book({ id, title, price, rating, image, link, author, download, author_
             {/* <button className="icon-btn add-btn" onClick={addToBasket}>
         <div className="add-icon"></div>
         <div className="btn-txt">Add</div> */}
-            <button className='btn-5' onClick={addToBasket}>Add</button>
+            <div id="wrap">
+                <div onClick={addToBasket} class="btn-slide">
+                    <span class="title">Add</span>
+                    <span class="title-hover">Click here</span>
+                    <span class="circle"><RiSendPlaneFill/></span>   
+                </div>
+                <a href={download} class="btn-slide2">
+                    <span class="circle2"><FiDownload/></span>
+                    <span class="title2">Download</span>
+                    <span class="title-hover2">Click here</span>
+                </a>
+            </div>
+            {/* <button className='btn-5' onClick={addToBasket}>Add</button>
 
 
             <a href={download} target="_blank" rel="noreferrer">
 
-            <button className="btn-5"><span className='text'>Download</span></button>
+            <button className="btn-5"><span className='text'>Download</span></button> */}
 
             {/* <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button> */}
 
-            </a>
+            {/* </a> */}
             {/* <a href={link} target="_blank" rel="noreferrer">
             
         <button className='btn-5'>Buy Book</button>
