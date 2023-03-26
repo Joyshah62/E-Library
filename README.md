@@ -17,6 +17,7 @@ A general purpose Full-Functioning E-library that can be accessed by anyone from
   ![ReactRouter](https://img.shields.io/badge/react_router-100000?style=for-the-badge&logo=react-router&logoColor=FFFFFF&labelColor=d0021b&color=d0021b)
   ![Vagrant](https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=1563ff&color=1563ff)
   ![SNYK](https://img.shields.io/badge/snyk-100000?style=for-the-badge&logo=snyk&logoColor=white&labelColor=221f4a&color=221f4a)
+  ![SCSS](https://img.shields.io/badge/scss-100000?style=for-the-badge&logo=SaSS&logoColor=white&labelColor=d56ea3&color=d56ea3)
 
 <p align="left">  
   
