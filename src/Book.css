@@ -288,6 +288,7 @@ filter: grayscale(0);
   border: 2px solid #0099cc;
   margin: 10px;
   transition: .5s;
+  cursor: pointer;
 }
 
 .btn-slide2 {
