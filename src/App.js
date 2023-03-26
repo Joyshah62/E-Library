@@ -17,6 +17,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import Orders from './Orders';
 import { ToastContainer } from 'react-toastify';
+import Fiction from './Fiction';
 
 const promise = loadStripe
 (
@@ -77,6 +78,26 @@ const promise = loadStripe
                     <Elements stripe={promise}>
                     <Payment/>
                     </Elements>
+                  </Route>
+                  <Route path="/fiction">
+                    <Header/>
+                    <Carousel images={countries}/>
+                    <Fiction/>
+                  </Route>
+                  <Route path="/novel">
+                    <Header/>
+                    <Carousel images={countries}/>
+                    <Home/>
+                  </Route>
+                  <Route path="/selfhelp">
+                    <Header/>
+                    <Carousel images={countries}/>
+                    <Home/>
+                  </Route>
+                  <Route path="/thriller">
+                    <Header/>
+                    <Carousel images={countries}/>
+                    <Home/>
                   </Route>
                   <Route path="/">
                     <Header/>

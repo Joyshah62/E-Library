@@ -5,9 +5,31 @@ import { FaSearch,FaBookmark } from 'react-icons/fa'
 import { useStateValue } from './StateProvider' 
 import Login from './Login'
 import { firebaseApp, auth } from './firebase';
+import Dropdown from './Dropdown'
 
 
 function Header() {
+
+  const [dropdown, setDropdown] = useState(false);
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
   const [currentUser, setCurrentUser] = useState();
   useEffect(() => {
@@ -45,6 +67,8 @@ function Header() {
 
         <div className='header__nav'>
 
+        
+
           
         {currentUser && <>
             <div id='imgDiv'>
@@ -61,6 +85,21 @@ function Header() {
                 <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
               </div>
             </Link>
+
+            <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to='/'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Genres
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
 
            <Link to="/" className='header__link'>
             <div className='header__option'>

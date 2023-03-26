@@ -67,6 +67,7 @@
 }
 
 .header__option {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -88,6 +89,7 @@
 }
 
 .header__Bookcount {
+    margin-top: 20px;
     display: inline-block;
     padding: 4px 10px 4px 10px;
     background: #3a56a3;
@@ -114,6 +116,7 @@
     top: 40px;
     right: 10px;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 
@@ -128,6 +131,7 @@
     filter: brightness(0%);
     transition: ease-in-out 0.5s;
     z-index: 0;
+   
 }
 
 #greetImg{
@@ -160,6 +164,30 @@
     border-radius: 100px;
     height: 40px;
     width: 40px;
+    margin-top:20px;
 
     transition: ease-in-out 0.5s;
 }
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+   
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
