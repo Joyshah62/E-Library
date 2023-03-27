@@ -26,7 +26,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51A88IvtjGL._SX331_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
-        download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
+        download="https://drive.google.com/file/d/1gIGwFO8hkOtwlbH5Djl2Go-nMHCVs2-x/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
         />
         </div>
@@ -40,7 +40,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?keywords=atomic+habits&qid=1671895226&sprefix=Atomic+%2Caps%2C285&sr=8-1"
-        download="https://drive.google.com/file/d/1dpM7_-DMX4aA4Zof3hX5El6huRf60Qga/view?usp=share_link"
+        download="https://drive.google.com/file/d/11Ud13Nben9UxvxPNIjH8YX0VG6eeDUjJ/view?usp=share_link"
         author_link="https://jamesclear.com/about"
         />
         </div>
@@ -54,7 +54,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51W-r3VQlAL._SX320_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
-        download="https://drive.google.com/file/d/1UTz5zdhjK8q6DrfHSBoyJpcBobzH_KML/view?usp=share_link"
+        download="https://drive.google.com/file/d/1GyOW8vA3o7Iz-VwJE7dTHlktAi-O5PnH/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Colleen_Hoover"
         /></div>
         <div className="home__row">
@@ -115,7 +115,7 @@ function Home() {
         rating={5}  
         image="https://99booksstore.com/uploaded_files/product/464279588.webp"
         link="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/ref=sr_1_2?keywords=harry+potter&qid=1672246382&sprefix=harry%2Caps%2C251&sr=8-2"
-        download="https://drive.google.com/file/d/19yq-tpfTIg1YkElWvuvNcFHXX8NlQTST/view?usp=share_link"
+        download="https://drive.google.com/file/d/1HoHdl6CJTkma9DY30-sWNVJdg22optDu/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/J._K._Rowling"
         /></div>
         <div className="home__row">
@@ -128,7 +128,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51xwGSNX-EL._SX356_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_3?crid=9VE19PX53KY7&keywords=ikigai&qid=1672246537&sprefix=ikigai%2Caps%2C274&sr=8-3"
-        download="https://drive.google.com/file/d/1SkNy7_9t0i15lE8-8Db1HKEKHMg_v8aS/view?usp=share_link"
+        download="https://drive.google.com/file/d/1rq52W4tmtt9dZKacjvCBkJfIn83OJd29/view?usp=share_link"
         author_link="https://hectorgarcia.org/"
         />
         
@@ -176,7 +176,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/41nTTMoaxiL._SX320_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/ref=sr_1_2?keywords=the+shining+by+stephen+king&qid=1672682337&sprefix=the+shinin%2Caps%2C1491&sr=8-2"
-        download="https://drive.google.com/file/d/1DKxLpyW-DsbYQ6dSkddIWgRsDDKULbwM/view?usp=share_link"
+        download="https://drive.google.com/file/d/1IPHeroUU7nHLbwGIapDrpbbKQ4vmOBNw/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Stephen_King"
         /></div>
         <div className="home__row">
@@ -235,7 +235,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
-        download="https://drive.google.com/file/d/1nk72vBJrYfdTG75xoLF5vdPIWyhHeRt9/view?usp=share_link"
+        download="https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Ruskin_Bond"
         /></div>
         <div className="home__row">
@@ -264,7 +264,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/41moQrlKZKL._SX324_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Immortals-Meluha-Shiva-Trilogy-Book/dp/9356290520"
-        download="https://drive.google.com/file/d/1yD6QsypUk4_gGnpap5xbnHq4A40UqMvR/view?usp=share_link"
+        download="https://drive.google.com/file/d/1HgpUzCly0mC9-iBYt9XedJXANUjxXVuS/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Amish_Tripathi"
         />
         </div>
@@ -294,7 +294,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51e6nhYq5TL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
         link="https://www.amazon.in/Storm-Swords-Song-Fire-Three/dp/055357342X/ref=sr_1_1?keywords=a+storm+of+swords&qid=1674450365&s=books&sprefix=a+storm+o%2Cstripbooks%2C289&sr=1-1"
-        download="https://drive.google.com/file/d/1XBd72OxxRXVuWCFbU2hpNlPIdFHm9t9K/view?usp=share_link"
+        download="https://drive.google.com/file/d/15mOhCZmmaRezhmFyu_MI3WEpEd4j4ruo/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/George_R._R._Martin"
         />
         </div>
@@ -354,7 +354,7 @@ function Home() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51JZHD0ac2L._SX325_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Maze-Runner-James-Dashner/dp/9351033139/ref=sr_1_3?crid=2C3ZO9XB1ZZYM&keywords=maze+runner&qid=1674995066&s=books&sprefix=maze+runner%2Cstripbooks%2C415&sr=1-3"
-        download="https://drive.google.com/file/d/1C_K-TtXrdWoYyQepS9XgG2yU4B6yg5Aa/view?usp=share_link"
+        download="https://drive.google.com/file/d/1jy75PBk65NtQMLe3fVkAVFo3NHFSl8zo/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/James_Dashner"
         />
         </div>

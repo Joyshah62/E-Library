@@ -18,6 +18,9 @@ import { Elements } from '@stripe/react-stripe-js';
 import Orders from './Orders';
 import { ToastContainer } from 'react-toastify';
 import Fiction from './Fiction';
+import Thriller from './Thriller';
+import Novel from './Novel';
+import Selfhelp from './Selfhelp';
 
 const promise = loadStripe
 (
@@ -87,17 +90,17 @@ const promise = loadStripe
                   <Route path="/novel">
                     <Header/>
                     <Carousel images={countries}/>
-                    <Home/>
+                    <Novel/>
                   </Route>
                   <Route path="/selfhelp">
                     <Header/>
                     <Carousel images={countries}/>
-                    <Home/>
+                    <Selfhelp/>
                   </Route>
                   <Route path="/thriller">
                     <Header/>
                     <Carousel images={countries}/>
-                    <Home/>
+                    <Thriller/>
                   </Route>
                   <Route path="/">
                     <Header/>

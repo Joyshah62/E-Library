@@ -173,6 +173,21 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         download="https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=sharing"
         author_link="https://www.goodreads.com/author/list/14810469.Shravya_Bhinder"
         /></div>
+        <div className="home__row">
+        <Book
+        id="23"
+        title="The Maze Runner"
+        by="by "
+        author="James Dashner"
+        price={190}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51JZHD0ac2L._SX325_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Maze-Runner-James-Dashner/dp/9351033139/ref=sr_1_3?crid=2C3ZO9XB1ZZYM&keywords=maze+runner&qid=1674995066&s=books&sprefix=maze+runner%2Cstripbooks%2C415&sr=1-3"
+        download="https://drive.google.com/file/d/1jy75PBk65NtQMLe3fVkAVFo3NHFSl8zo/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/James_Dashner"
+        />
+        </div>
+
 </div>
 
 
