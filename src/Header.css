@@ -191,3 +191,11 @@
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
+
+.searchPlaceholder{
+    color: rgb(172, 172, 172);
+    position: relative;
+    top: 4px;
+    right: 700px;
+    white-space: nowrap;
+}

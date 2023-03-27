@@ -1,4 +1,4 @@
-import React,{ useEffect } from 'react';
+import React,{ useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch , Route} from "react-router-dom";
 import Header from './Header';
@@ -29,6 +29,7 @@ const promise = loadStripe
   function App() {
 
     const [{user}, dispatch] = useStateValue();
+    const [searchValue, setSearchValue] = useState("");
   
     useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -61,54 +62,65 @@ const promise = loadStripe
           <div className="app">
             <Switch>
               <Route path="/orders">
-                <Header/>
+                <Header searchValue={searchValue} setSearchValue={setSearchValue} />
                 <Orders/>
               </Route>
-                <Route path="/login">
-                  <Login/>
-                  </Route>
-                  <Route path="/mybooks">
-                    <Header/> 
-                    <Mybook/>
-                  </Route>
-                  <Route path="/about">
-                    <Header/>
-                    <Accordion/>
-                    <About/>
-                  </Route>
-                  <Route path="/payment">
-                    <Header/>
-                    <Elements stripe={promise}>
-                    <Payment/>
-                    </Elements>
-                  </Route>
-                  <Route path="/fiction">
-                    <Header/>
-                    <Carousel images={countries}/>
-                    <Fiction/>
-                  </Route>
-                  <Route path="/novel">
-                    <Header/>
-                    <Carousel images={countries}/>
-                    <Novel/>
-                  </Route>
-                  <Route path="/selfhelp">
-                    <Header/>
-                    <Carousel images={countries}/>
-                    <Selfhelp/>
-                  </Route>
-                  <Route path="/thriller">
-                    <Header/>
-                    <Carousel images={countries}/>
-                    <Thriller/>
-                  </Route>
-                  <Route path="/">
-                    <Header/>
-                    <Carousel images={countries}/>
-                    <Home/>
-                  </Route>
+
+              <Route path="/login">
+                <Login/>
+              </Route>
+                  
+              <Route path="/mybooks">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/> 
+                <Mybook/>
+              </Route>
+                  
+              <Route path="/about">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Accordion/>
+                <About/>
+              </Route>
+                  
+              <Route path="/payment">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Elements stripe={promise}>
+                  <Payment/>
+                </Elements>
+              </Route>
+
+              <Route path="/fiction">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Carousel images={countries}/>
+                <Fiction searchValue={searchValue}/>
+              </Route>
+                  
+              <Route path="/novel">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Carousel images={countries}/>
+                <Novel searchValue={searchValue}/>
+              </Route>
+
+              <Route path="/selfhelp">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Carousel images={countries}/>
+                <Selfhelp searchValue={searchValue}/>
+              </Route>
+                  
+              <Route path="/thriller">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Carousel images={countries}/>
+                <Thriller searchValue={searchValue}/>
+              </Route>
+
+              <Route path="/">
+                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
+                <Carousel images={countries}/>
+                <Home searchValue={searchValue} />
+              </Route>
+
             </Switch>
           </div>
+          
           <ToastContainer style={{ marginTop: "45px" }} 
               autoClose={1000}
               theme="light"

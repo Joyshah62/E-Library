@@ -3,7 +3,7 @@ import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
-function fiction() {
+function fiction({ searchValue }) {
   return (
     <div className='home'>
         {/* <img className='home__image'
@@ -16,6 +16,7 @@ function fiction() {
 
         {/* product id, title, price, rating, image */}
         
+        {("Rich Dad Poor Dad".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="1"
@@ -26,10 +27,13 @@ function fiction() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/51A88IvtjGL._SX331_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
-        download="https://drive.google.com/file/d/1psj0n3NDZ75W3-nyoaJIJr0xLjicNhJV/view?usp=share_link"
+        download="https://drive.google.com/file/d/1gIGwFO8hkOtwlbH5Djl2Go-nMHCVs2-x/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
-        /></div>
+        />
+        </div>
+        )}
         
+        {("The Blue Umbrella".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="15"
@@ -40,10 +44,13 @@ function fiction() {
         rating={4}  
         image="https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg"
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
-        download="https://drive.google.com/file/d/1F8MMzW2s5MGFzXmQuI3TcJSLoKXtSWSm/view?usp=sharing"
+        download="https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Ruskin_Bond"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("The Silence of The Lambs".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="18"
@@ -56,8 +63,11 @@ function fiction() {
         link="https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/ref=sr_1_1?keywords=the+silence+of+the+lambs+book&qid=1674450019&s=books&sprefix=the+silence+of%2Cstripbooks%2C318&sr=1-1"
         download="https://drive.google.com/file/d/1PQfJG3LS1CzC8Gs75rLIMPcxAkDsAwUZ/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Thomas_Harris"
-        /></div>
+        />
+        </div>
+        )}
         
+        {("Schindler's List".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="22"
@@ -70,8 +80,11 @@ function fiction() {
         link="https://www.amazon.in/Schindlers-List-Thomas-Keneally/dp/1982151048/ref=sr_1_3?crid=U96SHJXZ2P8&keywords=schindler+list&qid=1674994514&s=books&sprefix=schiendler+list%2Cstripbooks%2C312&sr=1-3"
         download="https://drive.google.com/file/d/17ViwqeWT0DdJsTUm7ryeLy6cW_AbwoCb/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Thomas_Keneally"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("To Kill a Mockingbird".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="10"
@@ -84,24 +97,29 @@ function fiction() {
         link="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_3?keywords=to+kill+a+mockingbird&qid=1672682182&sprefix=to+kill+a+%2Caps%2C1001&sr=8-3"
         download="https://drive.google.com/file/d/1x_2WiwejU-FXmEeXOvBuZpLkBaJ-XGxt/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Harper_Lee"
-        /></div>
+        />
+        </div>
+        )}
 
-<div className="home__row">
+        {("Shawshank Redemption".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="13"
+        title="Shawshank Redemption"
+        by="by "
+        author="Frank Darabont"
+        price={289}
+        rating={5}  
+        image="https://m.media-amazon.com/images/I/51ALMvQGyWL._SX369_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
+        download="https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing"
+        author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
+        />
+        </div>
+        )}
 
-<Book
-id="13"
-title="Shawshank Redemption"
-by="by "
-author="Frank Darabont"
-price={289}
-rating={5}  
-image="https://m.media-amazon.com/images/I/51ALMvQGyWL._SX369_BO1,204,203,200_.jpg"
-link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
-download="https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing"
-author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
-/></div>
-
-<div className="home__row">
+        {("Fight Club".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
         <Book
         id="20"
         title="Fight Club"
@@ -115,6 +133,9 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         author_link="https://en.wikipedia.org/wiki/Chuck_Palahniuk"
         />
         </div>
+        )}
+
+        {("The Godfather".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="6"
@@ -127,9 +148,12 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
         download="https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Mario_Puzo"
-        /></div>
+        />
+        </div>
+        )}
 
-<div className="home__row">
+        {("No Country for Old Men".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
         <Book
         id="21"
         title="No Country for Old Men"
@@ -143,7 +167,9 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         author_link="https://en.wikipedia.org/wiki/Cormac_McCarthy"
         />
         </div>
+        )}
 
+        {("V for Vendetta".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="24"
@@ -158,9 +184,10 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         author_link="https://en.wikipedia.org/wiki/Alan_Moore"
         />
         </div>
+        )}
 
+        {("Something I Never Told You".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="9"
         title="Something I Never Told You"
@@ -172,7 +199,11 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         link="https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/ref=sr_1_5?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-5"
         download="https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=sharing"
         author_link="https://www.goodreads.com/author/list/14810469.Shravya_Bhinder"
-        /></div>
+        />
+        </div>
+        )}
+
+        {("The Maze Runner".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="23"
@@ -187,6 +218,7 @@ author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
         author_link="https://en.wikipedia.org/wiki/James_Dashner"
         />
         </div>
+        )}
 
 </div>
 

@@ -3,7 +3,7 @@ import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
-function thriller() {
+function thriller({ searchValue }) {
   return (
     <div className='home'>
         {/* <img className='home__image'
@@ -16,6 +16,7 @@ function thriller() {
 
         {/* product id, title, price, rating, image */}
 
+        {("The Silence of The Lambs".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="18"
@@ -28,8 +29,11 @@ function thriller() {
         link="https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/ref=sr_1_1?keywords=the+silence+of+the+lambs+book&qid=1674450019&s=books&sprefix=the+silence+of%2Cstripbooks%2C318&sr=1-1"
         download="https://drive.google.com/file/d/1PQfJG3LS1CzC8Gs75rLIMPcxAkDsAwUZ/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Thomas_Harris"
-        /></div>
+        />
+        </div>
+        )}
         
+        {("Schindler's List".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="22"
@@ -42,10 +46,12 @@ function thriller() {
         link="https://www.amazon.in/Schindlers-List-Thomas-Keneally/dp/1982151048/ref=sr_1_3?crid=U96SHJXZ2P8&keywords=schindler+list&qid=1674994514&s=books&sprefix=schiendler+list%2Cstripbooks%2C312&sr=1-3"
         download="https://drive.google.com/file/d/17ViwqeWT0DdJsTUm7ryeLy6cW_AbwoCb/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Thomas_Keneally"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("Shawshank Redemption".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="13"
         title="Shawshank Redemption"
@@ -57,8 +63,11 @@ function thriller() {
         link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
         download="https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("Fight Club".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="20"
@@ -73,6 +82,9 @@ function thriller() {
         author_link="https://en.wikipedia.org/wiki/Chuck_Palahniuk"
         />
         </div>
+        )}
+
+        {("The Godfather".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="6"
@@ -85,9 +97,12 @@ function thriller() {
         link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
         download="https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Mario_Puzo"
-        /></div>
+        />
+        </div>
+        )}
 
-<div className="home__row">
+        {("No Country for Old Men".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
         <Book
         id="21"
         title="No Country for Old Men"
@@ -101,7 +116,9 @@ function thriller() {
         author_link="https://en.wikipedia.org/wiki/Cormac_McCarthy"
         />
         </div>
+        )}
 
+        {("V for Vendetta".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="24"
@@ -116,6 +133,9 @@ function thriller() {
         author_link="https://en.wikipedia.org/wiki/Alan_Moore"
         />
         </div>
+        )}
+
+        {("The Maze Runner".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="23"
@@ -130,6 +150,7 @@ function thriller() {
         author_link="https://en.wikipedia.org/wiki/James_Dashner"
         />
         </div>
+        )}
 
 </div>
 

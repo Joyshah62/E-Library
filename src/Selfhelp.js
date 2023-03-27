@@ -3,7 +3,7 @@ import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
-function selfhelp() {
+function selfhelp({ searchValue }) {
   return (
     <div className='home'>
         {/* <img className='home__image'
@@ -16,6 +16,7 @@ function selfhelp() {
 
         {/* product id, title, price, rating, image */}
 
+        {("Rich Dad Poor Dad".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="1"
@@ -30,6 +31,9 @@ function selfhelp() {
         author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
         />
         </div>
+        )}
+
+        {("Atomic Habits".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="2"
@@ -44,9 +48,10 @@ function selfhelp() {
         author_link="https://jamesclear.com/about"
         />
         </div>
+        )}
 
+        {("Ikigai".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="8"
         title="Ikigai"
@@ -58,8 +63,11 @@ function selfhelp() {
         link="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_3?crid=9VE19PX53KY7&keywords=ikigai&qid=1672246537&sprefix=ikigai%2Caps%2C274&sr=8-3"
         download="https://drive.google.com/file/d/1rq52W4tmtt9dZKacjvCBkJfIn83OJd29/view?usp=share_link"
         author_link="https://hectorgarcia.org/"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("You Only Live Once".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="14"
@@ -72,22 +80,28 @@ function selfhelp() {
         link="https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/ref=sr_1_14?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-14"
         download="https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link"
         author_link="https://hi-m-wikipedia-org.translate.goog/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF_%E0%A4%9A%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A5%87?_x_tr_sl=hi&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc"
-        /></div>
-        <div className="home__row">
-            <Book
-            id="16"
-            title="The Subtle Art of Not Giving a F*ck"
-            by="by "
-            author="Mark Manson"
-            price={272}
-            rating={4}  
-            image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
-            link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
-            download="https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link"
-            author_link="https://en.wikipedia.org/wiki/Mark_Manson"
-            />
+        />
         </div>
-</div>
+        )}
+
+        {("The Subtle Art of Not Giving a F*ck".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="16"
+        title="The Subtle Art of Not Giving a F*ck"
+        by="by "
+        author="Mark Manson"
+        price={272}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
+        link="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1671895201&sprefix=rich+d%2Caps%2C283&sr=8-3"
+        download="https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Mark_Manson"
+        />
+        </div>
+        )}
+
+    </div>
 
 
   )

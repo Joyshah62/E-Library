@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./Header.css"
+import "./HeaderStyle.css"
+import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
 import { useStateValue } from './StateProvider' 
@@ -8,9 +10,14 @@ import { firebaseApp, auth } from './firebase';
 import Dropdown from './Dropdown'
 
 
-function Header() {
+function Header({ searchValue, setSearchValue }) {
 
-  const [dropdown, setDropdown] = useState(false);
+  const handleSearchChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
+
+  const [dropdown, setDropdown, bookFound] = useState(false);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -24,8 +31,8 @@ function Header() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 0) {
-      setDropdown(false);
+    if (window.innerWidth < 960) {
+      setDropdown(true);
     } else {
       setDropdown(false);
     }
@@ -59,9 +66,18 @@ function Header() {
 
         {/* Search box*/}
         <div className="header__search">
-            <input type="text" className="header__searchInput" />
-            <FaSearch className="header__searchIcon"/>
+
+        <input id='search-btn' type='checkbox'/>
+        <label for='search-btn'>Show search bar</label>
+        <input id='search-bar' type='text' placeholder='Search...' value={searchValue} onChange={handleSearchChange} />
+
+            {/* <input type="text" className="header__searchInput" value={searchValue} onChange={handleSearchChange} />
+            <span className='searchPlaceholder'>Search Your Favorite Book</span> */}
+
+            {/* <input type="text" className="header__searchInput" onChange={handleInputChange} onSearch={onSearch}/>
+            <FaSearch className="header__searchIcon" onClick={handleClick1}/> */}
         </div>
+        
 
         {/* 3 links */}
 

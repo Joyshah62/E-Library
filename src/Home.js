@@ -3,7 +3,12 @@ import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
-function Home() {
+
+function Home({ searchValue }) {
+
+  // const bookMatchesSearchTerm = (bookTitle) =>
+  //   bookTitle.toLowerCase().includes(searchTerm.toLowerCase());
+
   return (
     <div className='home'>
         {/* <img className='home__image'
@@ -15,7 +20,7 @@ function Home() {
         </div> */}
 
         {/* product id, title, price, rating, image */}
-        
+        {("Rich Dad Poor Dad".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="1"
@@ -30,6 +35,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Robert_Kiyosaki"
         />
         </div>
+        )}
+
+        {("Atomic Habits".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="2"
@@ -44,6 +52,9 @@ function Home() {
         author_link="https://jamesclear.com/about"
         />
         </div>
+        )}
+
+        {("It Starts With Us".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="3"
@@ -56,7 +67,12 @@ function Home() {
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
         download="https://drive.google.com/file/d/1GyOW8vA3o7Iz-VwJE7dTHlktAi-O5PnH/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Colleen_Hoover"
-        /></div>
+        />
+        </div>
+        )}
+
+        {("The 48 Laws of Power".toLowerCase().includes(searchValue.toLowerCase())) && (
+
         <div className="home__row">
         <Book
         id="4"
@@ -70,13 +86,11 @@ function Home() {
         download="https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Robert_Greene_(American_author)"
         />
-        
-        
         </div>
+        )}
 
-        
+        {("Dark Psychology".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="5"
         title="Dark Psychology"
@@ -90,9 +104,10 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/James_Williams"
         />
         </div>
+        )}
+
+        {("The Godfather".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
-
         <Book
         id="6"
         title="The Godfather"
@@ -104,7 +119,11 @@ function Home() {
         link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
         download="https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Mario_Puzo"
-        /></div>
+        />
+        </div>
+        )}
+
+        {("Harry Potter".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="7"
@@ -117,7 +136,11 @@ function Home() {
         link="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/ref=sr_1_2?keywords=harry+potter&qid=1672246382&sprefix=harry%2Caps%2C251&sr=8-2"
         download="https://drive.google.com/file/d/1HoHdl6CJTkma9DY30-sWNVJdg22optDu/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/J._K._Rowling"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("Ikigai".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="8"
@@ -131,13 +154,11 @@ function Home() {
         download="https://drive.google.com/file/d/1rq52W4tmtt9dZKacjvCBkJfIn83OJd29/view?usp=share_link"
         author_link="https://hectorgarcia.org/"
         />
-        
         </div>
+        )}
 
-        
-
+        {("Something I Never Told You".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="9"
         title="Something I Never Told You"
@@ -149,10 +170,13 @@ function Home() {
         link="https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/ref=sr_1_5?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-5"
         download="https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=sharing"
         author_link="https://www.goodreads.com/author/list/14810469.Shravya_Bhinder"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("To Kill a Mockingbird".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
-      <Book
+        <Book
         id="10"
         title="To Kill a Mockingbird"
         by="by "
@@ -163,10 +187,12 @@ function Home() {
         link="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_3?keywords=to+kill+a+mockingbird&qid=1672682182&sprefix=to+kill+a+%2Caps%2C1001&sr=8-3"
         download="https://drive.google.com/file/d/1x_2WiwejU-FXmEeXOvBuZpLkBaJ-XGxt/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Harper_Lee"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("The Shining".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
-
         <Book
         id="11"
         title="The Shining"
@@ -178,7 +204,11 @@ function Home() {
         link="https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/ref=sr_1_2?keywords=the+shining+by+stephen+king&qid=1672682337&sprefix=the+shinin%2Caps%2C1491&sr=8-2"
         download="https://drive.google.com/file/d/1IPHeroUU7nHLbwGIapDrpbbKQ4vmOBNw/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Stephen_King"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("The Psychology of Money".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="12"
@@ -192,12 +222,11 @@ function Home() {
         download="https://drive.google.com/file/d/1eON81N0iW0UCvDw8pOYTtVSaqD_XvRGg/view?usp=share_link"
         author_link="https://www.morganhousel.com/"
         />
-       
-        
         </div>
+        )}
 
+        {("Shawshank Redemption".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="13"
         title="Shawshank Redemption"
@@ -209,9 +238,12 @@ function Home() {
         link="https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/ref=sr_1_2?crid=2WJXM5XSBBUAQ&keywords=the+shawshank+redemption+book+by+frank&qid=1672682506&sprefix=the+shawshank+redemption+book+by+frank%2Caps%2C366&sr=8-2"
         download="https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Frank_Darabont"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("You Only Live Once".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="14"
         title="You Only Live Once"
@@ -223,10 +255,13 @@ function Home() {
         link="https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/ref=sr_1_14?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-14"
         download="https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link"
         author_link="https://hi-m-wikipedia-org.translate.goog/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF_%E0%A4%9A%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A4%B2%E0%A5%87?_x_tr_sl=hi&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("The Blue Umbrella".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
-      <Book
+        <Book
         id="15"
         title="The Blue Umbrella"
         by="by "
@@ -237,10 +272,12 @@ function Home() {
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
         download="https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Ruskin_Bond"
-        /></div>
+        />
+        </div>
+        )}
+        
+        {("The Subtle Art of Not Giving a F*ck".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
-
         <Book
         id="16"
         title="The Subtle Art of Not Giving a F*ck"
@@ -254,6 +291,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Mark_Manson"
         />
         </div>
+        )}
+
+        {("The Immortals of Meluha".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="17"
@@ -268,7 +308,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Amish_Tripathi"
         />
         </div>
+        )}
 
+        {("The Silence of The Lambs".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="18"
@@ -283,7 +325,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Thomas_Harris"
         />
         </div>
+        )}
         
+        {("A Storm of Swords".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="19"
@@ -298,7 +342,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/George_R._R._Martin"
         />
         </div>
+        )}
         
+        {("Fight Club".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="20"
@@ -313,7 +359,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Chuck_Palahniuk"
         />
         </div>
+        )}
         
+        {("No Country for Old Men".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="21"
@@ -328,7 +376,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Cormac_McCarthy"
         />
         </div>
+        )}
         
+        {("Schindler's List".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="22"
@@ -343,7 +393,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Thomas_Keneally"
         />
         </div>
+        )}
         
+        {("The Maze Runner".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="23"
@@ -358,7 +410,9 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/James_Dashner"
         />
         </div>
+        )}
 
+        {("V for Vendetta".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="24"
@@ -373,8 +427,7 @@ function Home() {
         author_link="https://en.wikipedia.org/wiki/Alan_Moore"
         />
         </div>
-
-        
+        )}
         
     </div>
   )

@@ -3,7 +3,7 @@ import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
-function novel() {
+function novel({ searchValue }) {
   return (
     <div className='home'>
         {/* <img className='home__image'
@@ -16,6 +16,7 @@ function novel() {
 
         {/* product id, title, price, rating, image */}
 
+        {("The Silence of The Lambs".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="18"
@@ -28,8 +29,11 @@ function novel() {
         link="https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/ref=sr_1_1?keywords=the+silence+of+the+lambs+book&qid=1674450019&s=books&sprefix=the+silence+of%2Cstripbooks%2C318&sr=1-1"
         download="https://drive.google.com/file/d/1PQfJG3LS1CzC8Gs75rLIMPcxAkDsAwUZ/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Thomas_Harris"
-        /></div>
+        />
+        </div>
+        )}
         
+        {("It Starts With Us".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="3"
@@ -42,10 +46,12 @@ function novel() {
         link="https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/ref=sr_1_2?keywords=it+starts+with+us&qid=1671895261&sprefix=it+%2Caps%2C441&sr=8-2"
         download="https://drive.google.com/file/d/1GyOW8vA3o7Iz-VwJE7dTHlktAi-O5PnH/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Colleen_Hoover"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("The Blue Umbrella".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
-
         <Book
         id="15"
         title="The Blue Umbrella"
@@ -57,8 +63,11 @@ function novel() {
         link="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17"
         download="https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/Ruskin_Bond"
-        /></div>
+        />
+        </div>
+        )}
 
+        {("Fight Club".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="20"
@@ -73,6 +82,9 @@ function novel() {
         author_link="https://en.wikipedia.org/wiki/Chuck_Palahniuk"
         />
         </div>
+        )}
+
+        {("The Godfather".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
         <Book
         id="6"
@@ -85,7 +97,10 @@ function novel() {
         link="https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/ref=sr_1_3?crid=1J9W2QSZKB970&keywords=the+godfather+book&qid=1672682011&sprefix=the+godfather%2Caps%2C633&sr=8-3"
         download="https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing"
         author_link="https://en.wikipedia.org/wiki/Mario_Puzo"
-        /></div>
+        />
+        </div>
+        )}
+
 </div>
 
 
