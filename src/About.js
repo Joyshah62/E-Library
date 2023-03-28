@@ -137,7 +137,8 @@ const About = () => {
     <div className={toggleTab === 3 ?"content active-content":"content"}>
       <h3>About Me</h3>
       
-      <p>Hello, and welcome to our website! My name is Rhythm, and I'm a front-end web developer with proficiency in HTML and CSS. In addition to my skills in web development, I'm also very interested in the world of AI/ML and cybersecurity, particularly ethical hacking.</p>
+      <p>Hello, and welcome to our website!</p>
+      <p>My name is Rhythm, and I'm a front-end web developer with proficiency in HTML and CSS. In addition to my skills in web development, I'm also very interested in the world of AI/ML and cybersecurity, particularly ethical hacking.</p>
       <p>I believe that technology should be used to make the world a better place, and I'm passionate about finding ways to use my skills to help achieve that goal. Thank you for stopping by, and I look forward to connecting with you soon!</p>
       <p>I love socializing! Ping me for a chat.</p>
       <h2>Skills</h2>
