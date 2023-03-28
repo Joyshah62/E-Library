@@ -428,7 +428,348 @@ function Home({ searchValue }) {
         />
         </div>
         )}
+
+{("Effective study techniques".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="25"
+        title="Effective study techniques"
+        by="by "
+        author="University of Otago"
+        price={272}
+        rating={4}  
+        image="https://d3tvd1u91rr79.cloudfront.net/eb39c1aa63df4807015794ad65fd00f4/html/bg1.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kM3R2ZDF1OTFycjc5LmNsb3VkZnJvbnQubmV0L2ViMzljMWFhNjNkZjQ4MDcwMTU3OTRhZDY1ZmQwMGY0L2h0bWwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY4MDA3NjYyMH19fV19&Signature=Rs76nbP61DhWPseCPIsZfBWAgc2xrem6ZLIWXazRcak8Xe2L27MYm5ppE0FzvRHQXFD655ENzEZ2nisLVJ0tu7ns0UGnK6WLMoXfFnJrP1Ca9GBPunLa9BZlTN7ygjZIOrWkwGYHFNckcK8Uywj-BJv5Yzg-zA~FYPAIMnYkKJ3J41h8PAEOzUfJB400e43zMJvyUAYrt59yMl3vA3koaxHuZg3phAbiYxlBzsuItDi1kGZZ8TI7l88kigrcUeNcFthwtbsWrFiqmROepRSP43ZeGvUPW-v6-jICoEEFfXR5LCA6aRBR04~pqarYfeLeTQcyei0nCwZqKx3BeC2POw__&Key-Pair-Id=APKAJ535ZH3ZAIIOADHQ"
+        link=""
+        download="https://drive.google.com/file/d/1V3EaJtK75AHYi_JZvDP_IWIHgb5plpTB/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/University_of_Otago"
+        />
+        </div>
+        )}
         
+        {("Introducing and Evaluating a study smarter not harder".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="26"
+        title="Introducing and Evaluating a study smarter not harder"
+        by="by "
+        author="Tara T Lineweaver"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/ogaDd2ffLdwzbzIpsp8rh0h55sC9TUpF9mLff1d7tIaKSq_5m3aD1snWiWP-Go6M2iVX7M0=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_4bBzi8jspGcnuAlairuIX1TdRx1qddm/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Tara_T_Lineweaver"
+        />
+        </div>
+        )}
+
+{("Startegies for Success in Mathematics".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="27"
+        title="Startegies for Success in Mathematics"
+        by="by "
+        author="Dr Neil Starr"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/1rD5X2hZMyKH0XFjDXpumJPsTIPgfvZ2REIe9LUCI3juFQyNF0gxObYbx8giy8nL-hHD=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_4fx6YkEsFbVHXmnkhAkCd2dOvtxBQv-/view?usp=share_link"
+        author_link="https://www.linkedin.com/in/neil-starr-5068999"
+        />
+        </div>
+        )}
+
+{("Improve Your Memory".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="28"
+        title="Improve Your Memory"
+        by="by "
+        author="The Institute of Water"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/3NC2zLNNUv12Eeu30nqBshoqiO35DziR9jSdzm8VPlcL6hyERNt0p7CRrZgsXohPzARQxA=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_816rCgUFZnYyogTsb_t3drGsql8SOQM/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/International_Water_Management_Institute"
+        />
+        </div>
+        )}
+
+{("Habits of Mind".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="29"
+        title="Habits of Mind"
+        by="by "
+        author="Arthur L Costa"
+        price={272}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51zm6HMJOVL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1JDSywd-C_d_Bqwo6ybkFeYlgtEd8CQLM/view?usp=share_link"
+        author_link="https://www.google.com/search?q=arthur+l+costa&oq=arthur+l++costa&aqs=chrome..69i57j69i60.5484j0j1&sourceid=chrome&ie=UTF-8"
+        />
+        </div>
+        )}
+
+{("What will Improve a Student's memory".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="30"
+        title="What will Improve a Student's memory"
+        by="by "
+        author="A.F.T."
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/mE_ByHopEVPg5gG0m59tF36RYCBNp2Zr6vl3LoZXFxhRk562va9hSR9NKbLUdf-NdJwW=s85"
+        link=""
+        download="https://drive.google.com/file/d/1yvGo6DoBpwRM4Prum_u1Bv8ALtEKBlcn/view?usp=share_link"
+        author_link="https://www.aft.org/"
+        />
+        </div>
+        )}
+
+{("When a Loved One Dies".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="31"
+        title="When a Loved One Dies"
+        by="by "
+        author="Philip W Williams"
+        price={272}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51wua3erHlL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/16MwbfBWdLG5DADCuRdiP1rIuO0WAsrJ9/view?usp=share_link"
+        author_link="https://www.google.com/search?q=philip+w+williams&sxsrf=APwXEddybxg4XF3Ge2iHST59291iCDguhQ%3A1680005579676&ei=y9kiZNfsKILiseMP9veFkAs&ved=0ahUKEwiX_q--zP79AhUCcWwGHfZ7AbIQ4dUDCA8&uact=5&oq=philip+w+williams&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQHjIICAAQigUQhgMyCAgAEIoFEIYDMggIABCKBRCGA0oECEEYAVCeB1ieB2DGOWgBcAB4AIABvAGIAbwBkgEDMC4xmAEAoAEBwAEB&sclient=gws-wiz-serp"
+        />
+        </div>
+        )}
+
+{("A Voyage to The Moon".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="32"
+        title="A Voyage to The Moon"
+        by="by "
+        author="Cyrano de Bergera"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/raTRlgp81yPuwK4pi64CNqLJ-tl8P6JsP4FRG5lSgHajMPpRfaLmNo-ULS4p2CfcmqfLqA=s85"
+        link=""
+        download="https://drive.google.com/file/d/1PhGQrVGn-h7zeL230ZMCwYHFY8cTD4ix/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Cyrano_de_Bergerac"
+        />
+        </div>
+        )}
+
+{("The Land that Time Forgot".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="33"
+        title="The Land that Time Forgot"
+        by="by "
+        author="Edgar Rice Burroughs"
+        price={272}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41Zs7qLeLvL._SY298_BO1,204,203,200_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1_LZlqNxlgzDBQ_7TVOz_cRETyzLMUyw8/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs"
+        />
+        </div>
+        )}
+
+
+{("New Atlantis".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="34"
+        title="New Atlantis"
+        by="by "
+        author="Francis Bacon"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/VswvZHkEPKZCXb7aUF-DV_nKHYl7ZmPogTJlhTbFXqKN7DsIHJDzZVk9eWatjwy2d5nEFg=s85"
+        link=""
+        download="https://drive.google.com/file/d/1HElZ-0whLs-C4DeUtr9iqM5BHq8ILwm6/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Francis_Bacon"
+        />
+        </div>
+        )}
+
+{("In the Days of the Comet".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="35"
+        title="In the Days of the Comet"
+        by="by "
+        author="H. G. Wells"
+        price={1515}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51nRSEIxTXL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1ybE6Y2whuuwsgMrm1X9aEnpHyGOnD2N6/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/H._G._Wells"
+        />
+        </div>
+        )}
+
+{("The War of The Worlds".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="36"
+        title="The War of The Worlds"
+        by="by "
+        author="H. G. Wells"
+        price={149}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41Z11JTRwQS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1uBe74s8v5u3nabUpKv5fziAfHBWNpHpC/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/H._G._Wells"
+        />
+        </div>
+        )}
+
+{("Niels Klim's Underground Travels".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="37"
+        title="Niels Klim's Underground Travels"
+        by="by "
+        author="Ludvig Holberg"
+        price={175}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51RnYptN2TL._SY346_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1XzNx3Y_99cuegHalJjwL2tEWl3uJL9Xa/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Ludvig_Holberg"
+        />
+        </div>
+        )}
+
+{("The Blazing World".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="38"
+        title="The Blazing World"
+        by="by "
+        author="Margaret Cavendish"
+        price={342}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51Pb9nRvgtL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1w7QyoxQvNu4i5fUK5xIqp6CP2OfGkJow/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne"
+        />
+        </div>
+        )}
+
+{("The Last Man".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="39"
+        title="The Last Man"
+        by="by "
+        author="Mary Shelley"
+        price={260}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/51XMZpX-6EL._SX323_BO1,204,203,200_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1I1J3M7aYOGR7qQqWNlnHiSbPJZMgAKg1/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Mary_Shelley"
+        />
+        </div>
+        )}
+
+{("Frankenstein".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="40"
+        title="Frankenstein"
+        by="by "
+        author="Mary Shelley"
+        price={195}
+        rating={4}  
+        image="https://m.media-amazon.com/images/P/1471141594.01._SCLZZZZZZZ_SX500_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1qqJG6JX9y2j8minU3V5A8V_DmGmsQkFS/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Mary_Shelley"
+        />
+        </div>
+        )}
+
+{("The Strange Case of Dr. Jekyll and Mr. Hyde".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="41"
+        title="The Strange Case of Dr. Jekyll and Mr. Hyde"
+        by="by "
+        author="Robert Louis Stevenson"
+        price={230}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/4128S1v2-4L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1qGpOeKwZXAAIXKJkIM7NxxZNN_ZWBCjp/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Robert_Louis_Stevenson"
+        />
+        </div>
+        )}
+
+{("The Gods Of Mars".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="42"
+        title="The Gods Of Mars"
+        by="by "
+        author="Edgar Rice Burroughs"
+        price={1054}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41fAV9m9naL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1eVnAEO8BqMXraBvrYdUAsRDJTH7RP1jt/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs"
+        />
+        </div>
+        )}
+
+      {("The Monster Men".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="44"
+        title="The Monster Men"
+        by="by "
+        author="Edgar Rice Burroughs"
+        price={272}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/514ttsNGEbL._SY346_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1q5rXI1dacpn8olKCJ6VEsL_BsiDtTUAw/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs"
+        />
+        </div>
+        )}
+        
+        {("The War in The Air".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="44"
+        title="The War in The Air"
+        by="by "
+        author="H. G. Wells"
+        price={1062}
+        rating={4}  
+        image="https://m.media-amazon.com/images/I/41ruYhc6LlL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+        link=""
+        download="https://drive.google.com/file/d/1sdfFIzHnriA8_2gt3y2kLgn9VSh-jWd5/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/H._G._Wells"
+        />
+        </div>
+        )}
+
     </div>
   )
 }
