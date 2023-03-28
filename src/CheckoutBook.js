@@ -1,6 +1,6 @@
 import React from 'react'
-import "./CheckoutBook.css";
 import { useStateValue } from './StateProvider';
+import "./CheckoutBook.css";
 
 function CheckoutBook({id, title,image,price, author ,author_link,by, rating,hideButton}) {
     const [{ basket }, dispatch] = useStateValue();

@@ -191,8 +191,13 @@
 }
 
 .about__title{
+    font-size: 30px;
     text-align: center;
     font-family: "Bitter", serif;
     background-color: rgb(255, 255, 255);
     padding: 10px;
+}
+
+.skill{
+    text-decoration: none;
 }

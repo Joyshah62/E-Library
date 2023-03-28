@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
-import "./Login.css";
 import { auth, provider1 } from './firebase';
 import { Link, useHistory } from "react-router-dom";
 import { async, isReactNative } from '@firebase/util';
 import GoogleButton from 'react-google-button';
 import {StateContext} from './StateProvider';
 import { useStateValue } from './StateProvider' 
-
-
-
+import "./Login.css";
 
 function Login() {
     const signin = () => {

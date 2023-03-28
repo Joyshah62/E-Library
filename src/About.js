@@ -51,29 +51,15 @@ const About = () => {
     {/* About Content */}
 
     <div className={toggleTab === 1 ?"content active-content":"content"}>
-      <h2>My Story</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Eveniet nostrum laborum porro pariatur minima tenetur.
-       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
-       quam doloribus nemo sed perferendis ipsa corporis?</p>
-       {/* <h3>I Am Web Designer And Developer Having 10 Year Of Experience</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae accusantium totam mollitia facilis debitis porro sunt repellat eveniet dignissimos.</p> */}
-    </div>
-
-    {/* Skills Content */}
-
-    <div className={toggleTab === 2 ?"content active-content":"content"}>
-      <h2>Skills</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Eveniet nostrum laborum porro pariatur minima tenetur.
-       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
-       quam doloribus nemo sed perferendis ipsa corporis?</p>
-
-       <div className="skills-row">
+      <h3>About Me</h3>
+      <p>Joy is an aspiring Web developer with absolute proficiency in ReactJS and its various modules. Moreover, He is passinate about Artificial Inteligence and Machine Learning. He also dedicates his time on competitive coding platforms like Codechef and Leetcode.</p>
+      
+      <h3>Skills</h3>
+      <div className="skills-row">
 
        <div className="skills-column">
         <div className="progress-wrap">
-          <h3>Developer</h3>
+          <h3>Designing</h3>
           <div className="progress">
             <div className="progress-bar">
               <span>80%</span>
@@ -84,7 +70,7 @@ const About = () => {
 
        <div className="skills-column">
         <div className="progress-wrap">
-          <h3>Designer</h3>
+          <h3>ReactJS</h3>
           <div className="progress">
             <div className="progress-bar Designer">
               <span>90%</span>
@@ -118,6 +104,33 @@ const About = () => {
        </div>
 
     </div>
+
+    {/* Skills Content */}
+
+    <div className={toggleTab === 2 ?"content active-content":"content"}>
+    <h3>About Me</h3>
+      <p>⚡ Passionate INTP Logician with Constant Development Trait, always seeking improvement and learning new things. I am pursuing BTech with specialization in Computer Science and Technology at Chandubhai S. Patel Institute Of Technology, Charusat University, Changa.</p>
+
+<p>🌱 My passion for learning new IT technologies has me exploring Offensive Security, Computer Networks, Virtualization, and System.</p>
+
+<p>🔭 I have been a mentee in Microsoft's Cybersecurity Engage 2022 Program. I'm learning RedHat from RedHat Academy and working on my computer Networking skills. I'm Actively Participating in CTF Events.</p>
+
+<p>💬 I love socializing! Ping me for a chat.</p>
+      
+      <h2>Skills</h2>
+       <a className='skill' href='https://www.w3schools.com/cpp' target="_blank"><img alt='cplusplus' src='https://img.shields.io/badge/C++-100000?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=000000&color=00427E'/> </a>
+        <a className='skill' href='https://www.w3schools.com/c/' target="_blank"><img alt='c' src='https://img.shields.io/badge/C-100000?style=for-the-badge&logo=c&logoColor=white&labelColor=000000&color=035697'/> </a> 
+        <a className='skill' href='https://www.microsoft.com/openjdk' target="_blank"><img alt='openjdk' src='https://img.shields.io/badge/java-100000?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=black&color=e26e03'/> </a>
+        <a className='skill' href='https://react.dev/' target="_blank"><img alt='react' src='https://img.shields.io/badge/Reactjs-100000?style=for-the-badge&logo=react&logoColor=white&labelColor=black&color=ffffff'/> </a>
+        <a className='skill' href='https://www.gnu.org/software/bash/' target="_blank"><img alt='gnu-bash' src='https://img.shields.io/badge/bash-100000?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=000000&color=4EAA25'/> </a>
+        <a className='skill' href='https://docs.microsoft.com/en-us/powershell/' target="_blank"><img alt='powershell' src='https://img.shields.io/badge/powershell-100000?style=for-the-badge&logo=powershell&logoColor=white&labelColor=000000&color=256DB8'/> </a> 
+        <a className='skill' href='https://pop.system76.com/' target="_blank"><img alt='vagrant' src='https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=000000&color=104CAC'/> </a>
+        <a className='skill' href='https://www.kali.org/' target="_blank"><img alt='kali-linux' src='https://img.shields.io/badge/Kali_Linux-100000?style=for-the-badge&logo=kali-linux&logoColor=white&labelColor=black&color=black'/> </a> 
+        <a className='skill' href='canva.com' target="_blank"><img alt='canva' src='https://img.shields.io/badge/canva-100000?style=for-the-badge&logo=canva&logoColor=white&labelColor=000000&color=00C4CC'/> </a>
+        <a className='skill' href='https://prezi.com/' target="_blank"><img alt='prezi' src='https://img.shields.io/badge/Prezi-100000?style=for-the-badge&logo=prezi&logoColor=white&labelColor=000000&color=5A99F7'/> </a>
+        
+    </div>
+    
 
        {/* Experience Content */}
 

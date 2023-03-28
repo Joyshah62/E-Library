@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import "./Header.css"
-import "./HeaderStyle.css"
 import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FaSearch,FaBookmark } from 'react-icons/fa'
 import { useStateValue } from './StateProvider' 
-import Login from './Login'
 import { firebaseApp, auth } from './firebase';
 import Dropdown from './Dropdown'
-
+import Login from './Login'
+import "./Header.css"
+import "./HeaderStyle.css"
 
 function Header({ searchValue, setSearchValue }) {
 
@@ -32,7 +31,7 @@ function Header({ searchValue, setSearchValue }) {
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(true);
+      setDropdown(false);
     } else {
       setDropdown(false);
     }

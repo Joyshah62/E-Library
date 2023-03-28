@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import "./Carousel.css";
 import { useEffect } from 'react';
+import "./Carousel.css";
 
 function Carousel({images}) {
     const [current,setCurrent] = useState(0);

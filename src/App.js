@@ -1,26 +1,28 @@
 import React,{ useEffect, useState } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Switch , Route} from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
 import Header from './Header';
 import Home from './Home';
 import Mybook from './Mybook';
 import Login from './Login';
-import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
 import About from './About';
 import Carousel from './Carousel';
 import { countries } from './Data';
 import FAQ from './FAQ';
 import Accordion from './Accordion';
 import Payment from './Payment';
-import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
 import Orders from './Orders';
-import { ToastContainer } from 'react-toastify';
 import Fiction from './Fiction';
 import Thriller from './Thriller';
 import Novel from './Novel';
 import Selfhelp from './Selfhelp';
+import './App.css';
+
 
 const promise = loadStripe
 (

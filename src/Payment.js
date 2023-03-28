@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import CheckoutBook from './CheckoutBook';
-import './Payment.css';
-import { useStateValue } from './StateProvider';
 import { Link, useHistory } from 'react-router-dom';
 import { CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
-import { getBasketTotal } from './reducer';
-import axios from './axios';
 import { db } from './firebase';
+import CheckoutBook from './CheckoutBook';
+import axios from './axios';
+import { useStateValue } from './StateProvider';
+import { getBasketTotal } from './reducer';
+import './Payment.css';
+
 function Payment() {
 
 

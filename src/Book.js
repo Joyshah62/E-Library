@@ -1,12 +1,13 @@
 import React from 'react';
-import "./Book.css";
-import "./Books.css";
-import "./CheckoutBook.css";
 import {FiDownload} from "react-icons/fi";
 import {RiSendPlaneFill} from "react-icons/ri";
 import { useStateValue } from './StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import "./Book.css";
+import "./Books.css";
+import "./CheckoutBook.css";
+
 function Book({ id, title, price, rating, image, link, author, download, author_link, by }) {
 
     const [{ basket }, dispatch] = useStateValue();

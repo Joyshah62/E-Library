@@ -1,8 +1,9 @@
 import React from 'react'
-import "./Home.css";
 import Book from './Book';
 import Carousel from './Carousel';
 import { countries } from './Data';
+import "./Home.css";
+
 function thriller({ searchValue }) {
   return (
     <div className='home'>
