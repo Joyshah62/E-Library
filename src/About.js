@@ -135,24 +135,18 @@ const About = () => {
        {/* Experience Content */}
 
     <div className={toggleTab === 3 ?"content active-content":"content"}>
-
-    <div className="exp-column">
-      <h3>Web Developer</h3>
-      <span>2014-2022</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error rem dicta perferendis et qui obcaecati labore accusantium cupiditate libero.</p>
-    </div>
-
-    <div className="exp-column">
-      <h3>Graphic Designer</h3>
-      <span>2015-2022</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error rem dicta perferendis et qui obcaecati labore accusantium cupiditate libero.</p>
-    </div>
-
-    <div className="exp-column">
-      <h3>Photoshop</h3>
-      <span>2017-2022</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error rem dicta perferendis et qui obcaecati labore accusantium cupiditate libero.</p>
-    </div>
+      <h3>About Me</h3>
+      
+      <p>Hello, and welcome to our website! My name is Rhythm, and I'm a front-end web developer with proficiency in HTML and CSS. In addition to my skills in web development, I'm also very interested in the world of AI/ML and cybersecurity, particularly ethical hacking.</p>
+      <p>I believe that technology should be used to make the world a better place, and I'm passionate about finding ways to use my skills to help achieve that goal. Thank you for stopping by, and I look forward to connecting with you soon!</p>
+      <p>I love socializing! Ping me for a chat.</p>
+      <h2>Skills</h2>
+      <h3>HTML and CSS :</h3>
+      <p>I have extensive experience creating websites and user interfaces using these foundational web technologies.</p>
+      <h3>Cybersecurity</h3>
+      <p>I'm knowledgeable in various cybersecurity concepts and threats.</p>
+      <h3>Ethical Hacking</h3>
+      <p>I'm knowledgeable in various hacking attacks and their types.</p>
     
     </div>
         
