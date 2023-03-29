@@ -429,73 +429,7 @@ function Home({ searchValue }) {
         </div>
         )}
 
-{("Effective study techniques".toLowerCase().includes(searchValue.toLowerCase())) && (
-        <div className="home__row">
-        <Book
-        id="25"
-        title="Effective study techniques"
-        by="by "
-        author="University of Otago"
-        price={272}
-        rating={4}  
-        image="https://d3tvd1u91rr79.cloudfront.net/eb39c1aa63df4807015794ad65fd00f4/html/bg1.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kM3R2ZDF1OTFycjc5LmNsb3VkZnJvbnQubmV0L2ViMzljMWFhNjNkZjQ4MDcwMTU3OTRhZDY1ZmQwMGY0L2h0bWwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY4MDA3NjYyMH19fV19&Signature=Rs76nbP61DhWPseCPIsZfBWAgc2xrem6ZLIWXazRcak8Xe2L27MYm5ppE0FzvRHQXFD655ENzEZ2nisLVJ0tu7ns0UGnK6WLMoXfFnJrP1Ca9GBPunLa9BZlTN7ygjZIOrWkwGYHFNckcK8Uywj-BJv5Yzg-zA~FYPAIMnYkKJ3J41h8PAEOzUfJB400e43zMJvyUAYrt59yMl3vA3koaxHuZg3phAbiYxlBzsuItDi1kGZZ8TI7l88kigrcUeNcFthwtbsWrFiqmROepRSP43ZeGvUPW-v6-jICoEEFfXR5LCA6aRBR04~pqarYfeLeTQcyei0nCwZqKx3BeC2POw__&Key-Pair-Id=APKAJ535ZH3ZAIIOADHQ"
-        link=""
-        download="https://drive.google.com/file/d/1V3EaJtK75AHYi_JZvDP_IWIHgb5plpTB/view?usp=share_link"
-        author_link="https://en.wikipedia.org/wiki/University_of_Otago"
-        />
-        </div>
-        )}
-        
-        {("Introducing and Evaluating a study smarter not harder".toLowerCase().includes(searchValue.toLowerCase())) && (
-        <div className="home__row">
-        <Book
-        id="26"
-        title="Introducing and Evaluating a study smarter not harder"
-        by="by "
-        author="Tara T Lineweaver"
-        price={272}
-        rating={4}  
-        image="https://lh3.googleusercontent.com/ogaDd2ffLdwzbzIpsp8rh0h55sC9TUpF9mLff1d7tIaKSq_5m3aD1snWiWP-Go6M2iVX7M0=s85"
-        link=""
-        download="https://drive.google.com/file/d/1_4bBzi8jspGcnuAlairuIX1TdRx1qddm/view?usp=share_link"
-        author_link="https://en.wikipedia.org/wiki/Tara_T_Lineweaver"
-        />
-        </div>
-        )}
 
-{("Startegies for Success in Mathematics".toLowerCase().includes(searchValue.toLowerCase())) && (
-        <div className="home__row">
-        <Book
-        id="27"
-        title="Startegies for Success in Mathematics"
-        by="by "
-        author="Dr Neil Starr"
-        price={272}
-        rating={4}  
-        image="https://lh3.googleusercontent.com/1rD5X2hZMyKH0XFjDXpumJPsTIPgfvZ2REIe9LUCI3juFQyNF0gxObYbx8giy8nL-hHD=s85"
-        link=""
-        download="https://drive.google.com/file/d/1_4fx6YkEsFbVHXmnkhAkCd2dOvtxBQv-/view?usp=share_link"
-        author_link="https://www.linkedin.com/in/neil-starr-5068999"
-        />
-        </div>
-        )}
-
-{("Improve Your Memory".toLowerCase().includes(searchValue.toLowerCase())) && (
-        <div className="home__row">
-        <Book
-        id="28"
-        title="Improve Your Memory"
-        by="by "
-        author="The Institute of Water"
-        price={272}
-        rating={4}  
-        image="https://lh3.googleusercontent.com/3NC2zLNNUv12Eeu30nqBshoqiO35DziR9jSdzm8VPlcL6hyERNt0p7CRrZgsXohPzARQxA=s85"
-        link=""
-        download="https://drive.google.com/file/d/1_816rCgUFZnYyogTsb_t3drGsql8SOQM/view?usp=share_link"
-        author_link="https://en.wikipedia.org/wiki/International_Water_Management_Institute"
-        />
-        </div>
-        )}
 
 {("Habits of Mind".toLowerCase().includes(searchValue.toLowerCase())) && (
         <div className="home__row">
@@ -766,6 +700,74 @@ function Home({ searchValue }) {
         link=""
         download="https://drive.google.com/file/d/1sdfFIzHnriA8_2gt3y2kLgn9VSh-jWd5/view?usp=share_link"
         author_link="https://en.wikipedia.org/wiki/H._G._Wells"
+        />
+        </div>
+        )}
+
+{("Effective study techniques".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="25"
+        title="Effective study techniques"
+        by="by "
+        author="University of Otago"
+        price={272}
+        rating={4}  
+        image="https://d3tvd1u91rr79.cloudfront.net/eb39c1aa63df4807015794ad65fd00f4/html/bg1.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kM3R2ZDF1OTFycjc5LmNsb3VkZnJvbnQubmV0L2ViMzljMWFhNjNkZjQ4MDcwMTU3OTRhZDY1ZmQwMGY0L2h0bWwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY4MDA3NjYyMH19fV19&Signature=Rs76nbP61DhWPseCPIsZfBWAgc2xrem6ZLIWXazRcak8Xe2L27MYm5ppE0FzvRHQXFD655ENzEZ2nisLVJ0tu7ns0UGnK6WLMoXfFnJrP1Ca9GBPunLa9BZlTN7ygjZIOrWkwGYHFNckcK8Uywj-BJv5Yzg-zA~FYPAIMnYkKJ3J41h8PAEOzUfJB400e43zMJvyUAYrt59yMl3vA3koaxHuZg3phAbiYxlBzsuItDi1kGZZ8TI7l88kigrcUeNcFthwtbsWrFiqmROepRSP43ZeGvUPW-v6-jICoEEFfXR5LCA6aRBR04~pqarYfeLeTQcyei0nCwZqKx3BeC2POw__&Key-Pair-Id=APKAJ535ZH3ZAIIOADHQ"
+        link=""
+        download="https://drive.google.com/file/d/1V3EaJtK75AHYi_JZvDP_IWIHgb5plpTB/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/University_of_Otago"
+        />
+        </div>
+        )}
+        
+        {("Introducing and Evaluating a study smarter not harder".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="26"
+        title="Introducing and Evaluating a study smarter not harder"
+        by="by "
+        author="Tara T Lineweaver"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/ogaDd2ffLdwzbzIpsp8rh0h55sC9TUpF9mLff1d7tIaKSq_5m3aD1snWiWP-Go6M2iVX7M0=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_4bBzi8jspGcnuAlairuIX1TdRx1qddm/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/Tara_T_Lineweaver"
+        />
+        </div>
+        )}
+
+{("Startegies for Success in Mathematics".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="27"
+        title="Startegies for Success in Mathematics"
+        by="by "
+        author="Dr Neil Starr"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/1rD5X2hZMyKH0XFjDXpumJPsTIPgfvZ2REIe9LUCI3juFQyNF0gxObYbx8giy8nL-hHD=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_4fx6YkEsFbVHXmnkhAkCd2dOvtxBQv-/view?usp=share_link"
+        author_link="https://www.linkedin.com/in/neil-starr-5068999"
+        />
+        </div>
+        )}
+
+{("Improve Your Memory".toLowerCase().includes(searchValue.toLowerCase())) && (
+        <div className="home__row">
+        <Book
+        id="28"
+        title="Improve Your Memory"
+        by="by "
+        author="The Institute of Water"
+        price={272}
+        rating={4}  
+        image="https://lh3.googleusercontent.com/3NC2zLNNUv12Eeu30nqBshoqiO35DziR9jSdzm8VPlcL6hyERNt0p7CRrZgsXohPzARQxA=s85"
+        link=""
+        download="https://drive.google.com/file/d/1_816rCgUFZnYyogTsb_t3drGsql8SOQM/view?usp=share_link"
+        author_link="https://en.wikipedia.org/wiki/International_Water_Management_Institute"
         />
         </div>
         )}
