@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FaSearch, FaBookmark } from 'react-icons/fa'
 import { AiOutlineAudio, AiOutlineAudioMuted } from 'react-icons/ai'
+import {MdOutlineMic,MdOutlineMicOff} from 'react-icons/md'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 import { useStateValue } from './StateProvider';
@@ -89,14 +90,14 @@ function Header({ searchValue, setSearchValue }) {
         {/* Search box*/}
         <div id="header__search">
 
-          <input id='searchBar' type='text' value={searchValue} onChange={handleSearchChange} placeholder={"Search"} required/>
+          <input id='searchBar' type='text' value={searchValue} onChange={handleSearchChange} placeholder={"Search by book name..."} required/>
             {/* <span>Search</span> */}
           
           <button className='audioIcon' onClick={handleToggleListening}> 
-            {listening? <AiOutlineAudio size={20} /> : <AiOutlineAudioMuted size={20} />}
+            {listening? <MdOutlineMic size={20} /> : <MdOutlineMicOff size={20} />}
           </button>
 
-          <p className='Voicebtn'>Listening: {listening ? 'on' : 'off'}</p>
+          {/* <p className='Voicebtn'>Listening: {listening ? 'on' : 'off'}</p> */}
         </div>
         
 
