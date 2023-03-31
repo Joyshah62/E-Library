@@ -10,7 +10,7 @@ const About = () => {
     <Fragment>
    
     <div className='about__title'>
-      <h1>Meet the Developers</h1>
+      <h3>Meet the Developers</h3>
     </div>
     <section className="about">
     

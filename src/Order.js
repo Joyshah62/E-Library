@@ -7,11 +7,12 @@ import './Order.css'
 function Order({ order }) {
     return (
         <div className='order'>
-            <h2>Order</h2>
+            <h2 className='orderTitle'>Invoice</h2>
             <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
             <p className="order__id">
-                <small>{order.id}</small>
+                <small><b className='orderIdTitle'>Order ID:</b><b className='orderIdMain'> {order.id}</b></small>
             </p>
+            <hr />
             {order.data.basket?.map(item => (
                 <CheckoutBook
                     id={item.id}
@@ -22,6 +23,7 @@ function Order({ order }) {
                     hideButton
                 />
             ))}
+            <hr />
             <CurrencyFormat
                 renderText={(value) => (
                     <h3 className="order__total">Order Total: {value}</h3>

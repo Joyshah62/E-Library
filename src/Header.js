@@ -1,18 +1,41 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { FaSearch,FaBookmark } from 'react-icons/fa'
-import { useStateValue } from './StateProvider' 
+import { FaSearch, FaBookmark } from 'react-icons/fa'
+import { AiOutlineAudio, AiOutlineAudioMuted } from 'react-icons/ai'
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+
+import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
 import Dropdown from './Dropdown'
 import Login from './Login'
 import "./Header.css"
-import "./HeaderStyle.css"
+// import "./HeaderStyle.css"
 
 function Header({ searchValue, setSearchValue }) {
 
   const handleSearchChange = (event) => {
     setSearchValue(event.target.value);
+  };
+
+
+  const { transcript, resetTranscript, listening } = useSpeechRecognition({
+    // lang: 'en-IN',
+  });
+  
+  const handleVoiceSearch = () => {
+    const cleanedTranscript = transcript.replace(/\./g, '');
+    setSearchValue(cleanedTranscript);
+    resetTranscript();
+  };
+
+  const handleToggleListening = () => {
+    if (listening) {
+      SpeechRecognition.stopListening();
+      handleVoiceSearch();
+    } else {
+      SpeechRecognition.startListening();
+    }
   };
 
 
@@ -64,26 +87,23 @@ function Header({ searchValue, setSearchValue }) {
         </Link>
 
         {/* Search box*/}
-        <div className="header__search">
+        <div id="header__search">
 
-        <input id='search-btn' type='checkbox'/>
-        <label for='search-btn'>Show search bar</label>
-        <input id='search-bar' type='text' placeholder='Search...' value={searchValue} onChange={handleSearchChange} />
+          <input id='searchBar' type='text' value={searchValue} onChange={handleSearchChange} placeholder={"Search"} required/>
+            {/* <span>Search</span> */}
+          
+          <button className='audioIcon' onClick={handleToggleListening}> 
+            {listening? <AiOutlineAudio size={20} /> : <AiOutlineAudioMuted size={20} />}
+          </button>
 
-            {/* <input type="text" className="header__searchInput" value={searchValue} onChange={handleSearchChange} />
-            <span className='searchPlaceholder'>Search Your Favorite Book</span> */}
-
-            {/* <input type="text" className="header__searchInput" onChange={handleInputChange} onSearch={onSearch}/>
-            <FaSearch className="header__searchIcon" onClick={handleClick1}/> */}
+          <p className='Voicebtn'>Listening: {listening ? 'on' : 'off'}</p>
         </div>
         
 
         {/* 3 links */}
 
         <div className='header__nav'>
-
-        
-
+          {/* <span className='menu'>MENU</span> */}
           
         {currentUser && <>
             <div id='imgDiv'>
@@ -101,9 +121,15 @@ function Header({ searchValue, setSearchValue }) {
               </div>
             </Link>
 
+            <Link to="/" className='header__link'>
+            <div className='header__option'>
+                <span className='hdrbtn'>Home</span>
+            </div>
+           </Link>
+
             <li
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            // onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -111,16 +137,14 @@ function Header({ searchValue, setSearchValue }) {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Genres
+              <b 
+                className='hdrbtn'
+                onMouseEnter={onMouseEnter}
+                // onMouseLeave={onMouseLeave}
+            >Genres</b>
             </Link>
             {dropdown && <Dropdown />}
           </li>
-
-           <Link to="/" className='header__link'>
-            <div className='header__option'>
-                <span className='hdrbtn'>Home</span>
-            </div>
-           </Link>
 
            <Link to="/about" className='header__link'>
             <div className='header__option'>

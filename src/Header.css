@@ -16,7 +16,7 @@
     margin-right: 20px;
 }
 
-.header__search {
+#header__search {
     display: flex;
     flex: 1;
 }
@@ -40,9 +40,10 @@
     justify-content: space-evenly;
 }
 
+/* Old Header button Styling
 .button {
     --c: #195163;
-    /* the color */
+    the color
 
     color: #0000;
     background:
@@ -52,7 +53,7 @@
     -webkit-background-clip: text, padding-box, padding-box;
     background-clip: text, padding-box, padding-box;
     transition: 0s, color .5s, background-color .5s;
-}
+} */
 
 .button:hover {
     color: #fff;
@@ -112,6 +113,7 @@
 }
 
 #userName{
+    white-space: nowrap;
     position: relative;
     top: 40px;
     right: 10px;
@@ -173,7 +175,6 @@
     display: flex;
     align-items: center;
     height: 80px;
-   
   }
   
   .nav-links {
@@ -187,7 +188,7 @@
   }
   
   .nav-links:hover {
-    background-color: #1888ff;
+    /* background-color: #1888ff; */
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
@@ -199,3 +200,69 @@
     right: 700px;
     white-space: nowrap;
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.audioIcon{
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    right: -40px;
+}
+
+.audioIcon:focus{
+    outline: none;
+}
+
+.Voicebtn{
+    position: relative;
+    right: -200px;
+}
+
+#searchBar{
+    /* border: none;
+    padding: 10px 10px;
+    background: none;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    border-top: 2px dotted rgba(255, 255, 255, 0);
+    border-bottom-width: 2px;
+    outline: none;
+    transition: ease-in-out 1s; */
+}
+
+#searchBar:focus{
+    /* background: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px dotted rgb(0, 0, 0);
+    transition: ease-in-out 0.5s; */
+}
+
+/* #header__search span{
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
+    top: 10px;
+    right: 175px;
+    transition: ease-in-out 0.5s;
+}
+
+#header__search input:focus ~ span,
+#header__search input:valid ~ span
+{
+    position: relative;
+    transform: translateX(0px) translateY(-22px);
+    transition: ease-in-out 0.5s;
+} */
