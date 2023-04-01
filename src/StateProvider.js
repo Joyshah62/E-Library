@@ -2,11 +2,11 @@
 //We need to track the basket
 
 import React, { createContext, useContext, useReducer } from "react";
-import { 
-    GoogleAuthProvider, 
-    signInWithPopup, 
-    signOut, 
-    onAuthStateChanged 
+import {
+    GoogleAuthProvider,
+    signInWithPopup,
+    signOut,
+    onAuthStateChanged
 } from "firebase/auth";
 import { auth } from './firebase';
 
@@ -33,12 +33,12 @@ export const StateContext = createContext();
 
 
 // Build a provider
-export const StateProvider=({ reducer, initialState, googleSignIn, children}) => {
+export const StateProvider = ({ reducer, initialState, googleSignIn, children }) => {
 
     return (
-    <StateContext.Provider value={useReducer(reducer, initialState, googleSignIn)}>
-        {children}
-    </StateContext.Provider>
+        <StateContext.Provider value={useReducer(reducer, initialState, googleSignIn)}>
+            {children}
+        </StateContext.Provider>
     );
 };
 

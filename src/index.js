@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { StateProvider } from './StateProvider';
-import reducer,{initialState} from "./reducer";
+import reducer, { initialState } from "./reducer";
 import App from './App';
 import './index.css';
 
@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>
       <App />
-    </StateProvider>  
+    </StateProvider>
   </React.StrictMode>
 );
 

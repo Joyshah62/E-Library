@@ -18,26 +18,28 @@
 
 #header__search {
     display: flex;
-    margin:0 auto;
-    width:575px;
-    border-radius:30px;
-    border:1px solid #dcdcdc;
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
     background-color: #FFF;
 }
 
-#header_search{
-    margin:0 auto;
-    width:575px;
-    border-radius:30px;
-    border:1px solid #dcdcdc;
-  }
-  #header_search:hover{
+#header_search {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+}
+
+#header_search:hover {
     box-shadow: 1px 1px 8px 1px #dcdcdc;
-  }
-  #header_search:focus-within{
+}
+
+#header_search:focus-within {
     box-shadow: 1px 1px 8px 1px #dcdcdc;
-    outline:none;
-  }
+    outline: none;
+}
 
 .header__searchInput {
     height: 30px;
@@ -71,14 +73,14 @@
     -webkit-background-clip: text, padding-box, padding-box;
     background-clip: text, padding-box, padding-box;
     transition: 0s, color .5s, background-color .5s;
-} */
+} 
 
 .button:hover {
     color: #fff;
     --_c: var(--c);
     --_p: 100%;
     transition: 0.5s, color 0s .5s, background-color 0s .5s;
-}
+} */
 
 .header__link {
     color: #195163;
@@ -99,7 +101,7 @@
     margin-top: 2px;
 }
 
-.userimg{
+.userimg {
     position: relative;
     right: 10px;
     top: -4px;
@@ -130,7 +132,7 @@
     z-index: 1;
 }
 
-#userName{
+#userName {
     white-space: nowrap;
     position: relative;
     top: 40px;
@@ -140,7 +142,7 @@
 }
 
 
-#imgDiv:hover img{
+#imgDiv:hover img {
     position: relative;
     top: 0px;
     right: -40px;
@@ -151,10 +153,10 @@
     filter: brightness(0%);
     transition: ease-in-out 0.5s;
     z-index: 0;
-   
+
 }
 
-#greetImg{
+#greetImg {
     font-size: 17px;
     position: relative;
     top: -35px;
@@ -164,27 +166,27 @@
     z-index: -1;
 }
 
-#imgDiv:hover #greetImg{
+#imgDiv:hover #greetImg {
     font-size: 17px;
     position: relative;
     top: -35px;
     right: -50px;
     color: #1DF289;
     visibility: visible;
-    
+
     z-index: 2;
     transition: ease-in-out 0.5s;
 
 }
 
-#imgDiv img{
+#imgDiv img {
     position: relative;
     top: 0px;
     right: -40px;
     border-radius: 100px;
     height: 40px;
     width: 40px;
-    margin-top:20px;
+    margin-top: 20px;
 
     transition: ease-in-out 0.5s;
 }
@@ -193,9 +195,9 @@
     display: flex;
     align-items: center;
     height: 80px;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -203,15 +205,15 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 4px;
-  }
-  
-  .nav-links:hover {
+}
+
+.nav-links:hover {
     /* background-color: #1888ff; */
     border-radius: 4px;
     transition: all 0.2s ease-out;
-  }
+}
 
-.searchPlaceholder{
+.searchPlaceholder {
     color: rgb(172, 172, 172);
     position: relative;
     top: 4px;
@@ -221,18 +223,20 @@
 
 @keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-.audioIcon{
-    margin-right:50px;
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.audioIcon {
+    margin-right: 50px;
     position: relative;
     background: none;
     border: none;
@@ -241,16 +245,16 @@
     right: -40px;
 }
 
-.audioIcon:focus{
+.audioIcon:focus {
     outline: none;
 }
 
-.Voicebtn{
+.Voicebtn {
     position: relative;
     right: -200px;
 }
 
-#searchBar{
+#searchBar {
     /* border: none;
     padding: 10px 10px;
     background: none;
@@ -259,16 +263,16 @@
     border-bottom-width: 2px;
     outline: none;
     transition: ease-in-out 1s; */
-   margin-left:20px;
-    height:45px;
-  border:none;
-  width:500px;
-  font-size:16px;
-  outline: none;
+    margin-left: 20px;
+    height: 45px;
+    border: none;
+    width: 500px;
+    font-size: 16px;
+    outline: none;
 }
 
 /* #searchBar:focus{ */
-    /* background: none;
+/* background: none;
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
     border-top: 2px dotted rgb(0, 0, 0);

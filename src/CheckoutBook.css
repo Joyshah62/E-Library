@@ -1,24 +1,24 @@
-.checkoutbook{
+.checkoutbook {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.checkoutbook__price{
+.checkoutbook__price {
     color: #111;
 }
 
-.checkoutbook__image{
+.checkoutbook__image {
     object-fit: contain;
     width: 180px;
     height: 180px;
 }
 
-.checkoutbook__info{
+.checkoutbook__info {
     padding-left: 20px;
 }
 
-.download__book{
+.download__book {
     background: #f0c14b;
     border: 1px solid;
     margin-top: 10px;
@@ -26,7 +26,7 @@
     color: #111;
 }
 
-.checkoutbook__remove{
+.checkoutbook__remove {
     display: flex;
     background: #f0c14b;
     border: 1px solid;
@@ -35,11 +35,11 @@
     color: #111;
 }
 
-.checkoutbook__rating{
+.checkoutbook__rating {
     display: flex;
 }
 
-.checkoutbook__title{
+.checkoutbook__title {
     font-size: 17px;
     font-weight: 800;
 }
@@ -47,65 +47,66 @@
 /*delete item button starts*/
 
 .noselect {
-		-webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .noselect {
     margin: 10px 5px 5px 0px;
-	width: 130px;
-	height: 30px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	background: red;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-	background: #e62222;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
 }
 
-.noselect, .noselect span {
-	transition: 200ms;
+.noselect,
+.noselect span {
+    transition: 200ms;
 }
 
 .noselect .text {
-	transform: translateX(35px);
-	color: white;
-	font-weight: bold;
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
 }
 
 .noselect .icon {
-	position: absolute;
-	border-left: 1px solid #c41b1b;
-	transform: translateX(90px);
-	height: 30px;
-	width: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(90px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .noselect svg {
-	width: 15px;
-	fill: #eee;
+    width: 15px;
+    fill: #eee;
 }
 
 .noselect:hover {
-	background: #ff3636;
+    background: #ff3636;
 }
 
 .noselect:hover .text {
-	color: transparent;
+    color: transparent;
 }
 
 .noselect:hover .icon {
-	width: 120px;
-	border-left: none;
-	transform: translateX(0);
+    width: 120px;
+    border-left: none;
+    transform: translateX(0);
 }
 
 .noselect:focus {
-	outline: none;
+    outline: none;
 }
 
 /*Delete Item Button ends*/

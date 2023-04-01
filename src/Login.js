@@ -3,8 +3,8 @@ import { auth, provider1 } from './firebase';
 import { Link, useHistory } from "react-router-dom";
 import { async, isReactNative } from '@firebase/util';
 import GoogleButton from 'react-google-button';
-import {StateContext} from './StateProvider';
-import { useStateValue } from './StateProvider' 
+import { StateContext } from './StateProvider';
+import { useStateValue } from './StateProvider'
 import "./Login.css";
 
 function Login() {
@@ -20,76 +20,76 @@ function Login() {
     const login = (event) => {
         event.preventDefault();
 
-        auth.signInWithEmailAndPassword(email,password)
-        .then((auth) => {
+        auth.signInWithEmailAndPassword(email, password)
+            .then((auth) => {
 
-            history.push("/");
+                history.push("/");
 
-        })
-        .catch((e) => alert(e.message));
+            })
+            .catch((e) => alert(e.message));
     };
 
     const register = (event) => {
         event.preventDefault();
 
-        auth.createUserWithEmailAndPassword(email,password)
-        .then(auth => {
+        auth.createUserWithEmailAndPassword(email, password)
+            .then(auth => {
 
-        })
-        .catch((e) => alert(e.message));
+            })
+            .catch((e) => alert(e.message));
     };
 
-        // const {googleSignIn} = StateContext();
+    // const {googleSignIn} = StateContext();
 
-        // const handleGoogleSignIn = async () => {
-        //     // e.preventDefault();
-    
-        //     try{
-        //         await googleSignIn();
-        //         // navigation.navigate("/")
-        //     } catch (err){
-        //         console.log(err);
-        //     }
-        // }
-        
-  return (
-    <div className="login">
-        <Link to="/">
-            <img
-                className="login__logo"
-                src="/images/ebooklogo.png"
-                alt=""
-            />
-        </Link>
+    // const handleGoogleSignIn = async () => {
+    //     // e.preventDefault();
 
-        <div className="login__container">
-            <h1>Sign in</h1>
-            <form>
-                <div id='EmailBox'>
-                    <input value={email} onChange={event => setEmail(event.target.value)} type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="required"/>
-                    <span>E-mail</span> 
-                <img src='/images/tickmark.png' id='EmailTick'></img>
+    //     try{
+    //         await googleSignIn();
+    //         // navigation.navigate("/")
+    //     } catch (err){
+    //         console.log(err);
+    //     }
+    // }
 
-                </div>
-                
-                <div id='PassBox'>
-                    <input className='PassBox' value={password} onChange={event => setPassword(event.target.value)} type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required="required"/>
-                    <span>Password</span> 
-                <img src='/images/tickmark.png' id='PassTick'></img>
+    return (
+        <div className="login">
+            <Link to="/">
+                <img
+                    className="login__logo"
+                    src="/images/ebooklogo.png"
+                    alt=""
+                />
+            </Link>
 
-                </div>
+            <div className="login__container">
+                <h1>Sign in</h1>
+                <form>
+                    <div id='EmailBox'>
+                        <input value={email} onChange={event => setEmail(event.target.value)} type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="required" />
+                        <span>E-mail</span>
+                        <img src='/images/tickmark.png' id='EmailTick'></img>
 
-                <button className='login__signInButton' onClick={login} type="submit">Sign in</button>
-            </form>
+                    </div>
 
-            <p>
-                By signing-in you agree to E-Library's Conditions of Use. Please 
-                see our Privacy Notice, our Cookies Notice and our interest-Based Ads 
-                Notice.
-            </p>
-            <button onClick={register} className="login__RegisterButton">Create your Account</button>
+                    <div id='PassBox'>
+                        <input className='PassBox' value={password} onChange={event => setPassword(event.target.value)} type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required="required" />
+                        <span>Password</span>
+                        <img src='/images/tickmark.png' id='PassTick'></img>
 
-            {/* <div>
+                    </div>
+
+                    <button className='login__signInButton' onClick={login} type="submit">Sign in</button>
+                </form>
+
+                <p>
+                    By signing-in you agree to E-Library's Conditions of Use. Please
+                    see our Privacy Notice, our Cookies Notice and our interest-Based Ads
+                    Notice.
+                </p>
+                <button onClick={register} className="login__RegisterButton">Create your Account</button>
+
+                {/* <div>
                 <button onClick={handleGoogleSignIn}></button> 
 
                 <GoogleButton
@@ -99,20 +99,20 @@ function Login() {
 
                 </GoogleButton>
             </div> */}
-            <center>
-        <Link to={user? '\'/\'>' : '\'/login\'>'} className='header__link'>
-            <div> 
-                <GoogleButton className=''
-                    theme="light"
-                    onClick={signin}>Sign in with Google
-                </GoogleButton>
+                <center>
+                    <Link to={user ? '\'/\'>' : '\'/login\'>'} className='header__link'>
+                        <div>
+                            <GoogleButton className=''
+                                theme="light"
+                                onClick={signin}>Sign in with Google
+                            </GoogleButton>
+                        </div>
+                    </Link>
+                </center>
             </div>
-        </Link>
-        </center>
-        </div>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Login

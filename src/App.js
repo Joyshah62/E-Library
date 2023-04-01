@@ -1,5 +1,5 @@
-import React,{ useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch , Route} from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
@@ -25,110 +25,110 @@ import './App.css';
 
 
 const promise = loadStripe
-(
-  "pk_test_51MeMGpSJQ6PAvITZSBJSJky24X5nCuJn79mx4qzj9Yg4u83jv56sIhu0BD9hntXKrwkhj4yvsz0rESU0D0uVNAJG00rxtSuvcP"
-);
-  function App() {
+  (
+    "pk_test_51MeMGpSJQ6PAvITZSBJSJky24X5nCuJn79mx4qzj9Yg4u83jv56sIhu0BD9hntXKrwkhj4yvsz0rESU0D0uVNAJG00rxtSuvcP"
+  );
+function App() {
 
-    const [{user}, dispatch] = useStateValue();
-    const [searchValue, setSearchValue] = useState("");
-  
-    useEffect(() => {
-      const unsubscribe = auth.onAuthStateChanged((authUser) => {
-        if(authUser){
-  
-          dispatch({
-            type: "SET_USER",
-            user: authUser,
-          });
-        }else{
-  
-          dispatch({
-            type:"SET_USER",
-            user:null,
-          });
-  
-        }
-      })
-  
-      return () => {
-        unsubscribe();
+  const [{ user }, dispatch] = useStateValue();
+  const [searchValue, setSearchValue] = useState("");
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+
       }
-  
-    }, []);
-  
-    console.log(user);
+    })
+
+    return () => {
+      unsubscribe();
+    }
+
+  }, []);
+
+  console.log(user);
 
   return (
     <Router>
-          <div className="app">
-            <Switch>
-              <Route path="/orders">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue} />
-                <Orders/>
-              </Route>
+      <div className="app">
+        <Switch>
+          <Route path="/orders">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Orders />
+          </Route>
 
-              <Route path="/login">
-                <Login/>
-              </Route>
-                  
-              <Route path="/mybooks">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/> 
-                <Mybook/>
-              </Route>
-                  
-              <Route path="/about">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Accordion/>
-                <About/>
-              </Route>
-                  
-              <Route path="/payment">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Elements stripe={promise}>
-                  <Payment/>
-                </Elements>
-              </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
 
-              <Route path="/fiction">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Carousel images={countries}/>
-                <Fiction searchValue={searchValue}/>
-              </Route>
-                  
-              <Route path="/novel">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Carousel images={countries}/>
-                <Novel searchValue={searchValue}/>
-              </Route>
+          <Route path="/mybooks">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Mybook />
+          </Route>
 
-              <Route path="/selfhelp">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Carousel images={countries}/>
-                <Selfhelp searchValue={searchValue}/>
-              </Route>
-                  
-              <Route path="/thriller">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Carousel images={countries}/>
-                <Thriller searchValue={searchValue}/>
-              </Route>
+          <Route path="/about">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Accordion />
+            <About />
+          </Route>
 
-              <Route path="/">
-                <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
-                <Carousel images={countries}/>
-                <Home searchValue={searchValue} />
-              </Route>
+          <Route path="/payment">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+          </Route>
 
-            </Switch>
-          </div>
-          
-          <ToastContainer style={{ marginTop: "45px" }} 
-              autoClose={1000}
-              theme="light"
-          />
+          <Route path="/fiction">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Carousel images={countries} />
+            <Fiction searchValue={searchValue} />
+          </Route>
+
+          <Route path="/novel">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Carousel images={countries} />
+            <Novel searchValue={searchValue} />
+          </Route>
+
+          <Route path="/selfhelp">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Carousel images={countries} />
+            <Selfhelp searchValue={searchValue} />
+          </Route>
+
+          <Route path="/thriller">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Carousel images={countries} />
+            <Thriller searchValue={searchValue} />
+          </Route>
+
+          <Route path="/">
+            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Carousel images={countries} />
+            <Home searchValue={searchValue} />
+          </Route>
+
+        </Switch>
+      </div>
+
+      <ToastContainer style={{ marginTop: "45px" }}
+        autoClose={1000}
+        theme="light"
+      />
     </Router>
-    
+
   );
 }
 

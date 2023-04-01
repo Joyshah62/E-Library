@@ -1,85 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Mate+SC&family=Raleway&family=Roboto:wght@500&family=Source+Sans+Pro:wght@300;600&family=Squada+One&display=swap");
+
 * {
-  box-sizing:border-box;
-  
+  box-sizing: border-box;
+
 }
 
 
 .main-div {
-    
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-      rgba(17, 17, 26, 0.1) 0px 0px 8px;
-    transition: ease-in-out;
-  }
 
-  .accordion__heading {
-    text-align: center;
-    font-family: "Bitter", serif;
-    text-transform: capitalize;
-    font-size: 32px;
-    letter-spacing: 5;
-    word-spacing: 5px;
-    margin-bottom: 50px;
-    color: #2c3148;
-    transition: ease-in-out;
-  }
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  transition: ease-in-out;
+}
 
-  .main-heading {
-    
-    display:flex;
-    margin-top: 30px;
-    padding: 20px 0 20px 20px;
-    background: #f1f4ff;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    transition: ease-in-out;
-  }
-  
-  .main-heading:first-child {
-    margin-top: 0;
-    transition: ease-in-out;
-  }
-  
-  .main-heading h3 {
-    
-    margin-left: 30px;
-    font-family: "Mate SC", serif;
-    color: #303243;
-    font-family: "Raleway", sans-serif;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 18px;
-    transition: ease-in-out;
-  }
-  
-  .main-heading p {
-   
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    background: #fff;
-    padding: 5px;
-    transition: ease-in-out;
-  }
-  
-  .answers {
-   
-    padding: 30px 20px 40px 20px;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    word-spacing: 2px;
-    font-weight: 400;
-    line-height: 1.7;
-    background: #fdeae6;
-    color: rgb(40, 37, 53);
-    transition: ease-in-out;
-  }
-  
+.accordion__heading {
+  text-align: center;
+  font-family: "Bitter", serif;
+  text-transform: capitalize;
+  font-size: 32px;
+  letter-spacing: 5;
+  word-spacing: 5px;
+  margin-bottom: 50px;
+  color: #2c3148;
+  transition: ease-in-out;
+}
+
+.main-heading {
+
+  display: flex;
+  margin-top: 30px;
+  padding: 20px 0 20px 20px;
+  background: #f1f4ff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: ease-in-out;
+}
+
+.main-heading:first-child {
+  margin-top: 0;
+  transition: ease-in-out;
+}
+
+.main-heading h3 {
+
+  margin-left: 30px;
+  font-family: "Mate SC", serif;
+  color: #303243;
+  font-family: "Raleway", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: ease-in-out;
+}
+
+.main-heading p {
+
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  background: #fff;
+  padding: 5px;
+  transition: ease-in-out;
+}
+
+.answers {
+
+  padding: 30px 20px 40px 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  word-spacing: 2px;
+  font-weight: 400;
+  line-height: 1.7;
+  background: #fdeae6;
+  color: rgb(40, 37, 53);
+  transition: ease-in-out;
+}

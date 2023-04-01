@@ -1,6 +1,6 @@
 import React from 'react';
-import {FiDownload} from "react-icons/fi";
-import {RiSendPlaneFill} from "react-icons/ri";
+import { FiDownload } from "react-icons/fi";
+import { RiSendPlaneFill } from "react-icons/ri";
 import { useStateValue } from './StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -59,10 +59,10 @@ function Book({ id, title, price, rating, image, link, author, download, author_
                 <div onClick={addToBasket} class="btn-slide">
                     <span class="title">Add</span>
                     <span class="title-hover">Click here</span>
-                    <span class="circle"><RiSendPlaneFill/></span>   
+                    <span class="circle"><RiSendPlaneFill /></span>
                 </div>
                 <a href={download} class="btn-slide2">
-                    <span class="circle2"><FiDownload/></span>
+                    <span class="circle2"><FiDownload /></span>
                     <span class="title2">Download</span>
                     <span class="title-hover2">Click here</span>
                 </a>

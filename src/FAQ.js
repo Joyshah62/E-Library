@@ -11,7 +11,7 @@ const FAQ = () => {
       question: 'Can you download a book without signing in?',
       answer: 'No, You must sign in in order to download a book.'
     },
-  
+
   ]);
 
   return (

@@ -1,4 +1,4 @@
-.mybook{
+.mybook {
     display: flex;
     padding: 20px;
     background-color: white;
@@ -6,14 +6,13 @@
 }
 
 
-.mybook__title{
+.mybook__title {
     margin-right: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
 
-.checkout__ad{
+.checkout__ad {
     width: 100%;
     margin-bottom: 10px;
 }
-

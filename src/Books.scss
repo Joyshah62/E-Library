@@ -12,9 +12,10 @@ $color: #0cf;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-    font-family: Arial;
-    text-decoration: none;
-    font-size: 13px;
+	font-family: Arial;
+	text-decoration: none;
+	font-size: 13px;
+
 	&:after {
 		content: '';
 		position: absolute;
@@ -26,6 +27,7 @@ $color: #0cf;
 		border-radius: 10rem;
 		z-index: -2;
 	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -38,8 +40,10 @@ $color: #0cf;
 		border-radius: 10rem;
 		z-index: -1;
 	}
+
 	&:hover {
 		color: #fff;
+
 		&:before {
 			width: 100%;
 		}

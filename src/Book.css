@@ -1,24 +1,24 @@
-.book__price{
+.book__price {
   margin-top: 5px;
 }
 
-.book__rating{
+.book__rating {
   display: flex;
 }
 
-.book__info{
+.book__info {
   height: 100px;
-  
+
 }
 
-.add_to_mybook{
+.add_to_mybook {
   background-color: #f0c14b;
   border: 1px solid;
   border: #a88734 #9c7e31 #846a29;
 }
 
 .btn-5 {
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 25px;
   margin-top: 10px;
   background: #e8716b;
@@ -32,89 +32,94 @@
 .btn-5:hover {
   background: transparent;
   color: #000;
-   box-shadow:
-   -7px -7px 20px 0px #fff9, 
-    -4px -4px 5px 0px #fff9, 
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
     7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+    4px 4px 5px 0px #0001;
 }
+
 .btn-5:before,
-.btn-5:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
   background: #80669d;
-  transition:400ms ease all;
+  transition: 400ms ease all;
 }
-.btn-5:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
+
 .btn-5:hover:before,
-.btn-5:hover:after{
-  width:100%;
-  transition:800ms ease all;
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 /* Book Image Starts */
 
-.book{
+.book {
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-end;
-max-height: 800px;
-min-width: 100px;
-margin: 10px;
-padding: 20px;
-width: 100%;
-background-color: white;
-z-index: 1;
-transition: ease-in-out 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 800px;
+  min-width: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  transition: ease-in-out 0.5s;
 }
 
-.book:hover{
-transform: scale(1.03);
-transition: ease-in-out 0.5s;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.book:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.book:hover img:not(:hover){
-filter: grayscale(0) blur(0px);
+.book:hover img:not(:hover) {
+  filter: grayscale(0) blur(0px);
 }
 
-.book > img{
-width: 100%;
-max-height: 200px;
-object-fit: contain;
-margin-bottom: 15px;
-margin-top: 20px;
-transition: ease-in-out 0.5s;
-filter: grayscale(0);
+.book>img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  transition: ease-in-out 0.5s;
+  filter: grayscale(0);
 }
 
-.book:hover > img {
-transform: scale(1.05);
-transition: ease-in-out 0.5s;
-filter: grayscale(0);
+.book:hover>img {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+  filter: grayscale(0);
 }
 
-.author__link{
+.author__link {
   font-size: medium;
 }
-.link{
+
+.link {
   color: black;
   text-decoration: none;
 }
+
 .link:hover {
   color: #e8716b;
-  
+
 }
 
 /* Book Image Ends */
@@ -276,7 +281,8 @@ filter: grayscale(0);
   text-align: center;
 }
 
-.btn-slide, .btn-slide2 {
+.btn-slide,
+.btn-slide2 {
   position: relative;
   display: inline-block;
   height: 50px;
@@ -303,7 +309,8 @@ filter: grayscale(0);
   background-color: #efa666;
 }
 
-.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+.btn-slide:hover span.circle,
+.btn-slide2:hover span.circle2 {
   left: 100%;
   margin-left: -45px;
   background-color: #fdfdfd;
@@ -314,17 +321,20 @@ filter: grayscale(0);
   color: #efa666;
 }
 
-.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
+.btn-slide:hover span.title,
+.btn-slide2:hover span.title2 {
   left: 40px;
   opacity: 0;
 }
 
-.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
+.btn-slide:hover span.title-hover,
+.btn-slide2:hover span.title-hover2 {
   opacity: 1;
   left: 40px;
 }
 
-.btn-slide span.circle, .btn-slide2 span.circle2 {
+.btn-slide span.circle,
+.btn-slide2 span.circle2 {
   display: block;
   background-color: #0099cc;
   color: #fff;
@@ -345,7 +355,8 @@ filter: grayscale(0);
 }
 
 .btn-slide span.title,
-.btn-slide span.title-hover, .btn-slide2 span.title2,
+.btn-slide span.title-hover,
+.btn-slide2 span.title2,
 .btn-slide2 span.title-hover2 {
   position: absolute;
   left: 90px;
@@ -363,11 +374,13 @@ filter: grayscale(0);
   left: 80px;
 }
 
-.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+.btn-slide span.title-hover,
+.btn-slide2 span.title-hover2 {
   left: 80px;
   opacity: 0;
 }
 
-.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+.btn-slide span.title-hover,
+.btn-slide2 span.title-hover2 {
   color: #fff;
 }

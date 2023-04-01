@@ -1,4 +1,4 @@
-.login{
+.login {
     background-color: white;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.login__container{
+.login__container {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -14,45 +14,45 @@
     border: 1px solid lightgray;
 }
 
-.login__container > h1{
+.login__container>h1 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.login__logo{
+.login__logo {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 160px;
     object-fit: contain;
 }
 
-.login__container > form > h5{
+.login__container>form>h5 {
     margin-bottom: 5px;
 }
 
-.login__container > form > input{
+.login__container>form>input {
     height: 30px;
     margin-bottom: 10px;
     background-color: white;
     width: 98%;
 }
 
-.login__container > p{
+.login__container>p {
     margin-top: 15px;
     font-size: 12px;
 }
 
-.login__signInButton{
+.login__signInButton {
     background-color: #f0c14b;
     border-radius: 2px;
     width: 100%;
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
-    border-color:#9c7e31 #846a29 #a88734 ;
+    border-color: #9c7e31 #846a29 #a88734;
 }
 
-.login__RegisterButton{
+.login__RegisterButton {
     border-radius: 2px;
     width: 100%;
     height: 30px;
@@ -60,16 +60,15 @@
     margin-top: 10px;
 }
 
-#EmailBox{
+#EmailBox {
     position: relative;
 }
 
-#PassBox{
+#PassBox {
     position: relative;
 }
 
-#EmailBox input
-{
+#EmailBox input {
     position: relative;
     align-items: center;
     display: inline-flex;
@@ -83,8 +82,7 @@
     font-size: 1em;
 }
 
-#PassBox input
-{
+#PassBox input {
     align-items: center;
     display: inline-flex;
     width: 100%;
@@ -100,11 +98,10 @@
     margin-top: 13px;
 }
 
-#EmailBox input:valid ~ span,
-#EmailBox input:focus ~ span,
-#PassBox input:valid ~ span,
-#PassBox input:focus ~ span
-{
+#EmailBox input:valid~span,
+#EmailBox input:focus~span,
+#PassBox input:valid~span,
+#PassBox input:focus~span {
     color: #f0c14b;
     top: -52px;
     right: -10px;
@@ -116,9 +113,8 @@
     border-right: 1px solid #f0c14b;
 }
 
-#EmailBox input:invalid ~ span,
-#PassBox input:invalid ~ span
-{
+#EmailBox input:invalid~span,
+#PassBox input:invalid~span {
     top: -52px;
     right: -10px;
     font-size: 0.90em;
@@ -129,12 +125,11 @@
     border-right: 1px solid #f04b4b;
 }
 
-.Google-btn{
+.Google-btn {
     margin: 5px;
 }
 
-#EmailBox span
-{
+#EmailBox span {
     top: -36px;
     right: 0px;
     /* top: auto; */
@@ -147,8 +142,7 @@
     transition: ease-in-out 0.3s;
 }
 
-#PassBox span
-{
+#PassBox span {
     top: -36px;
     right: 0px;
     /* top: auto; */
@@ -161,7 +155,7 @@
     transition: ease-in-out 0.3s;
 }
 
-#EmailTick{
+#EmailTick {
     position: relative;
     width: 0px;
     top: -29px;
@@ -170,7 +164,7 @@
     transition: ease-in-out 0.3s;
 }
 
-#EmailBox input:valid ~ #EmailTick{
+#EmailBox input:valid~#EmailTick {
     position: relative;
     width: 20px;
     top: -30px;
@@ -179,7 +173,7 @@
     transition: ease-in-out 0.3s;
 }
 
-#PassTick{
+#PassTick {
     position: relative;
     width: 0px;
     top: -30px;
@@ -188,7 +182,7 @@
     transition: ease-in-out 0.3s;
 }
 
-#PassBox input:valid ~ #PassTick{
+#PassBox input:valid~#PassTick {
     position: relative;
     width: 20px;
     top: -30px;

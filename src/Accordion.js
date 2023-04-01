@@ -4,18 +4,18 @@ import './Accordion.css';
 import MyAccordion from './MyAccordion';
 
 const Accordion = () => {
-    const [data, setData] = useState(questions);
+  const [data, setData] = useState(questions);
   return (
     <>
-        <section className='main-div'>
+      <section className='main-div'>
         <h1 className='accordion__heading'>Frequently Asked Questions</h1>
-        
-       {
-        data.map((curElem) => {
-            return <MyAccordion key={curElem.id} {...curElem}/>
-        })
-       }
-       </section>
+
+        {
+          data.map((curElem) => {
+            return <MyAccordion key={curElem.id} {...curElem} />
+          })
+        }
+      </section>
     </>
   )
 }
