@@ -32,6 +32,7 @@ function App() {
 
   const [{ user }, dispatch] = useStateValue();
   const [searchValue, setSearchValue] = useState("");
+  const [resultWords, setResultWords] = useState([""]);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -64,7 +65,7 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/orders">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Orders />
           </Route>
 
@@ -73,51 +74,51 @@ function App() {
           </Route>
 
           <Route path="/mybooks">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Mybook />
           </Route>
 
           <Route path="/about">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Accordion />
             <About />
           </Route>
 
           <Route path="/payment">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Elements stripe={promise}>
               <Payment />
             </Elements>
           </Route>
 
           <Route path="/fiction">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
             <Fiction searchValue={searchValue} />
           </Route>
 
           <Route path="/novel">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
             <Novel searchValue={searchValue} />
           </Route>
 
           <Route path="/selfhelp">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
             <Selfhelp searchValue={searchValue} />
           </Route>
 
           <Route path="/thriller">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
             <Thriller searchValue={searchValue} />
           </Route>
 
           <Route path="/">
-            <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
-            <Home searchValue={searchValue} />
+            <Home searchValue={searchValue} resultWords={resultWords} />
           </Route>
 
         </Switch>

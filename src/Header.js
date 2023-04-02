@@ -5,6 +5,7 @@ import { FaSearch, FaBookmark } from 'react-icons/fa'
 import { AiOutlineAudio, AiOutlineAudioMuted } from 'react-icons/ai'
 import { MdOutlineMic, MdOutlineMicOff } from 'react-icons/md'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import Tesseract from 'tesseract.js';
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
@@ -12,7 +13,31 @@ import Dropdown from './Dropdown'
 import Login from './Login'
 import "./Header.css"
 
-function Header({ searchValue, setSearchValue }) {
+function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
+
+  const [error, setError, imgText] = useState(null);
+
+  const handleCapture = event => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = () => {
+
+      Tesseract.recognize(reader.result)
+        .then(result => {
+
+          const resultWords = result.data.words.map(word => word.text);
+          const filteredResultWords = resultWords.filter(word => word.length > 3 && /^[a-zA-Z]+$/.test(word));
+          console.log(filteredResultWords);
+          setResultWords(filteredResultWords);
+        })
+        .catch(err => {
+          // handle error
+          setError(err.message);
+        });
+    };
+  };
+
 
   const handleSearchChange = (event) => {
     setSearchValue(event.target.value);
@@ -91,6 +116,9 @@ function Header({ searchValue, setSearchValue }) {
 
         <input id='searchBar' type='text' value={searchValue} onChange={handleSearchChange} placeholder={"Search by book name..."} required />
         {/* <span>Search</span> */}
+
+        <input type="file" onChange={handleCapture} />
+        {imgText ? imgText : <></>}
 
         <button className='audioIcon' onClick={handleToggleListening}>
           {listening ? <MdOutlineMic size={20} /> : <MdOutlineMicOff size={20} />}
