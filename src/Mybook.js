@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStateValue } from './StateProvider'
-import CurrencyFormat from 'react-currency-format';
 import CheckoutBook from './CheckoutBook';
 import Subtotal from './Subtotal';
 import "./Mybook.css";

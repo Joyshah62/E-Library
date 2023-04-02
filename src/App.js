@@ -13,7 +13,6 @@ import Login from './Login';
 import About from './About';
 import Carousel from './Carousel';
 import { countries } from './Data';
-import FAQ from './FAQ';
 import Accordion from './Accordion';
 import Payment from './Payment';
 import Orders from './Orders';
@@ -94,25 +93,25 @@ function App() {
           <Route path="/fiction">
             <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
-            <Fiction searchValue={searchValue} />
+            <Fiction searchValue={searchValue} resultWords={resultWords} />
           </Route>
 
           <Route path="/novel">
             <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
-            <Novel searchValue={searchValue} />
+            <Novel searchValue={searchValue} resultWords={resultWords} />
           </Route>
 
           <Route path="/selfhelp">
             <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
-            <Selfhelp searchValue={searchValue} />
+            <Selfhelp searchValue={searchValue} resultWords={resultWords} />
           </Route>
 
           <Route path="/thriller">
             <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
             <Carousel images={countries} />
-            <Thriller searchValue={searchValue} />
+            <Thriller searchValue={searchValue} resultWords={resultWords} />
           </Route>
 
           <Route path="/">

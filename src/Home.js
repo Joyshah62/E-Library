@@ -1,6 +1,4 @@
 import React from 'react'
-import Carousel from './Carousel';
-import { countries } from './Data';
 import Book from './Book';
 import "./Home.css";
 
@@ -11,7 +9,6 @@ function Home({ searchValue, resultWords }) {
 
         return (
                 <div className='home'>
-
                         {/* product id, title, price, rating, image */}
                         {(resultWords.some(word => "Rich Dad Poor Dad".toLowerCase().includes(word.toLowerCase())) &&
                                 "Rich Dad Poor Dad".toLowerCase().includes(searchValue.toLowerCase())) && (

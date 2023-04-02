@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { FaSearch, FaBookmark } from 'react-icons/fa'
-import { AiOutlineAudio, AiOutlineAudioMuted } from 'react-icons/ai'
 import { MdOutlineMic, MdOutlineMicOff } from 'react-icons/md'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Tesseract from 'tesseract.js';
@@ -10,12 +7,11 @@ import Tesseract from 'tesseract.js';
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
 import Dropdown from './Dropdown'
-import Login from './Login'
 import "./Header.css"
 
 function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
-  const [error, setError, imgText] = useState(null);
+  const [setError, imgText] = useState(null);
 
   const handleCapture = event => {
     const file = event.target.files[0];
@@ -28,8 +24,10 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
           const resultWords = result.data.words.map(word => word.text);
           const filteredResultWords = resultWords.filter(word => word.length > 3 && /^[a-zA-Z]+$/.test(word));
-          console.log(filteredResultWords);
+          console.log(filteredResultWords.toString());
           setResultWords(filteredResultWords);
+          // setSearchValue(filteredResultWords[0].toString());
+          imgText = filteredResultWords.toString();
         })
         .catch(err => {
           // handle error
@@ -38,8 +36,13 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
     };
   };
 
+  //   const handleResetCapture = (event) => {
+  //       setResultWords([""]);
+  // };
+
 
   const handleSearchChange = (event) => {
+    setResultWords([""]);
     setSearchValue(event.target.value);
   };
 
@@ -55,6 +58,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
   };
 
   const handleToggleListening = () => {
+    setResultWords([""]);
     if (listening) {
       SpeechRecognition.stopListening();
       handleVoiceSearch();
@@ -64,9 +68,8 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
   };
 
 
-  const [dropdown, setDropdown, bookFound] = useState(false);
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const [dropdown, setDropdown] = useState(false);
+  const [setClick] = useState(false);
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
@@ -118,7 +121,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
         {/* <span>Search</span> */}
 
         <input type="file" onChange={handleCapture} />
-        {imgText ? imgText : <></>}
+        {/* <span value={imgText}></span> */}
 
         <button className='audioIcon' onClick={handleToggleListening}>
           {listening ? <MdOutlineMic size={20} /> : <MdOutlineMicOff size={20} />}
@@ -127,15 +130,24 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
         {/* <p className='Voicebtn'>Listening: {listening ? 'on' : 'off'}</p> */}
       </div>
 
+      {resultWords.length > 0 && resultWords[0] != "" && (
+        <div className="header__result-words">
+          <p>Recognized words:</p>
+          <ul>
+            {resultWords.map((word, index) => (
+              <li key={index}>{word}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* 3 links */}
 
       <div className='header__nav'>
-        {/* <span className='menu'>MENU</span> */}
 
-        {currentUser && <>
+        {currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') && <>
           <div id='imgDiv'>
-            <img id='userImg' src={currentUser.photoURL} />
+            <img id='userImg' src={currentUser.photoURL} alt='' />
             <p id='greetImg'>Hi!</p>
           </div>
 
@@ -189,28 +201,6 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
         <Link to="/mybooks" className='header__link'>
           <span className='header__Bookcount'>{basket?.length}</span>
         </Link>
-
-        {/* <Link to= {!user && "/login"} className="header__link">
-              <div onClick={login} className="header__option">
-                <span className=''>{user ? <img className="userimg" src='images/UserIcon.png'></img> : <img className="userimg" src='images/UserIcon2.png'></img> }</span>
-              </div>
-            </Link> */}
-
-        {/* <Link to= {!user && "/login"} className="header__link">
-              <div onClick={login} className="header__option">
-                <span className='hdrbtn'>{user ? 'Logout' : 'Login'}</span>
-              </div>
-            </Link> */}
-
-
-        {/* <Link to="/mybooks" className='header__link'>
-            <div className='header__optionBookmark'>
-                {/* <FaBookmark/>
-                <span className='header__Bookcount'>{basket?.length}</span> 
-
-
-            </div>
-           </Link> */}
 
       </div>
 

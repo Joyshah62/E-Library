@@ -2,7 +2,7 @@ import React from 'react';
 import { FiDownload } from "react-icons/fi";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { useStateValue } from './StateProvider';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import "./Book.css";
 import "./Books.css";
@@ -10,7 +10,7 @@ import "./CheckoutBook.css";
 
 function Book({ id, title, price, rating, image, link, author, download, author_link, by }) {
 
-    const [{ basket }, dispatch] = useStateValue();
+    const [dispatch] = useStateValue();
 
     const addToBasket = () => {
         dispatch({
@@ -25,7 +25,6 @@ function Book({ id, title, price, rating, image, link, author, download, author_
                 author: author,
                 download: download,
                 author_link: author_link,
-                author: author,
                 by: by,
             },
         })

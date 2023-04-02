@@ -22,7 +22,7 @@
 .login__logo {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 160px;
+    width: 190px;
     object-fit: contain;
 }
 
@@ -205,3 +205,11 @@
     border-right: 1px solid #f0c14b;
 
 }  */
+
+#error{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+}

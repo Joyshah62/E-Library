@@ -295,3 +295,26 @@
     transform: translateX(0px) translateY(-22px);
     transition: ease-in-out 0.5s;
 } */
+
+
+.header__result-words {
+    margin: auto;
+  }
+  
+  .header__result-words p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .header__result-words ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__result-words li {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 14px;
+  }
