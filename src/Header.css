@@ -60,28 +60,6 @@
     justify-content: space-evenly;
 }
 
-/* Old Header button Styling
-.button {
-    --c: #195163;
-    the color
-
-    color: #0000;
-    background:
-        linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%)) / 200%,
-        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) no-repeat,
-        var(--_c, #0000);
-    -webkit-background-clip: text, padding-box, padding-box;
-    background-clip: text, padding-box, padding-box;
-    transition: 0s, color .5s, background-color .5s;
-} 
-
-.button:hover {
-    color: #fff;
-    --_c: var(--c);
-    --_p: 100%;
-    transition: 0.5s, color 0s .5s, background-color 0s .5s;
-} */
-
 .header__link {
     color: #195163;
     text-decoration: none;
@@ -153,7 +131,6 @@
     filter: brightness(0%);
     transition: ease-in-out 0.5s;
     z-index: 0;
-
 }
 
 #greetImg {
@@ -221,34 +198,6 @@
     white-space: nowrap;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.audioIcon {
-    margin-right: 50px;
-    position: relative;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    right: -40px;
-}
-
-.audioIcon:focus {
-    outline: none;
-}
-
 .Voicebtn {
     position: relative;
     right: -200px;
@@ -271,50 +220,78 @@
     outline: none;
 }
 
-/* #searchBar:focus{ */
-/* background: none;
-    border: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-top: 2px dotted rgb(0, 0, 0);
-    transition: ease-in-out 0.5s; */
-/* } */
-
-/* #header__search span{
-    font-size: 15px;
-    white-space: nowrap;
-    position: relative;
-    top: 10px;
-    right: 175px;
-    transition: ease-in-out 0.5s;
-}
-
-#header__search input:focus ~ span,
-#header__search input:valid ~ span
-{
-    position: relative;
-    transform: translateX(0px) translateY(-22px);
-    transition: ease-in-out 0.5s;
-} */
-
 
 .header__result-words {
     margin: auto;
-  }
-  
-  .header__result-words p {
+}
+
+.header__result-words p {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 4px;
-  }
-  
-  .header__result-words ul {
+}
+
+.header__result-words ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .header__result-words li {
+}
+
+.header__result-words li {
     display: inline-block;
     margin-right: 8px;
     font-size: 14px;
+}
+
+#cameraIcon {
+    margin-bottom: -16px;
+    margin-right: 20px;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    right: -40px;
+}
+
+.processLable {
+    position: relative;
+    top: 42px;
+    right: -95px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#cameraIconLoading {
+    margin-top: 10px;
+    margin-right: 15px;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    right: -40px;
+    animation: spin 1s infinite;
+}
+
+button.audioIcon {
+    margin-right: 50px;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    right: -40px;
+  }
+  
+  button.audioIcon:focus {
+    outline: none;
   }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MdOutlineMic, MdOutlineMicOff } from 'react-icons/md'
+import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
+import { FcProcess } from 'react-icons/fc'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Tesseract from 'tesseract.js';
 
@@ -8,12 +9,16 @@ import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
 import Dropdown from './Dropdown'
 import "./Header.css"
+import "./Books.css"
 
 function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
+  const [processing, setProcessing] = useState(false);
   const [setError, imgText] = useState(null);
 
+
   const handleCapture = event => {
+    setProcessing(true);
     const file = event.target.files[0];
     const reader = new FileReader();
     reader.readAsDataURL(file);
@@ -26,23 +31,22 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
           const filteredResultWords = resultWords.filter(word => word.length > 3 && /^[a-zA-Z]+$/.test(word));
           console.log(filteredResultWords.toString());
           setResultWords(filteredResultWords);
+          setProcessing(false);
           // setSearchValue(filteredResultWords[0].toString());
           imgText = filteredResultWords.toString();
         })
         .catch(err => {
           // handle error
           setError(err.message);
+          setProcessing(false);
         });
     };
   };
 
-  //   const handleResetCapture = (event) => {
-  //       setResultWords([""]);
-  // };
-
 
   const handleSearchChange = (event) => {
     setResultWords([""]);
+    setProcessing(false);
     setSearchValue(event.target.value);
   };
 
@@ -53,12 +57,14 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
   const handleVoiceSearch = () => {
     const cleanedTranscript = transcript.replace(/\./g, '');
+    console.log(cleanedTranscript);
     setSearchValue(cleanedTranscript);
     resetTranscript();
   };
 
   const handleToggleListening = () => {
     setResultWords([""]);
+    setProcessing(false);
     if (listening) {
       SpeechRecognition.stopListening();
       handleVoiceSearch();
@@ -69,7 +75,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
 
   const [dropdown, setDropdown] = useState(false);
-  const [setClick] = useState(false);
+  const [click, setClick] = useState(false);
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
@@ -106,9 +112,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
   return (
     <nav className="header">
-      {/*logo on the left -> img */}
       <Link to="/">
-        {/* <img className='header__logo' src="https://www.concreteisbetter.com/wp-content/uploads/2019/10/elibrary2.png" */}
         <img className='header__logo' src="/images/EduZone Logo.png"
           alt=''
         />
@@ -118,19 +122,25 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
       <div id="header__search">
 
         <input id='searchBar' type='text' value={searchValue} onChange={handleSearchChange} placeholder={"Search by book name..."} required />
-        {/* <span>Search</span> */}
 
-        <input type="file" onChange={handleCapture} />
-        {/* <span value={imgText}></span> */}
+        {processing ? <>
+          <FcProcess id='cameraIconLoading' size={24} />
+        </>
+          :
+          <>
+            <input type="file" onChange={handleCapture} style={{ display: 'none' }} id="camera-input" accept="image/*" />
+            <label htmlFor="camera-input">
+              <MdOutlineImageSearch id='cameraIcon' size={24} />
+            </label>
+          </>}
 
-        <button className='audioIcon' onClick={handleToggleListening}>
+        <button className={'audioIcon'} onClick={handleToggleListening}>
           {listening ? <MdOutlineMic size={20} /> : <MdOutlineMicOff size={20} />}
         </button>
 
-        {/* <p className='Voicebtn'>Listening: {listening ? 'on' : 'off'}</p> */}
       </div>
 
-      {resultWords.length > 0 && resultWords[0] != "" && (
+      {/* {resultWords.length > 0 && resultWords[0] != "" && (
         <div className="header__result-words">
           <p>Recognized words:</p>
           <ul>
@@ -139,7 +149,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
 
       {/* 3 links */}
 
