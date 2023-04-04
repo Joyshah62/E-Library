@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "compromise": "^14.8.2",
-    "firebase": "^9.18.0",
+    "firebase": "^9.19.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "moment": "^2.29.4",

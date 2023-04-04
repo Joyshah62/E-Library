@@ -10,7 +10,7 @@ import "./CheckoutBook.css";
 
 function Book({ id, title, price, rating, image, link, author, download, author_link, by }) {
 
-    const [dispatch] = useStateValue();
+    const [{basket},dispatch] = useStateValue();
 
     const addToBasket = () => {
         dispatch({

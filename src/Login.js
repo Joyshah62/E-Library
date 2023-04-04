@@ -3,7 +3,8 @@ import { auth, provider1 } from './firebase';
 import { Link, useHistory } from "react-router-dom";
 import GoogleButton from 'react-google-button';
 import { useStateValue } from './StateProvider'
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { StateContext } from './StateProvider';
+
 import "./Login.css";
 
 function Login() {

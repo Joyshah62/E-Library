@@ -14,7 +14,7 @@ import "./Books.css"
 function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
 
   const [processing, setProcessing] = useState(false);
-  const [setError, imgText] = useState(null);
+  const [error,setError, imgText] = useState(null);
 
 
   const handleCapture = event => {
