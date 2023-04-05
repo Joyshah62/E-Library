@@ -3,11 +3,18 @@ import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
 import { useHistory } from "react-router-dom";
+import { auth } from './firebase';
+
 import "./Subtotal.css";
 
 function Subtotal() {
     const history = useHistory();
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }] = useStateValue();
+    const login = () => {
+        if (user) {
+            auth.signOut();
+        }
+    }
 
     return (
         <div className="subtotal">
@@ -30,10 +37,15 @@ function Subtotal() {
 
             />
 
-
-            <button onClick={e => history.push('/payment')} className="button5">
-                Proceed to Buy
-            </button>
+            {user ? <>
+                <button onClick={e => history.push('/payment')} className="button5">
+                    Proceed to Buy
+                </button>
+            </>
+                :
+                <>
+                    <p className="loginError" onClick={event =>  window.location.href='/login'}>Please Log In to continue</p>
+                </>}
         </div>
     )
 }

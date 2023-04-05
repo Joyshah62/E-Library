@@ -94,3 +94,9 @@
     background-image: -o-linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
     background-image: linear-gradient(top, #1c7ec9 0%, #2395d9 100%);
 }
+
+.loginError{
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
