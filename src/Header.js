@@ -161,7 +161,7 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
             <p id='greetImg'>Hi!</p>
           </div>
 
-          <p id='userName'>{currentUser.displayName}</p>
+          <p id='userName'>{currentUser.displayName.split(' ').splice(0,2).join(' ')}</p>
 
         </>}
 
