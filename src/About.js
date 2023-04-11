@@ -52,7 +52,12 @@ const About = () => {
 
               <div className={toggleTab === 1 ? "content active-content" : "content"}>
                 <h3>About Me</h3>
-                <p>Joy is an aspiring Web developer with absolute proficiency in ReactJS and its various modules. Moreover, He is passinate about Artificial Inteligence and Machine Learning. He also dedicates his time on competitive coding platforms like Codechef and Leetcode.</p>
+                <p>Hello and welcome to our website! My name is Joy, I am passionate about web development, with a deep love for books and all things related to literature.
+                  From a young age, I have been an avid reader, and over the years, my passion for books has only grown.
+                  I believe that reading is one of the most powerful ways to broaden your horizons, gain knowledge, and develop empathy for others.</p>
+                  <p>That's why we created this e-library website - to provide a space where anyone, anywhere, can access a vast collection of books and resources. Whether you're a student, a researcher, or simply a lover of literature, 
+                  I hope you'll find something of value on this platform and I believe that through this e-library website, we can make a real difference in the world. Thank you for joining me on this journey, 
+                  and I look forward to connecting with you on this platform.</p>
 
                 <h3>Skills</h3>
                 <div className="skills-row">
