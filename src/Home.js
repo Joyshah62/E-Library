@@ -466,20 +466,20 @@ function Home({ searchValue, resultWords }) {
                                         </div>
                                 )}
 
-                        {(resultWords.some(word => "What will Improve a Student's memory".toLowerCase().includes(word.toLowerCase())) &&
-                                "What will Improve a Student's memory".toLowerCase().includes(searchValue.toLowerCase())) && (
+                        {(resultWords.some(word => "The Power of Subconscious Mind".toLowerCase().includes(word.toLowerCase())) &&
+                                "The Power of Subconscious Mind".toLowerCase().includes(searchValue.toLowerCase())) && (
                                         <div className="home__row">
                                                 <Book
                                                         id="30"
-                                                        title="What will Improve a Student's memory"
+                                                        title="The Power of Subconscious Mind"
                                                         by="by "
-                                                        author="A.F.T."
+                                                        author="Dr. Joseph Murphy"
                                                         price={272}
-                                                        rating={4}
-                                                        image="https://lh3.googleusercontent.com/mE_ByHopEVPg5gG0m59tF36RYCBNp2Zr6vl3LoZXFxhRk562va9hSR9NKbLUdf-NdJwW=s85"
+                                                        rating={4}  
+                                                        image="https://m.media-amazon.com/images/I/51QnuLIY2uL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
                                                         link=""
-                                                        download="https://drive.google.com/file/d/1yvGo6DoBpwRM4Prum_u1Bv8ALtEKBlcn/view?usp=share_link"
-                                                        author_link="https://www.aft.org/"
+                                                        download="https://drive.google.com/file/d/1Q-hEVO-Wa6RhFvmzPJra8aQFKRf351sF/view?usp=share_link"
+                                                        author_link="https://en.wikipedia.org/wiki/Joseph_Murphy_(author)"
                                                 />
                                         </div>
                                 )}
@@ -512,7 +512,7 @@ function Home({ searchValue, resultWords }) {
                                                         author="Cyrano de Bergera"
                                                         price={272}
                                                         rating={4}
-                                                        image="https://lh3.googleusercontent.com/raTRlgp81yPuwK4pi64CNqLJ-tl8P6JsP4FRG5lSgHajMPpRfaLmNo-ULS4p2CfcmqfLqA=s85"
+                                                        image="https://m.media-amazon.com/images/I/41juzthDmRL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
                                                         link=""
                                                         download="https://drive.google.com/file/d/1PhGQrVGn-h7zeL230ZMCwYHFY8cTD4ix/view?usp=share_link"
                                                         author_link="https://en.wikipedia.org/wiki/Cyrano_de_Bergerac"
@@ -549,7 +549,7 @@ function Home({ searchValue, resultWords }) {
                                                         author="Francis Bacon"
                                                         price={272}
                                                         rating={4}
-                                                        image="https://lh3.googleusercontent.com/VswvZHkEPKZCXb7aUF-DV_nKHYl7ZmPogTJlhTbFXqKN7DsIHJDzZVk9eWatjwy2d5nEFg=s85"
+                                                        image="https://m.media-amazon.com/images/I/316ZjA5ZKuL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
                                                         link=""
                                                         download="https://drive.google.com/file/d/1HElZ-0whLs-C4DeUtr9iqM5BHq8ILwm6/view?usp=share_link"
                                                         author_link="https://en.wikipedia.org/wiki/Francis_Bacon"
@@ -755,56 +755,56 @@ function Home({ searchValue, resultWords }) {
                                         </div>
                                 )}
 
-                        {(resultWords.some(word => "Introducing and Evaluating a study smarter not harder".toLowerCase().includes(word.toLowerCase())) &&
-                                "Introducing and Evaluating a study smarter not harder".toLowerCase().includes(searchValue.toLowerCase())) && (
+                        {(resultWords.some(word => "Think and Grow Rich".toLowerCase().includes(word.toLowerCase())) &&
+                                "Think and Grow Rich".toLowerCase().includes(searchValue.toLowerCase())) && (
                                         <div className="home__row">
                                                 <Book
                                                         id="26"
-                                                        title="Introducing and Evaluating a study smarter not harder"
+                                                        title="Think and Grow Rich"
                                                         by="by "
-                                                        author="Tara T Lineweaver"
+                                                        author="Napoleon Hill"
                                                         price={272}
-                                                        rating={4}
-                                                        image="https://lh3.googleusercontent.com/ogaDd2ffLdwzbzIpsp8rh0h55sC9TUpF9mLff1d7tIaKSq_5m3aD1snWiWP-Go6M2iVX7M0=s85"
+                                                        rating={4}  
+                                                        image="https://m.media-amazon.com/images/I/411OtAf040L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
                                                         link=""
-                                                        download="https://drive.google.com/file/d/1_4bBzi8jspGcnuAlairuIX1TdRx1qddm/view?usp=share_link"
-                                                        author_link="https://en.wikipedia.org/wiki/Tara_T_Lineweaver"
+                                                        download="https://drive.google.com/file/d/1lvVQQ9OlWU4weYYPvJ8YrlefP-yH55gM/view?usp=share_link"
+                                                        author_link="https://en.wikipedia.org/wiki/Nepoleon_Hill"
                                                 />
                                         </div>
                                 )}
 
-                        {(resultWords.some(word => "Startegies for Success in Mathematics".toLowerCase().includes(word.toLowerCase())) &&
-                                "Startegies for Success in Mathematics".toLowerCase().includes(searchValue.toLowerCase())) && (
+                        {(resultWords.some(word => "Attitude is Everything".toLowerCase().includes(word.toLowerCase())) &&
+                                "Attitude is Everything".toLowerCase().includes(searchValue.toLowerCase())) && (
                                         <div className="home__row">
                                                 <Book
                                                         id="27"
-                                                        title="Startegies for Success in Mathematics"
+                                                        title="Attitude is Everything"
                                                         by="by "
-                                                        author="Dr Neil Starr"
+                                                        author="Jeff Keller"
                                                         price={272}
-                                                        rating={4}
-                                                        image="https://lh3.googleusercontent.com/1rD5X2hZMyKH0XFjDXpumJPsTIPgfvZ2REIe9LUCI3juFQyNF0gxObYbx8giy8nL-hHD=s85"
+                                                        rating={4}  
+                                                        image="https://m.media-amazon.com/images/I/41F8ATXoMOL._SX317_BO1,204,203,200_.jpg"
                                                         link=""
-                                                        download="https://drive.google.com/file/d/1_4fx6YkEsFbVHXmnkhAkCd2dOvtxBQv-/view?usp=share_link"
-                                                        author_link="https://www.linkedin.com/in/neil-starr-5068999"
+                                                        download="https://drive.google.com/file/d/1TmRI8RllOEk9I_7Fry4A7H451WdbR-jn/view?usp=share_link"
+                                                        author_link="https://en.wikipedia.org/wiki/Jeff_Keller"
                                                 />
                                         </div>
                                 )}
 
-                        {(resultWords.some(word => "Improve Your Memory".toLowerCase().includes(word.toLowerCase())) &&
-                                "Improve Your Memory".toLowerCase().includes(searchValue.toLowerCase())) && (
+                        {(resultWords.some(word => "Zen Habits".toLowerCase().includes(word.toLowerCase())) &&
+                                "Zen Habits".toLowerCase().includes(searchValue.toLowerCase())) && (
                                         <div className="home__row">
                                                 <Book
                                                         id="28"
-                                                        title="Improve Your Memory"
+                                                        title="Zen Habits"
                                                         by="by "
-                                                        author="The Institute of Water"
+                                                        author="Leo Babauta"
                                                         price={272}
-                                                        rating={4}
-                                                        image="https://lh3.googleusercontent.com/3NC2zLNNUv12Eeu30nqBshoqiO35DziR9jSdzm8VPlcL6hyERNt0p7CRrZgsXohPzARQxA=s85"
+                                                        rating={4}  
+                                                        image="https://m.media-amazon.com/images/I/31n4HIDxQgL._SY346_.jpg"
                                                         link=""
-                                                        download="https://drive.google.com/file/d/1_816rCgUFZnYyogTsb_t3drGsql8SOQM/view?usp=share_link"
-                                                        author_link="https://en.wikipedia.org/wiki/International_Water_Management_Institute"
+                                                        download="https://drive.google.com/file/d/1THIiaM2p2VaaK_ZH1jNcdPGVCcwEZqFc/view?usp=share_link"
+                                                        author_link="https://en.wikipedia.org/wiki/Leo_Babauta"
                                                 />
                                         </div>
                                 )}
