@@ -28,11 +28,15 @@ function Login() {
             .catch((e) => {
                 switch (e.code) {
                     case "auth/user-not-found":
-                        document.getElementById("error").innerHTML = "User not found";
+                        document.getElementById("error").innerHTML = "Invalid Email or Password";
                         document.getElementById("error").style.backgroundColor = "#ff6339";
                         break;
                     case "auth/wrong-password":
-                        document.getElementById("error").innerHTML = "Wrong password";
+                        document.getElementById("error").innerHTML = "Invalid Email or Password";
+                        document.getElementById("error").style.backgroundColor = "#ff6339";
+                        break;
+                    case "auth/too-many-requests":
+                        document.getElementById("error").innerHTML = "Too Many Attempts";
                         document.getElementById("error").style.backgroundColor = "#ff6339";
                         break;
                     default:
@@ -43,7 +47,7 @@ function Login() {
     };
 
 
-const register = (event) => {
+    const register = (event) => {
         event.preventDefault();
 
         auth.createUserWithEmailAndPassword(email, password)
@@ -52,13 +56,17 @@ const register = (event) => {
                 document.getElementById("error").style.backgroundColor = "green";
             })
             .catch((e) => {
-                switch(e.code){
+                switch (e.code) {
                     case "auth/email-already-in-use":
                         document.getElementById("error").innerHTML = "Email already in use";
                         document.getElementById("error").style.backgroundColor = "#ff6339";
                         break;
                     case "auth/weak-password":
-                        document.getElementById("error").innerHTML = "Password should be at least 6 characters";
+                        document.getElementById("error").innerHTML = "Provide A Stronger Password";
+                        document.getElementById("error").style.backgroundColor = "#ff6339";
+                        break;
+                    case "auth/too-many-requests":
+                        document.getElementById("error").innerHTML = "Too Many Attempts";
                         document.getElementById("error").style.backgroundColor = "#ff6339";
                         break;
                     default:
