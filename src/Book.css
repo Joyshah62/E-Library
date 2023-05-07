@@ -384,3 +384,13 @@
 .btn-slide2 span.title-hover2 {
   color: #fff;
 }
+
+.partStar {
+  margin-bottom: 3.5px;
+}
+
+#ratingTxt {
+  position: relative;
+  top: -2px;
+  right: 2px;
+}

@@ -1,9 +1,17 @@
 import React from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { useStateValue } from './StateProvider';
 import "./CheckoutBook.css";
 
-function CheckoutBook({ id, title, image, price, author, author_link, by, rating, hideButton }) {
+function CheckoutBook({ id, title, image, price, author, author_link, rating, hideButton }) {
     const [{basket},dispatch] = useStateValue();
+
+    const fullStars = Math.floor(rating);
+    const partialStar = rating % 1;
+    library.add(faStar);
 
 
     const removeFromBasket = () => {
@@ -18,8 +26,7 @@ function CheckoutBook({ id, title, image, price, author, author_link, by, rating
             <img className="checkoutbook__image" src={image} alt="" />
             <div className='checkoutbook__info'>
                 <p className="checkoutbook__title">{title}</p>
-                <p className='author__link'>{by}<a href={author_link} className="link" >{author}</a></p>
-
+                <p className='author__link'><a href={author_link} className="link" >{author}</a></p>
 
                 <p className='checkoutbook__price'>
                     <small>₹</small>
@@ -27,19 +34,35 @@ function CheckoutBook({ id, title, image, price, author, author_link, by, rating
                 </p>
 
                 <div className='checkoutbook__rating'>
-                    {
-                        Array(rating)
-                            .fill()
-                            .map((_) => (
-                                <p>⭐</p>
-                            ))
-                    }
+                    {Array(fullStars)
+                        .fill()
+                        .map((_) => (
+                            <FontAwesomeIcon icon='star' style={{ color: '#ffc83d' }} />
+                        ))}
+                    {partialStar > 0 && (
+                        <span
+                            style={{
+                                position: 'relative',
+                                display: 'inline-block',
+                            }}
+                        >
+                            <FontAwesomeIcon icon='star' style={{ color: 'transparent' }} className='partStar' />
+                            <span
+                                style={{
+                                    position: 'absolute',
+                                    left: 0,
+                                    top: 0,
+                                    overflow: 'hidden',
+                                    width: `${partialStar * 100}%`,
+                                }}
+                            >
+                                <FontAwesomeIcon icon='star' style={{ color: '#ffc83d' }} className='partStar' />
+                            </span>
+                        </span>
+                    )}
+                    <span id="ratingTxt">&nbsp;{rating}</span>
+
                 </div>
-                {/* <a href={download} target="_blank" rel="noreferrer"> */}
-
-                {/* <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button> */}
-
-                {/* </a> */}
                 {!hideButton && (
                     <button className="noselect" onClick={removeFromBasket}><span class='text'>Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" /></svg></span></button>
                 )}
