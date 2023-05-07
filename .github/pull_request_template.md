@@ -10,4 +10,4 @@
 - [ ] My changes generate no new warnings or errors
 
 
-## Screenshots (if appropriate):
+## Screenshots (if applicable):
