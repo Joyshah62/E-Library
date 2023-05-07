@@ -3,14 +3,22 @@ import { FiDownload } from "react-icons/fi";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { useStateValue } from './StateProvider';
 import { toast } from 'react-toastify';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import "react-toastify/dist/ReactToastify.css";
 import "./Book.css";
 import "./Books.css";
 import "./CheckoutBook.css";
+import books from './books.db';
 
-function Book({ id, title, price, rating, image, link, author, download, author_link, by }) {
+function Book({ id, title, price, rating, image, link, author, download, author_link }) {
 
-    const [{basket},dispatch] = useStateValue();
+    const [{ basket }, dispatch] = useStateValue();
+    const fullStars = Math.floor(rating);
+    const partialStar = rating % 1;
+    library.add(faStar);
 
     const addToBasket = () => {
         dispatch({
@@ -25,7 +33,6 @@ function Book({ id, title, price, rating, image, link, author, download, author_
                 author: author,
                 download: download,
                 author_link: author_link,
-                by: by,
             },
         })
         toast("Added to MyBooks");
@@ -35,25 +42,46 @@ function Book({ id, title, price, rating, image, link, author, download, author_
         <div className='book'>
             <div className='book__info'>
                 <p ><h3>{title}</h3></p>
-                <p className="author__link">{by}<a href={author_link} className="link" >{author}</a></p>
+                <p className="author__link">by <a href={author_link} className="link" >{author}</a></p>
                 <p className='book__price'>
                     <small>₹</small>
                     <strong>{price}</strong>
                 </p>
+
                 <div className='book__rating'>
-                    {
-                        Array(rating)
-                            .fill()
-                            .map((_) => (
-                                <p>⭐</p>
-                            ))
-                    }
+                    {Array(fullStars)
+                        .fill()
+                        .map((_) => (
+                            <FontAwesomeIcon icon='star' style={{ color: '#ffc83d' }} />
+                        ))}
+                    {partialStar > 0 && (
+                        <span
+                            style={{
+                                position: 'relative',
+                                display: 'inline-block',
+                            }}
+                        >
+                            <FontAwesomeIcon icon='star' style={{ color: 'transparent' }} className='partStar' />
+                            <span
+                                style={{
+                                    position: 'absolute',
+                                    left: 0,
+                                    top: 0,
+                                    overflow: 'hidden',
+                                    width: `${partialStar * 100}%`,
+                                }}
+                            >
+                                <FontAwesomeIcon icon='star' style={{ color: '#ffc83d' }} className='partStar' />
+                            </span>
+                        </span>
+                    )}
+                    <span id="ratingTxt">&nbsp;{rating}</span>
+
                 </div>
+
+
             </div>
             <img src={image} alt="" />
-            {/* <button className="icon-btn add-btn" onClick={addToBasket}>
-        <div className="add-icon"></div>
-        <div className="btn-txt">Add</div> */}
             <div id="wrap">
                 <div onClick={addToBasket} class="btn-slide">
                     <span class="title">Add</span>
@@ -66,20 +94,6 @@ function Book({ id, title, price, rating, image, link, author, download, author_
                     <span class="title-hover2">Click here</span>
                 </a>
             </div>
-            {/* <button className='btn-5' onClick={addToBasket}>Add</button>
-
-
-            <a href={download} target="_blank" rel="noreferrer">
-
-            <button className="btn-5"><span className='text'>Download</span></button> */}
-
-            {/* <button className="buttonDownload"><span className='text'>Download</span><span className="icon"><img src="https://i.ibb.co/3znZG9S/icons8-download-from-cloud-24-1.png" width="24" height="24" viewBox="0 0 24 24"></img></span></button> */}
-
-            {/* </a> */}
-            {/* <a href={link} target="_blank" rel="noreferrer">
-            
-        <button className='btn-5'>Buy Book</button>
-        </a> */}
         </div>
 
 

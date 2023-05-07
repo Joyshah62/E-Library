@@ -32,11 +32,10 @@ function Mybook() {
                                 image={item.image}
                                 price={item.price}
                                 rating={item.rating}
-                                link={item.link}
+                                link={item.url}
                                 author={item.author}
                                 download={item.download}
                                 author_link={item.author_link}
-                                by={item.by}
                             />
 
                         ))}
