@@ -7,6 +7,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
 import Header from './Header';
+import Sidebar from './Sidebar';
 import Home from './Home';
 import Mybook from './Mybook';
 import Login from './Login';
@@ -115,7 +116,8 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Sidebar></Sidebar>
+            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Carousel images={countries} />
             <Home searchValue={searchValue} resultWords={resultWords} />
           </Route>

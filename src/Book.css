@@ -1,5 +1,5 @@
 .book__price {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .book__rating {
@@ -276,6 +276,7 @@
 
 
 /* OLD Add to MyBooks Ends */
+
 #wrap {
   margin: 5px;
   text-align: center;
@@ -341,6 +342,7 @@
   position: absolute;
   float: left;
   margin: 3.5px;
+  padding: 6%;
   line-height: 42px;
   height: 40px;
   width: 40px;
