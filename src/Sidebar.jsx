@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Tesseract from 'tesseract.js';
 import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
+import  {BsInfoSquare} from 'react-icons/bs'
+
 import { FcProcess } from 'react-icons/fc'
 import { HiMenuAlt3 } from "react-icons/hi";
-import { MdOutlineDashboard } from "react-icons/md";
+import { MdOutlineDashboard} from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
-import { TbReportAnalytics } from "react-icons/tb";
+import { TbReportAnalytics} from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { CiLogin, CiLogout } from "react-icons/ci";
@@ -116,7 +118,7 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
   }
 
   const menus = [
-    { name: "dashboard", link: "/", icon: MdOutlineDashboard },
+    { name: "Home", link: "/", icon: MdOutlineDashboard },
     {
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
         currentUser.displayName.split(' ').splice(0, 2).join(' ').toString() :
@@ -135,11 +137,11 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
       link: user ? "/" : "/login",
       icon: user ? CiLogout : CiLogin
     },
-    { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
-    { name: "File Manager", link: "/", icon: FiFolder },
-    { name: "Cart", link: "/", icon: FiShoppingCart },
-    { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
-    { name: "Setting", link: "/", icon: RiSettings4Line },
+    // { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
+    { name: "Cart", link: "/mybooks", icon: FiShoppingCart, margin: true },
+    { name: "About", link: "/about", icon: BsInfoSquare },
+    // { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
+    { name: "Setting", link: "/", icon: RiSettings4Line, margin:true },
   ];
 
   return (
@@ -169,6 +171,11 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
         <div className="mt-4 flex flex-col gap-4 relative">
           {menus?.map((menu, i) => (
             <Link
+            onClick={() => {
+              if (menu.name === "Logout") {
+                login();
+              }
+            }}
               to={menu?.link}
               key={i}
               className={` ${menu?.margin && "mt-5"
@@ -189,11 +196,6 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
                 }}
                 className={`whitespace-pre duration-500 ${!open && "opacity-0 translate-x-28 overflow-hidden"
                   }`}
-                onClick={() => {
-                  if (menu.name === "Logout") {
-                    login();
-                  }
-                }}
               >
                 {menu?.name}
               </h2>

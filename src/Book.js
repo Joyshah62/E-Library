@@ -35,7 +35,7 @@ function Book({ id, title, price, rating, image, link, author, download, author_
                 author_link: author_link,
             },
         })
-        toast("Added to MyBooks");
+        toast("Added to Cart");
     }
 
     return (
