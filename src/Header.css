@@ -79,14 +79,6 @@
     margin-top: 2px;
 }
 
-.userimg {
-    position: relative;
-    right: 10px;
-    top: -4px;
-    max-width: 50px;
-    max-height: 50px;
-}
-
 .header__Bookcount {
     margin-top: 20px;
     display: inline-block;
@@ -119,6 +111,13 @@
     margin-top: 20px;
 }
 
+.userimg {
+    position: relative;
+    right: 1px;
+    top: -4px;
+    max-width: 50px;
+    max-height: 50px;
+}
 
 #imgDiv:hover img {
     position: relative;

@@ -33,6 +33,7 @@ function App() {
   const [{ user }, dispatch] = useStateValue();
   const [searchValue, setSearchValue] = useState("");
   const [resultWords, setResultWords] = useState([""]);
+  const [genre, setGenre] = useState("");
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -116,10 +117,10 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Sidebar></Sidebar>
+            <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
             {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Carousel images={countries} />
-            <Home searchValue={searchValue} resultWords={resultWords} />
+            <Home searchValue={searchValue} resultWords={resultWords} genre={genre} />
           </Route>
 
         </Switch>

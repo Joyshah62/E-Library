@@ -16,9 +16,10 @@
   margin-left: auto;
   margin-top: 10px;
   display: flex;
-  height: 400px;
+  height: auto;
   width: 98%;
   max-width: 1800px;
+  aspect-ratio: 4/1;
 }
 
 .carousel_wrapper {

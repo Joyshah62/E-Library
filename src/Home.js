@@ -3,7 +3,8 @@ import Book from './Book';
 import "./Home.css";
 import books from './books.db'
 
-function Home({ searchValue, resultWords }) {
+function Home({ searchValue, resultWords , genre}) {
+
         return (
                 <div className='home'>
                         {books.map((book) =>
