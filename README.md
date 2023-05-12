@@ -1,8 +1,5 @@
-# SGP-2-E-Library_21CS056_21CS062_21CS068
-
 <!-- ## Description -->
-
-<h2>📚 E-Library</h2>
+# <img style="height:300px; width:300px; display:block; margin-left:auto; margin-right:auto;" src="https://i.ibb.co/DYfqKwQ/Edu-Zone-favicon.png"></img>
 
 A general purpose Full-Functioning E-library that can be accessed by anyone from anywhere in the world. This project aims to reduce the knowledge gap and provide everyone with books available on the website.
 <br /><br />
@@ -17,7 +14,7 @@ A general purpose Full-Functioning E-library that can be accessed by anyone from
   ![ReactRouter](https://img.shields.io/badge/react_router-100000?style=for-the-badge&logo=react-router&logoColor=FFFFFF&labelColor=d0021b&color=d0021b)
   ![Vagrant](https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=1563ff&color=1563ff)
   ![SNYK](https://img.shields.io/badge/snyk-100000?style=for-the-badge&logo=snyk&logoColor=white&labelColor=221f4a&color=221f4a)
-  ![SCSS](https://img.shields.io/badge/scss-100000?style=for-the-badge&logo=SaSS&logoColor=white&labelColor=d56ea3&color=d56ea3)
+  ![Tailwind](https://img.shields.io/badge/Tailwind-100000?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF&labelColor=38BDF8&color=38BDF8)
 
 <p align="left">  
   
@@ -27,6 +24,7 @@ A general purpose Full-Functioning E-library that can be accessed by anyone from
   <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Joyshah62/E-Library" /> &nbsp;
   <img alt="GitHub Commit Activity (Week)" src="https://img.shields.io/github/commit-activity/w/Joyshah62/E-Library" /> &nbsp;
   <img alt="GitHub Commit Activity (Month)" src="https://img.shields.io/github/commit-activity/m/Joyshah62/E-Library" /> &nbsp;
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/JoyShah62/E-Library" />
 
 </p>
 
@@ -40,7 +38,7 @@ $ git clone https://github.com/Joyshah62/E-Library
 # Acesse the Repository
 $ cd E-Library
 # Install the Dependencies
-$ npm install
+$ npm i --force
 # Start the application
 $ npm start
 ```
