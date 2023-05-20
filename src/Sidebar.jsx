@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Tesseract from 'tesseract.js';
-import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
-import  {BsInfoSquare} from 'react-icons/bs'
 
+import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
+import { BsInfoSquare } from 'react-icons/bs'
 import { FcProcess } from 'react-icons/fc'
 import { HiMenuAlt3 } from "react-icons/hi";
-import { MdOutlineDashboard} from "react-icons/md";
+import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
-import { TbReportAnalytics} from "react-icons/tb";
+import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { CiLogin, CiLogout } from "react-icons/ci";
@@ -23,7 +23,8 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
 
   const [error, setError, imgText] = useState(null);
   const [processing, setProcessing] = useState(false);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [drop, setDrop] = useState(false);
 
   const handleCapture = event => {
     setProcessing(true);
@@ -81,26 +82,6 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
     }
   };
 
-  const [dropdown, setDropdown] = useState(false);
-  const [click, setClick] = useState(false);
-  const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 0) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
-
   const [currentUser, setCurrentUser] = useState();
 
   useEffect(() => {
@@ -115,6 +96,12 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
     if (user) {
       auth.signOut();
     }
+  }
+
+  const handleGenreClick = (clickedGenre) => {
+    setDrop(!drop);
+    setOpen(!open);
+    setGenre(clickedGenre);
   }
 
   const menus = [
@@ -140,8 +127,8 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
     // { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
     { name: "Cart", link: "/mybooks", icon: FiShoppingCart, margin: true },
     { name: "About", link: "/about", icon: BsInfoSquare },
-    // { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
-    { name: "Setting", link: "/", icon: RiSettings4Line, margin:true },
+    { name: "Genre", link: "/", icon: AiOutlineHeart },
+    // { name: "Setting", link: "/", icon: RiSettings4Line, margin: true },
   ];
 
   return (
@@ -171,24 +158,40 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
         <div className="mt-4 flex flex-col gap-4 relative">
           {menus?.map((menu, i) => (
             <Link
-            onClick={() => {
-              if (menu.name === "Logout") {
-                login();
+              onClick={() => {
+
+                if (menu.name === "Logout") {
+                  login();
+                }
+
+                if (menu.name === "Genre") {
+                  { (drop && !open) ? <></> : setDrop(!drop) }
+                  { !open && setOpen(!open) }
+                }
+
+                if (menu.name === "Home") {
+                  setGenre("");
+                }
               }
-            }}
+              }
               to={menu?.link}
               key={i}
               className={` ${menu?.margin && "mt-5"
                 } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md `}
             >
 
-              {typeof menu?.icon === 'function' || typeof menu?.icon === 'string' ? (
-                <div>{React.createElement(menu?.icon, { size: "20" })}</div>
-              ) : (
-                <div>
-                  <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt='' />
-                </div>
-              )}
+              {(typeof menu?.icon === 'function' || typeof menu?.icon === 'string') ?
+                (
+                  <div>{React.createElement(menu?.icon, { size: "20" })}</div>
+                )
+                :
+                (
+                  <div>
+                    <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt='' />
+                  </div>
+                )
+              }
+
 
               <h2
                 style={{
@@ -199,6 +202,71 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
               >
                 {menu?.name}
               </h2>
+
+              {menu.name === "Genre" && drop && open &&
+                <div className="container">
+
+                  <div className="dropdown inline-block relative">
+                    {(menu.name === "Genre" && genre === "") ? <></> :
+                      <>
+                        <h2
+                          style={{
+                            transitionDelay: `${i + 3}00ms`,
+                          }}
+                          className={`whitespace-pre duration-500 ${!open && "opacity-0 translate-x-28 overflow-hidden"
+                            }`}
+                        >
+                          <span style={{ fontWeight: 'bold' }}>
+                            {genre.toString().charAt(0).toUpperCase() + genre.toString().slice(1).toLowerCase()}
+                          </span>
+                        </h2>
+                      </>
+                    }
+
+                    <ul
+                      style={{
+                        transitionDelay: `${i + 3}00ms`,
+                      }}
+                      className={`dropdown-menu pt-3 whitespace-pre duration-500 absolute left-0 mt-1 overflow-hidden ${!open && "opacity-0 translate-x-28 overflow-hidden"
+                        }`}
+                    >
+                      <li
+                        className="group flex items-center text-sm duration-500  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
+                        onClick={() => handleGenreClick("thriller")}
+                      >
+
+                        {/* Add Icons here. 
+                        <img className="max-w-xs" src="public/images/Thriller.png"></img> 
+                        */}
+
+                        Thriller
+                      </li>
+
+                      <li
+                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
+                        onClick={() => handleGenreClick("self-help")}
+                      >
+                        Self-help
+                      </li>
+
+                      <li
+                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
+                        onClick={() => handleGenreClick("fiction")}
+                      >
+                        Fiction
+                      </li>
+
+                      <li
+                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
+                        onClick={() => handleGenreClick("novel")}
+                      >
+                        Novel
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              }
 
 
               <h2

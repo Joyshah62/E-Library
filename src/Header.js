@@ -7,7 +7,6 @@ import Tesseract from 'tesseract.js';
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
-import Dropdown from './Dropdown'
 import "./Header.css"
 import "./Books.css"
 
@@ -193,7 +192,6 @@ function Header({ resultWords, setResultWords, searchValue, setSearchValue }) {
             // onMouseLeave={onMouseLeave}
             >Genres</b>
           </Link>
-          {dropdown && <Dropdown />}
         </li>
 
         <Link to="/about" className='header__link'>

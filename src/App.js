@@ -13,14 +13,10 @@ import Mybook from './Mybook';
 import Login from './Login';
 import About from './About';
 import Carousel from './Carousel';
-import { countries } from './Data';
+// import { countries } from './Data';
 import Accordion from './Accordion';
 import Payment from './Payment';
 import Orders from './Orders';
-import Fiction from './Fiction';
-import Thriller from './Thriller';
-import Novel from './Novel';
-import Selfhelp from './Selfhelp';
 import './App.css';
 
 
@@ -34,6 +30,31 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [resultWords, setResultWords] = useState([""]);
   const [genre, setGenre] = useState("");
+
+  const countries = [
+
+    {
+        image: "\\images\\1.png",
+
+    },
+
+    {
+        image: "\\images\\2.png",
+
+    },
+
+    {
+        image: "\\images\\3.png",
+
+    },
+
+    {
+        image: "\\images\\4.png",
+
+    },
+
+];
+
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -67,7 +88,6 @@ function App() {
         <Switch>
           <Route path="/orders">
           <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Orders />
           </Route>
 
@@ -77,56 +97,24 @@ function App() {
 
           <Route path="/mybooks">
           <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Mybook />
           </Route>
 
           <Route path="/about">
           <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Accordion />
             <About />
           </Route>
 
           <Route path="/payment">
           <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Elements stripe={promise}>
               <Payment />
             </Elements>
           </Route>
 
-          <Route path="/fiction">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-            <Carousel images={countries} />
-            <Fiction searchValue={searchValue} resultWords={resultWords} />
-          </Route>
-
-          <Route path="/novel">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-            <Carousel images={countries} />
-            <Novel searchValue={searchValue} resultWords={resultWords} />
-          </Route>
-
-          <Route path="/selfhelp">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-            <Carousel images={countries} />
-            <Selfhelp searchValue={searchValue} resultWords={resultWords} />
-          </Route>
-
-          <Route path="/thriller">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-            <Carousel images={countries} />
-            <Thriller searchValue={searchValue} resultWords={resultWords} />
-          </Route>
-
           <Route path="/">
             <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
-            {/* <Header resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} /> */}
             <Carousel images={countries} />
             <Home searchValue={searchValue} resultWords={resultWords} genre={genre} />
           </Route>
