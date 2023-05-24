@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Tesseract from 'tesseract.js';
+import { motion, AnimatePresence } from 'framer-motion';
 
+// Import Icons
 import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
 import { BsInfoSquare } from 'react-icons/bs'
 import { FcProcess } from 'react-icons/fc'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
-import { RiSettings4Line } from "react-icons/ri";
+import { RiSettings4Line, RiLoginCircleLine } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
-import { CiLogin, CiLogout } from "react-icons/ci";
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
-import Header from "./Header";
 import './Header.css'
 
 function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, genre, setGenre }) {
@@ -99,13 +99,12 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
   }
 
   const handleGenreClick = (clickedGenre) => {
-    setDrop(!drop);
-    setOpen(!open);
+    setDrop(true);
     setGenre(clickedGenre);
   }
 
   const menus = [
-    { name: "Home", link: "/", icon: MdOutlineDashboard },
+    { name: "Home", link: "/", icon: <MdOutlineDashboard size={20} /> },
     {
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
         currentUser.displayName.split(' ').splice(0, 2).join(' ').toString() :
@@ -113,23 +112,37 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
       link: user ? "/" : "/",
       icon: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ? (
         <>
-          <img id='userImg' src={currentUser.photoURL} alt="User" />
+          <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt="usr-img" />
         </>
       ) : (
-        AiOutlineUser
+        <AiOutlineUser size={20} />
       )
     },
     {
       name: user ? "Logout" : "Login",
       link: user ? "/" : "/login",
-      icon: user ? CiLogout : CiLogin
+      icon:
+        <RiLoginCircleLine
+          size={20}
+          style={{
+            transform: user ? "rotate(180deg)" : "",
+            transition: 'transform 500ms ease-in-out',
+          }}
+        />
     },
     // { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
-    { name: "Cart", link: "/mybooks", icon: FiShoppingCart, margin: true },
-    { name: "About", link: "/about", icon: BsInfoSquare },
-    { name: "Genre", link: "/", icon: AiOutlineHeart },
+    { name: "Cart", link: "/mybooks", icon: <FiShoppingCart size={20} />, margin: true },
+    { name: "About", link: "/about", icon: <BsInfoSquare size={20} /> },
+    { name: "Genre", link: "/", icon: <AiOutlineHeart size={20} /> },
     // { name: "Setting", link: "/", icon: RiSettings4Line, margin: true },
   ];
+
+  const genrelist = [
+    { name: "Thriller", icon: <img className="h-7 w-7" src="images/ThrillerIcon.png" alt="" /> },
+    { name: "Self-help", icon: <img className="h-7 w-7" src="images/SelfhelpIcon.png" alt="" /> },
+    { name: "Fiction", icon: <img className="h-7 w-7" src="images/FictionIcon.png" alt="" /> },
+    { name: "Novel", icon: <img className="h-7 w-7" src="images/NovelIcon.png" alt="" /> },
+  ]
 
   return (
     <section className="gap-6 flex fixed top-0 bottom-0 w-200 z-50 left-0">
@@ -138,21 +151,28 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
           } duration-500 text-gray-100 px-4`}
       >
         <div className="py-3 flex justify-end">
+          <AnimatePresence>
 
-          {open ?
-            <Link to="/">
-              <img
-                className={`h-20 absolute left-6 -mt-6 ${!open && "duration-500 -translate-x-5"}`}
-                src="/images/EduZone favicon.png" alt="logo"
-              />
-            </Link>
-            :
-            <></>}
+            {open &&
+              <Link to="/">
+                <motion.img
+                  transition={{ delay: 0.2 }}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 10 }}
+                  exit={{ opacity: 0, x: -50 }}
+                  className={`h-20 absolute left-6 -mt-6 ${!open && "duration-500 -translate-x-5"}`}
+                  src="/images/EduZone favicon.png" alt="logo"
+                />
+              </Link>
+            }
+          </AnimatePresence>
 
           <HiMenuAlt3
             size={26}
             className="cursor-pointer"
-            onClick={() => setOpen(!open)}
+            onClick={() => {
+              setOpen(!open)
+            }}
           />
         </div>
         <div className="mt-4 flex flex-col gap-4 relative">
@@ -180,18 +200,9 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
                 } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md `}
             >
 
-              {(typeof menu?.icon === 'function' || typeof menu?.icon === 'string') ?
-                (
-                  <div>{React.createElement(menu?.icon, { size: "20" })}</div>
-                )
-                :
-                (
-                  <div>
-                    <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt='' />
-                  </div>
-                )
-              }
-
+              <div>
+                {menu?.icon}
+              </div>
 
               <h2
                 style={{
@@ -202,71 +213,59 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
               >
                 {menu?.name}
               </h2>
+              <AnimatePresence>
 
-              {menu.name === "Genre" && drop && open &&
-                <div className="container">
+                {menu.name === "Genre" && drop && open &&
+                  <div className="container">
+                    <div className="dropdown inline-block relative">
 
-                  <div className="dropdown inline-block relative">
-                    {(menu.name === "Genre" && genre === "") ? <></> :
-                      <>
-                        <h2
-                          style={{
-                            transitionDelay: `${i + 3}00ms`,
-                          }}
-                          className={`whitespace-pre duration-500 ${!open && "opacity-0 translate-x-28 overflow-hidden"
-                            }`}
-                        >
-                          <span style={{ fontWeight: 'bold' }}>
-                            {genre.toString().charAt(0).toUpperCase() + genre.toString().slice(1).toLowerCase()}
-                          </span>
-                        </h2>
-                      </>
-                    }
+                      {(menu.name === "Genre" && genre === "") ? <></> :
+                        <>
+                          <motion.h2
+                            transition={{ delay: 0.3 }}
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 10 }}
+                            exit={{ opacity: 0, x: 50 }}
+                          >
+                            <motion.span
+                              style={{ fontWeight: 'bold' }}
+                            >
+                              {genre.toString().charAt(0).toUpperCase() + genre.toString().slice(1).toLowerCase()}
+                            </motion.span>
+                          </motion.h2>
+                        </>
+                      }
 
-                    <ul
-                      style={{
-                        transitionDelay: `${i + 3}00ms`,
-                      }}
-                      className={`dropdown-menu pt-3 whitespace-pre duration-500 absolute left-0 mt-1 overflow-hidden ${!open && "opacity-0 translate-x-28 overflow-hidden"
-                        }`}
-                    >
-                      <li
-                        className="group flex items-center text-sm duration-500  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
-                        onClick={() => handleGenreClick("thriller")}
-                      >
+                      <ul className="dropdown-menu pt-3 whitespace-pre duration-500 absolute left-0 mt-1" >
 
-                        {/* Add Icons here. 
-                        <img className="max-w-xs" src="public/images/Thriller.png"></img> 
-                        */}
+                        {genrelist?.map((genreItem, genreIndex) =>
+                        (
+                          <>
 
-                        Thriller
-                      </li>
+                            <motion.li
+                              transition={{ delay: 0.1 * genreIndex }}
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: 20 }}
+                              className="group flex items-center text-sm duration-500  gap-3.5 font-medium p-2 pr-10 hover:bg-gray-800 rounded-s-md"
+                              onClick={() => handleGenreClick(genreItem?.name.toString().toLowerCase())}
+                              key={genreIndex}
+                            >
+                              {genreItem.icon}
+                              {genreItem?.name}
+                            </motion.li>
 
-                      <li
-                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
-                        onClick={() => handleGenreClick("self-help")}
-                      >
-                        Self-help
-                      </li>
+                          </>
+                        )
+                        )}
 
-                      <li
-                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
-                        onClick={() => handleGenreClick("fiction")}
-                      >
-                        Fiction
-                      </li>
-
-                      <li
-                        className="group flex items-center text-sm duration-500 gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-s-md"
-                        onClick={() => handleGenreClick("novel")}
-                      >
-                        Novel
-                      </li>
-
-                    </ul>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              }
+                }
+
+              </AnimatePresence>
+
 
 
               <h2

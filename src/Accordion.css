@@ -72,8 +72,7 @@
 }
 
 .answers {
-
-  padding: 30px 20px 40px 20px;
+  border-radius: 0 0 10px 10px;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   word-spacing: 2px;

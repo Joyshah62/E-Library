@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useAutoAnimate } from '@formkit/auto-animate/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Accordion.css';
 
 const Accordion = () => {
@@ -27,17 +27,50 @@ const Accordion = () => {
     },
   ]
 
-  const [parent, enableAnimations] = useAutoAnimate()
-
   const MyAccordion = ({ question, answer }) => {
     const [show, setShow] = useState(false);
     return (
       <>
-        <div className="main-heading">
-          <p onClick={() => setShow(!show)}> {show ? "➖" : "➕"} </p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4 }}
+          className="main-heading"
+        >
+
+          <motion.p
+            onClick={() => setShow(!show)}
+          >
+            {show ? "➖" : "➕"}
+          </motion.p>
           <h3>{question}</h3>
-        </div>
-        {show && <p className="answers"> {answer} </p>}
+
+        </motion.div>
+
+        <AnimatePresence>
+
+          {show && (
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: "auto" }}
+              exit={{ height: 0 }}
+              transition={{ duration: 0.4 }}
+              style={{ overflow: "hidden" }}
+              className="answers"
+            >
+
+              <motion.p
+                transition={{ duration: 0.5 }}
+                style={{ padding: "30px 10px 30px 20px" }}
+              >
+                {answer}
+              </motion.p>
+
+            </motion.div>
+          )}
+
+        </AnimatePresence>
 
       </>
     )
