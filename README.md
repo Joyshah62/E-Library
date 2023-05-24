@@ -11,10 +11,11 @@ A general purpose Full-Functioning E-library that can be accessed by anyone from
   ![ReactJS](https://img.shields.io/badge/reactJS-100000?style=for-the-badge&logo=react&logoColor=00DAFF&labelColor=FFFFFF&color=FFFFFF)
   ![FireBase](https://img.shields.io/badge/firebase-100000?style=for-the-badge&logo=firebase&logoColor=FFFFFF&labelColor=ffcb2c&color=ffcb2c)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  ![Tailwind](https://img.shields.io/badge/Tailwind-100000?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF&labelColor=38BDF8&color=38BDF8)
+  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-100000?style=for-the-badge&logo=framer&logoColor=white&labelColor=676afa&color=676afa)
   ![ReactRouter](https://img.shields.io/badge/react_router-100000?style=for-the-badge&logo=react-router&logoColor=FFFFFF&labelColor=d0021b&color=d0021b)
   ![Vagrant](https://img.shields.io/badge/vagrant-100000?style=for-the-badge&logo=vagrant&logoColor=white&labelColor=1563ff&color=1563ff)
   ![SNYK](https://img.shields.io/badge/snyk-100000?style=for-the-badge&logo=snyk&logoColor=white&labelColor=221f4a&color=221f4a)
-  ![Tailwind](https://img.shields.io/badge/Tailwind-100000?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF&labelColor=38BDF8&color=38BDF8)
 
 <p align="left">  
   
