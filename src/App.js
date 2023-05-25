@@ -92,6 +92,7 @@ function App() {
           </Route>
 
           <Route path="/login">
+          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
             <Login />
           </Route>
 
