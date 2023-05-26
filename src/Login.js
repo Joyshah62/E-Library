@@ -428,7 +428,7 @@ function Login() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -50 }}
                         transition={{ duration: 0.5 }}
-                        className={`fixed bottom-10 right:10 ${sliderOnLogin ? "md:right-10" : "md:right-[950px]"}`}
+                        className={`fixed bottom-10 right-10 ${sliderOnLogin ? "md:right-10" : "md:right-[950px]"}`}
                     >
 
                         <motion.button

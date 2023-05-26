@@ -6,19 +6,17 @@ import { auth } from './firebase';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
-import Header from './Header';
 import Sidebar from './Sidebar';
 import Home from './Home';
 import Mybook from './Mybook';
 import Login from './Login';
 import About from './About';
 import Carousel from './Carousel';
-// import { countries } from './Data';
 import Accordion from './Accordion';
 import Payment from './Payment';
 import Orders from './Orders';
+import Searchbar from './Searchbar';
 import './App.css';
-
 
 const promise = loadStripe
   (
@@ -30,30 +28,35 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [resultWords, setResultWords] = useState([""]);
   const [genre, setGenre] = useState("");
+  const [searchBarVisibility, setSearchBarVisibility] = useState("false");
+
+  const handleSearchBarVisibility = () => {
+    setSearchBarVisibility(!searchBarVisibility);
+  }
 
   const countries = [
 
     {
-        image: "\\images\\1.png",
+      image: "\\images\\1.png",
 
     },
 
     {
-        image: "\\images\\2.png",
+      image: "\\images\\2.png",
 
     },
 
     {
-        image: "\\images\\3.png",
+      image: "\\images\\3.png",
 
     },
 
     {
-        image: "\\images\\4.png",
+      image: "\\images\\4.png",
 
     },
 
-];
+  ];
 
 
   useEffect(() => {
@@ -87,35 +90,36 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/orders">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Orders />
           </Route>
 
           <Route path="/login">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Login />
           </Route>
 
           <Route path="/mybooks">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Mybook />
           </Route>
 
           <Route path="/about">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Accordion />
             <About />
           </Route>
 
           <Route path="/payment">
-          <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Elements stripe={promise}>
               <Payment />
             </Elements>
           </Route>
 
           <Route path="/">
-            <Sidebar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre}></Sidebar>
+            <Searchbar resultWords={resultWords} setResultWords={setResultWords} searchValue={searchValue} setSearchValue={setSearchValue} searchBarVisibility={searchBarVisibility} ></Searchbar>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Carousel images={countries} />
             <Home searchValue={searchValue} resultWords={resultWords} genre={genre} />
           </Route>

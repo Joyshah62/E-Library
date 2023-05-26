@@ -1,87 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from "react-router-dom";
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import Tesseract from 'tesseract.js';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Icons
-import { MdOutlineMic, MdOutlineMicOff, MdOutlineImageSearch } from 'react-icons/md'
 import { BsInfoSquare } from 'react-icons/bs'
-import { FcProcess } from 'react-icons/fc'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line, RiLoginCircleLine } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
-import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
+import { FiMessageSquare, FiFolder, FiShoppingCart, FiSearch } from "react-icons/fi";
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
-import './Header.css'
 
-function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, genre, setGenre }) {
+function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVisibility, handleSearchBarVisibility }) {
 
-  const [error, setError, imgText] = useState(null);
-  const [processing, setProcessing] = useState(false);
+
   const [open, setOpen] = useState(false);
   const [drop, setDrop] = useState(false);
-
-  const handleCapture = event => {
-    setProcessing(true);
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onloadend = () => {
-
-      Tesseract.recognize(reader.result)
-        .then(result => {
-
-          const resultWords = result.data.words.map(word => word.text);
-          const filteredResultWords = resultWords.filter(word => word.length > 3 && /^[a-zA-Z]+$/.test(word));
-          console.log(filteredResultWords.toString());
-          setResultWords(filteredResultWords);
-          setProcessing(false);
-          // setSearchValue(filteredResultWords[0].toString());
-          imgText = filteredResultWords.toString();
-        })
-        .catch(err => {
-          // handle error
-          setError(err.message);
-          setProcessing(false);
-        });
-    };
-  };
-
-
-  const handleSearchChange = (event) => {
-    setResultWords([""]);
-    setProcessing(false);
-    setSearchValue(event.target.value);
-  };
-
-
-  const { transcript, resetTranscript, listening } = useSpeechRecognition({
-    // lang: 'en-IN',
-  });
-
-  const handleVoiceSearch = () => {
-    const cleanedTranscript = transcript.replace(/\./g, '');
-    console.log(cleanedTranscript);
-    setSearchValue(cleanedTranscript);
-    resetTranscript();
-  };
-
-  const handleToggleListening = () => {
-    setResultWords([""]);
-    setProcessing(false);
-    if (listening) {
-      SpeechRecognition.stopListening();
-      handleVoiceSearch();
-    } else {
-      SpeechRecognition.startListening();
-    }
-  };
-
   const [currentUser, setCurrentUser] = useState();
 
   useEffect(() => {
@@ -104,7 +41,8 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
   }
 
   const menus = [
-    { name: "Home", link: "/", icon: <MdOutlineDashboard size={20} /> },
+    { name: "Search", link: "/", icon: <FiSearch size={20} /> },
+    { name: "Home", link: "/", icon: <MdOutlineDashboard size={20} />, margin: true },
     {
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
         currentUser.displayName.split(' ').splice(0, 2).join(' ').toString() :
@@ -191,6 +129,19 @@ function Sidebar({ resultWords, setResultWords, searchValue, setSearchValue, gen
 
                 if (menu.name === "Home") {
                   setGenre("");
+                  setDrop(false);
+                  setSearchValue("");
+                  setResultWords([""]);
+                }
+
+                if(menu.name === "Search") {
+
+                  if(!searchBarVisibility){
+                    setSearchValue("");
+                    setResultWords([""]);
+                  }
+                  
+                  handleSearchBarVisibility();
                 }
               }
               }
