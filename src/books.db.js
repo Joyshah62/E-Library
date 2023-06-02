@@ -1,3 +1,11 @@
+function generatePdfDriveUrl(bookTitle) {
+    const cleanTitle = bookTitle.toLowerCase().replace(/[^\w\s-]/g, '');
+    const urlFriendlyTitle = cleanTitle.replace(/\s+/g, '-');
+    const pdfDriveUrl = `https://www.pdfdrive.com/${urlFriendlyTitle}-books.html`;
+
+    return pdfDriveUrl;
+}
+
 const books = [
     {
         id: 0,
@@ -7,7 +15,8 @@ const books = [
         rating: 4.6, // Want to fetch from an API
         url: "https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/",
         image: "https://m.media-amazon.com/images/I/51A88IvtjGL.jpg",
-        download: "https://drive.google.com/file/d/1gIGwFO8hkOtwlbH5Djl2Go-nMHCVs2-x/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1gIGwFO8hkOtwlbH5Djl2Go-nMHCVs2-x/view?usp=share_link",
+        download: generatePdfDriveUrl("Rich Dad Poor Dad"),
         author_link: "https://en.wikipedia.org/wiki/Robert_Kiyosaki",
         genre: ["self-help"]
     },
@@ -19,7 +28,8 @@ const books = [
         rating: 4.6, 
         url: "https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/",
         image: "https://m.media-amazon.com/images/I/51-nXsSRfZL.jpg",
-        download: "https://drive.google.com/file/d/11Ud13Nben9UxvxPNIjH8YX0VG6eeDUjJ/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/11Ud13Nben9UxvxPNIjH8YX0VG6eeDUjJ/view?usp=share_link",
+        download: generatePdfDriveUrl("Atomic Habits"),
         author_link: "https://jamesclear.com/about",
         genre: ["self-help"]
     },
@@ -31,7 +41,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/51W-r3VQlAL.jpg",
         url: "https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/",
-        download: "https://drive.google.com/file/d/1GyOW8vA3o7Iz-VwJE7dTHlktAi-O5PnH/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1GyOW8vA3o7Iz-VwJE7dTHlktAi-O5PnH/view?usp=share_link",
+        download: generatePdfDriveUrl("It Starts With Us"),
         author_link: "https://en.wikipedia.org/wiki/Colleen_Hoover",
         genre: ["novel"]
     },
@@ -43,7 +54,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/411yaMigwbL.jpg",
         url: "https://www.amazon.in/Laws-Power-Robert-Greene-Collection/dp/1861972784/",
-        download: "https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/14RERTTCx3UWp9FwO7d2I_-u_JwS9C_IK/view?usp=share_link",
+        download: generatePdfDriveUrl("The 48 Laws of Power"),
         author_link: "https://en.wikipedia.org/wiki/Robert_Greene_(American_author)",
         genre: ["self-help"]
     },
@@ -55,8 +67,10 @@ const books = [
         rating: 3.9,
         image: "https://m.media-amazon.com/images/I/4172DT28tgL.jpg",
         url: "https://www.amazon.in/Dark-Psychology-Psychological-Manipulation-Persuasion-ebook/dp/B07NRTWWJK/",
-        download: "https://drive.google.com/file/d/10dmzg0vn8aqSH8LnJn-p4HUEGx2fJ0yZ/view?usp=share_link",
-        author_link: "https://en.wikipedia.org/wiki/James_Williams"
+        // download: "https://drive.google.com/file/d/10dmzg0vn8aqSH8LnJn-p4HUEGx2fJ0yZ/view?usp=share_link",
+        download: generatePdfDriveUrl("Dark Psychology"),
+        author_link: "https://en.wikipedia.org/wiki/James_Williams",
+        genre: [""]
     },
     {
         id: 5,
@@ -66,7 +80,8 @@ const books = [
         rating: 4.7,
         image: "https://m.media-amazon.com/images/I/41pSXiKR39L.jpg",
         url: "https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/",
-        download: "https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1-BfDruoZsnILTCd1kyJhiWa0h8BgpW_o/view?usp=sharing",
+        download: generatePdfDriveUrl("The Godfather"),
         author_link: "https://en.wikipedia.org/wiki/Mario_Puzo",
         genre: ["fiction", "thriller"]
     },
@@ -78,7 +93,8 @@ const books = [
         rating: 4.7,
         image: "https://m.media-amazon.com/images/I/81HteEu+D6L.jpg",
         url: "https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/",
-        download: "https://drive.google.com/file/d/1HoHdl6CJTkma9DY30-sWNVJdg22optDu/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1HoHdl6CJTkma9DY30-sWNVJdg22optDu/view?usp=share_link",
+        download: generatePdfDriveUrl("Harry Potter"),
         author_link: "https://en.wikipedia.org/wiki/J._K._Rowling",
         genre: ["fiction", "novel"]
     },
@@ -90,7 +106,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/814L+vq01mL.jpg",
         url: "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/",
-        download: "https://drive.google.com/file/d/1rq52W4tmtt9dZKacjvCBkJfIn83OJd29/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1rq52W4tmtt9dZKacjvCBkJfIn83OJd29/view?usp=share_link",
+        download: generatePdfDriveUrl("Ikigai"),
         author_link: "https://hectorgarcia.org/",
         genre: ["self-help"]
     },
@@ -102,7 +119,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/51Xjv4IzydL.jpg",
         url: "https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/",
-        download: "https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1hAHUvmH5vDFuJ9DSf2yC5PDHLXBu2NC0/view?usp=sharing",
+        download: generatePdfDriveUrl("Something I Never Told You"),
         author_link: "https://www.goodreads.com/author/list/14810469.Shravya_Bhinder",
         genre: ["fiction"]
     },
@@ -114,7 +132,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/51Z9p5AecCL.jpg",
         url: "https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/",
-        download: "https://drive.google.com/file/d/1x_2WiwejU-FXmEeXOvBuZpLkBaJ-XGxt/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1x_2WiwejU-FXmEeXOvBuZpLkBaJ-XGxt/view?usp=sharing",
+        download: generatePdfDriveUrl("To Kill a Mockingbird"),
         author_link: "https://en.wikipedia.org/wiki/Harper_Lee",
         genre: ["fiction"]
     },
@@ -126,7 +145,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/41nTTMoaxiL.jpg",
         url: "https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/",
-        download: "https://drive.google.com/file/d/1IPHeroUU7nHLbwGIapDrpbbKQ4vmOBNw/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1IPHeroUU7nHLbwGIapDrpbbKQ4vmOBNw/view?usp=share_link",
+        download: generatePdfDriveUrl("The Shining"),
         author_link: "https://en.wikipedia.org/wiki/Stephen_King",
         genre: ["fiction"]
     },
@@ -138,7 +158,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/41r6F2LRf8L.jpg",
         url: "https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/",
-        download: "https://drive.google.com/file/d/1eON81N0iW0UCvDw8pOYTtVSaqD_XvRGg/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1eON81N0iW0UCvDw8pOYTtVSaqD_XvRGg/view?usp=share_link",
+        download: generatePdfDriveUrl("The Psychology of Money"),
         author_link: "https://www.morganhousel.com/",
         genre: ["self-help"]
     },
@@ -150,7 +171,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/51ALMvQGyWL.jpg",
         url: "https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/",
-        download: "https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1exbzl-2GBsWaVD3wADu2TMYmTW8VDymv/view?usp=sharing",
+        download: generatePdfDriveUrl("Shawshank Redemption"),
         author_link: "https://en.wikipedia.org/wiki/Frank_Darabont",
         genre: ["fiction", "thriller"]
     },
@@ -162,7 +184,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/413OgI8KzuL.jpg",
         url: "https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/",
-        download: "https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1nEb-CSJV8q0TBoKck8vApaPLYQSmbCtw/view?usp=share_link",
+        download: generatePdfDriveUrl("You Only Live Once"),
         author_link: "https://www.stutichangle.com/",
         genre: ["self-help"]
     },
@@ -174,7 +197,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg",
         url: "https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17",
-        download: "https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1ra5VcJqEeRVJ7M6aKiuO1tdk4igZbhO5/view?usp=share_link",
+        download: generatePdfDriveUrl("The Blue Umbrella"),
         author_link: "https://en.wikipedia.org/wiki/Ruskin_Bond",
         genre: ["fiction", "novel"]
     },
@@ -186,7 +210,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/511vJPN7p5L.jpg",
         url: "https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/",
-        download: "https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1FklXIESJmlxf0Jjig-mZw9IbmvWRhq7J/view?usp=share_link",
+        download: generatePdfDriveUrl("The Subtle Art"),
         author_link: "https://en.wikipedia.org/wiki/Mark_Manson",
         genre: ["self-help"]
     },
@@ -198,7 +223,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/41moQrlKZKL.jpg",
         url: "https://www.amazon.in/Immortals-Meluha-Shiva-Trilogy-Book/dp/9356290520",
-        download: "https://drive.google.com/file/d/1HgpUzCly0mC9-iBYt9XedJXANUjxXVuS/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1HgpUzCly0mC9-iBYt9XedJXANUjxXVuS/view?usp=share_link",
+        download: generatePdfDriveUrl("The Immortals of Meluha"),
         author_link: "https://en.wikipedia.org/wiki/Amish_Tripathi",
         genre: ["fiction"]
     },
@@ -210,7 +236,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/519n1y9Q9kL.jpg",
         url: "https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/",
-        download: "https://drive.google.com/file/d/1PQfJG3LS1CzC8Gs75rLIMPcxAkDsAwUZ/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1PQfJG3LS1CzC8Gs75rLIMPcxAkDsAwUZ/view?usp=sharing",
+        download: generatePdfDriveUrl("The Silence of The Lambs"),
         author_link: "https://en.wikipedia.org/wiki/Thomas_Harris",
         genre: ["fiction", "thriller"]
     },
@@ -222,7 +249,8 @@ const books = [
         rating: 4.7,
         image: "https://m.media-amazon.com/images/I/51e6nhYq5TL.jpg",
         url: "https://www.amazon.in/Storm-Swords-Song-Fire-Three/dp/055357342X/",
-        download: "https://drive.google.com/file/d/15mOhCZmmaRezhmFyu_MI3WEpEd4j4ruo/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/15mOhCZmmaRezhmFyu_MI3WEpEd4j4ruo/view?usp=share_link",
+        download: generatePdfDriveUrl("A Storm of Swords"),
         author_link: "https://en.wikipedia.org/wiki/George_R._R._Martin",
         genre: ["novel"]
     },
@@ -234,7 +262,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/51CbOKu34OL.jpg",
         url: "https://www.amazon.in/Fight-Club-Chuck-Palahniuk/dp/0099765217/",
-        download: "https://drive.google.com/file/d/1aML1Up2auLdYo7jtzlQFWO3XgTXDqc50/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1aML1Up2auLdYo7jtzlQFWO3XgTXDqc50/view?usp=sharing",
+        download: generatePdfDriveUrl("Fight Club"),
         author_link: "https://en.wikipedia.org/wiki/Chuck_Palahniuk",
         genre: ["fiction", "thriller"]
     },
@@ -246,7 +275,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/51U6-kcsIUL.jpg",
         url: "https://www.amazon.in/Country-Old-Men-Vintage-International/dp/0375706674",
-        download: "https://drive.google.com/file/d/1R7dIjIC7tRPC8_1NmZ2c01PuEBr1jZdc/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1R7dIjIC7tRPC8_1NmZ2c01PuEBr1jZdc/view?usp=sharing",
+        download: generatePdfDriveUrl("No Country for Old Men"),
         author_link: "https://en.wikipedia.org/wiki/Cormac_McCarthy",
         genre: ["fiction"]
     },
@@ -258,7 +288,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/416HJgbykrL.jpg",
         url: "https://www.amazon.in/Schindlers-List-Thomas-Keneally/dp/1982151048/",
-        download: "https://drive.google.com/file/d/17ViwqeWT0DdJsTUm7ryeLy6cW_AbwoCb/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/17ViwqeWT0DdJsTUm7ryeLy6cW_AbwoCb/view?usp=sharing",
+        download: generatePdfDriveUrl("Schindler List"),
         author_link: "https://en.wikipedia.org/wiki/Thomas_Keneally",
         genre: ["fiction", "thriller"]
     },
@@ -270,7 +301,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/51JZHD0ac2L.jpg",
         url: "https://www.amazon.in/Maze-Runner-James-Dashner/dp/9351033139/",
-        download: "https://drive.google.com/file/d/1jy75PBk65NtQMLe3fVkAVFo3NHFSl8zo/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1jy75PBk65NtQMLe3fVkAVFo3NHFSl8zo/view?usp=share_link",
+        download: generatePdfDriveUrl("The Maze Runner"),
         author_link: "https://en.wikipedia.org/wiki/James_Dashner",
         genre: ["fiction", "thriller"]
     },
@@ -282,7 +314,8 @@ const books = [
         rating: 4.8,
         image: "https://m.media-amazon.com/images/I/41jW+y-RCuL.jpg",
         url: "https://www.amazon.in/V-Vendetta-30th-Anniversary-Deluxe/dp/1401285007/",
-        download: "https://drive.google.com/file/d/1VKelLG6d44o0kk19pzqOzCfFyf_6R3L7/view?usp=sharing",
+        // download: "https://drive.google.com/file/d/1VKelLG6d44o0kk19pzqOzCfFyf_6R3L7/view?usp=sharing",
+        download: generatePdfDriveUrl("V for Vendetta"),
         author_link: "https://en.wikipedia.org/wiki/Alan_Moore",
         genre: ["fiction"]
     },
@@ -294,7 +327,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/61b5aPmEhzL.jpg",
         url: "https://www.amazon.in/Think-Grow-Rich-Napoleon-Hill/dp/8194790883/",
-        download: "https://drive.google.com/file/d/1lvVQQ9OlWU4weYYPvJ8YrlefP-yH55gM/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1lvVQQ9OlWU4weYYPvJ8YrlefP-yH55gM/view?usp=share_link",
+        download: generatePdfDriveUrl("Think and Grow Rich"),
         author_link: "https://en.wikipedia.org/wiki/Nepoleon_Hill",
         genre: ["self-help"]
     },
@@ -306,7 +340,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/710jnzKlDTL.jpg",
         url: "https://www.amazon.in/Attitude-Everything-Change-Your-Life/dp/9351772071/",
-        download: "https://drive.google.com/file/d/1TmRI8RllOEk9I_7Fry4A7H451WdbR-jn/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1TmRI8RllOEk9I_7Fry4A7H451WdbR-jn/view?usp=share_link",
+        download: generatePdfDriveUrl("Attitude is Everything"),
         author_link: "https://en.wikipedia.org/wiki/Jeff_Keller",
         genre: ["self-help"]
     },
@@ -318,7 +353,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/61GscjwicrL.jpg",
         url: "https://www.amazon.in/MINDFUL-ZEN-HABITS-Suffering-Happiness/dp/8129144905/",
-        download: "https://drive.google.com/file/d/1THIiaM2p2VaaK_ZH1jNcdPGVCcwEZqFc/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1THIiaM2p2VaaK_ZH1jNcdPGVCcwEZqFc/view?usp=share_link",
+        download: generatePdfDriveUrl("Mindful Zen Habits"),
         author_link: "https://en.wikipedia.org/wiki/Leo_Babauta",
         genre: ["self-help"]
     },
@@ -330,7 +366,8 @@ const books = [
         rating: 4.7,
         image: "https://m.media-amazon.com/images/I/71h4luymQZL.jpg",
         url: "https://www.amazon.in/Learning-Leading-Habits-Mind-Characteristics/dp/1416607412/",
-        download: "https://drive.google.com/file/d/1JDSywd-C_d_Bqwo6ybkFeYlgtEd8CQLM/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1JDSywd-C_d_Bqwo6ybkFeYlgtEd8CQLM/view?usp=share_link",
+        download: generatePdfDriveUrl("Habits of Mind"),
         author_link: "https://www.google.com/search?q=arthur+l+costa&oq=arthur+l++costa&aqs=chrome..69i57j69i60.5484j0j1&sourceid=chrome&ie=UTF-8",
         genre: ["self-help"]
     },
@@ -342,7 +379,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg",
         url: "https://www.amazon.in/Power-Your-Subconscious-Mind/dp/8194790832",
-        download: "https://drive.google.com/file/d/1Q-hEVO-Wa6RhFvmzPJra8aQFKRf351sF/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1Q-hEVO-Wa6RhFvmzPJra8aQFKRf351sF/view?usp=share_link",
+        download: generatePdfDriveUrl("The Power of Subconscious Mind"),
         author_link: "https://en.wikipedia.org/wiki/Joseph_Murphy_(author)",
         genre: ["self-help"]
     },
@@ -354,8 +392,10 @@ const books = [
         rating: 3.5,
         image: "https://m.media-amazon.com/images/I/41juzthDmRL.jpg",
         url: "https://www.amazon.in/Voyage-Moon-Alma-Classics-Pages/dp/1847497993/",
-        download: "https://drive.google.com/file/d/1PhGQrVGn-h7zeL230ZMCwYHFY8cTD4ix/view?usp=share_link",
-        author_link: "https://en.wikipedia.org/wiki/Cyrano_de_Bergerac"
+        // download: "https://drive.google.com/file/d/1PhGQrVGn-h7zeL230ZMCwYHFY8cTD4ix/view?usp=share_link",
+        download: generatePdfDriveUrl("A Voyage to The Moon"),
+        author_link: "https://en.wikipedia.org/wiki/Cyrano_de_Bergerac",
+        genre: [""]
     },
     {
         id: 30,
@@ -365,7 +405,8 @@ const books = [
         rating: 4.3,
         image: "https://m.media-amazon.com/images/I/719AAiDZmIL.jpg",
         url: "https://www.amazon.in/Land-That-Time-Forgot/dp/9390315786/",
-        download: "https://drive.google.com/file/d/1_LZlqNxlgzDBQ_7TVOz_cRETyzLMUyw8/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1_LZlqNxlgzDBQ_7TVOz_cRETyzLMUyw8/view?usp=share_link",
+        download: generatePdfDriveUrl("The Land that Time Forgot"),
         author_link: "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
         genre: ["novel"]
     },
@@ -377,7 +418,8 @@ const books = [
         rating: 4.1,
         image: "https://m.media-amazon.com/images/I/61LcxqR8HxL.jpg",
         url: "https://www.amazon.in/New-Atlantis-Sir-Francis-Bacon/dp/1603862862/",
-        download: "https://drive.google.com/file/d/1HElZ-0whLs-C4DeUtr9iqM5BHq8ILwm6/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1HElZ-0whLs-C4DeUtr9iqM5BHq8ILwm6/view?usp=share_link",
+        download: generatePdfDriveUrl("The New Atlantis"),
         author_link: "https://en.wikipedia.org/wiki/Francis_Bacon",
         genre: ["novel"]
     },
@@ -389,7 +431,8 @@ const books = [
         rating: 4.3,
         image: "https://m.media-amazon.com/images/I/813ZwvNNKKS.jpg",
         url: "https://www.amazon.in/War-Worlds-H-G-Wells/dp/8175992824/",
-        download: "https://drive.google.com/file/d/1uBe74s8v5u3nabUpKv5fziAfHBWNpHpC/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1uBe74s8v5u3nabUpKv5fziAfHBWNpHpC/view?usp=share_link",
+        download: generatePdfDriveUrl("The War of The Worlds"),
         author_link: "https://en.wikipedia.org/wiki/H._G._Wells",
         genre: ["fiction", "novel"]
     },
@@ -401,8 +444,10 @@ const books = [
         rating: 4.3,
         image: "https://m.media-amazon.com/images/I/71zPftGi69L.jpg",
         url: "https://www.amazon.in/Blazing-World-Writings-Penguin-Classics/dp/0140433724/",
-        download: "https://drive.google.com/file/d/1w7QyoxQvNu4i5fUK5xIqp6CP2OfGkJow/view?usp=share_link",
-        author_link: "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne"
+        // download: "https://drive.google.com/file/d/1w7QyoxQvNu4i5fUK5xIqp6CP2OfGkJow/view?usp=share_link",
+        download: generatePdfDriveUrl("The Blazing World"),
+        author_link: "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne",
+        genre: [""]
     },
     {
         id: 34,
@@ -412,7 +457,8 @@ const books = [
         rating: 4.3,
         image: "https://m.media-amazon.com/images/I/51XMZpX-6EL.jpg",
         url: "https://www.amazon.in/Last-Man-Wordsworth-Classics/dp/1840224037/",
-        download: "https://drive.google.com/file/d/1I1J3M7aYOGR7qQqWNlnHiSbPJZMgAKg1/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1I1J3M7aYOGR7qQqWNlnHiSbPJZMgAKg1/view?usp=share_link",
+        download: generatePdfDriveUrl("The Last Man"),
         author_link: "https://en.wikipedia.org/wiki/Mary_Shelley",
         genre: ["fiction", "novel"]
     },
@@ -424,7 +470,8 @@ const books = [
         rating: 4.4,
         image: "https://m.media-amazon.com/images/P/1471141594.jpg",
         url: "https://www.amazon.in/Frankenstein-Mary-Shelley/dp/9380816251/",
-        download: "https://drive.google.com/file/d/1qqJG6JX9y2j8minU3V5A8V_DmGmsQkFS/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1qqJG6JX9y2j8minU3V5A8V_DmGmsQkFS/view?usp=share_link",
+        download: generatePdfDriveUrl("Frankenstein"),
         author_link: "https://en.wikipedia.org/wiki/Mary_Shelley",
         genre: ["fiction"]
     },
@@ -436,7 +483,8 @@ const books = [
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/41fAV9m9naL.jpg",
         url: "https://www.amazon.in/Gods-Annotated-Sastrugi-Press-Classics/dp/164922110X/",
-        download: "https://drive.google.com/file/d/1eVnAEO8BqMXraBvrYdUAsRDJTH7RP1jt/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1eVnAEO8BqMXraBvrYdUAsRDJTH7RP1jt/view?usp=share_link",
+        download: generatePdfDriveUrl("The Gods Of Mars"),
         author_link: "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
         genre: ["fiction"]
     },
@@ -448,7 +496,8 @@ const books = [
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/41ruYhc6LlL.jpg",
         url: "https://www.amazon.in/War-Worlds-Air-Wordsworth-Classics/dp/1840227427/",
-        download: "https://drive.google.com/file/d/1sdfFIzHnriA8_2gt3y2kLgn9VSh-jWd5/view?usp=share_link",
+        // download: "https://drive.google.com/file/d/1sdfFIzHnriA8_2gt3y2kLgn9VSh-jWd5/view?usp=share_link",
+        download: generatePdfDriveUrl("The War in The Air"),
         author_link: "https://en.wikipedia.org/wiki/H._G._Wells",
         genre: ["fiction", "novel"]
     }
