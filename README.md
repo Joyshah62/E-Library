@@ -71,7 +71,7 @@ Populates the ubuntu vm with XFCE4 Desktop Environment, Chrome Browser, VSCode, 
 
 ## Contributors 
 
-<a href="https://github.com/Joyshah62/E-Library/">
+<a href="https://github.com/Joyshah62/E-Library/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Joyshah62/E-Library" />
 </a>
 
