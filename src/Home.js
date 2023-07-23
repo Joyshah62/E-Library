@@ -1,15 +1,29 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'; 
 import Book from './Book';
 import "./Home.css";
 import books from './books.db'
 
 function Home({ searchValue, resultWords, genre }) {
 
+        const [books, setBooks] = useState([]);
+
+        useEffect(() => {
+                // Fetch book data from Flask API
+                axios.get('http://localhost:5000/getall')
+                        .then(response => {
+                                setBooks(response.data);
+                        })
+                        .catch(error => {
+                                console.error('Error fetching book data:', error);
+                        });
+        }, []);
+
         return (
                 <div className='home'>
                         {books
                                 .filter((book) => genre === "" || (book.genre || []).includes(genre))
-                                
+
                                 // .filter((book) => {
                                 //         if (genre === "") {
                                 //                 return true; // Show all books when genre is empty
