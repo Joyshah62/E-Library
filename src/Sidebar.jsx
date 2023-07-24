@@ -10,6 +10,7 @@ import { RiSettings4Line, RiLoginCircleLine } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart, FiSearch } from "react-icons/fi";
+import { RiAdminLine } from "react-icons/ri";
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
@@ -70,6 +71,7 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
           }}
         />
     },
+    {name: "Admin", link: "/admin", icon: <RiAdminLine size={20}/>, margin: true},
     // { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
     { name: "Cart", link: "/mybooks", icon: <FiShoppingCart size={20} />, margin: true },
     { name: "About", link: "/about", icon: <BsInfoSquare size={20} /> },
