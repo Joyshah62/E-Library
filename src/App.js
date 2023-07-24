@@ -5,7 +5,7 @@ import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-
+import Admin from './Admin';
 import Sidebar from './Sidebar';
 import Home from './Home';
 import Mybook from './Mybook';
@@ -89,6 +89,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path='/admin'>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
+            <Admin />
+          </Route>
           <Route path="/orders">
             <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Orders />

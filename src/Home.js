@@ -10,7 +10,7 @@ function Home({ searchValue, resultWords, genre }) {
 
         useEffect(() => {
                 // Fetch book data from Flask API
-                axios.get('http://localhost:5000/getall')
+                axios.get('http://127.0.0.1:5000/getall')
                         .then(response => {
                                 setBooks(response.data);
                         })

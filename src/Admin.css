@@ -1,0 +1,33 @@
+/* admin-page.css */
+
+/* Styling for the admin page container */
+.Admin {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styling for the AdminButtons component container */
+.Admin-buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Hover effect for the buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Active (clicked) effect for the buttons */
+button:active {
+  background-color: #003c80;
+}
