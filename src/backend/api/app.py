@@ -1,6 +1,14 @@
 from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
 import json
+import re
+
+
+def generatePdfDriveUrl(bookTitle):
+    cleanTitle = bookTitle.lower().replace(r"[^\w\s-]", "")
+    urlFriendlyTitle = re.sub(r"\s+", "-", cleanTitle)
+    pdfDriveUrl = f"https://www.pdfdrive.com/{urlFriendlyTitle}-books.html"
+    return pdfDriveUrl
 
 
 class BookAPI:
@@ -35,7 +43,7 @@ class BookAPI:
                 or "author" not in request.json
                 or "price" not in request.json
                 or "rating" not in request.json
-                or "url" not in request.json
+                # or "url" not in request.json
                 or "image" not in request.json
                 or "author_link" not in request.json
                 or "genre" not in request.json
@@ -59,7 +67,7 @@ class BookAPI:
                 "author": request.json["author"],
                 "price": request.json["price"],
                 "rating": request.json["rating"],
-                "url": request.json["url"],
+                "url": generatePdfDriveUrl(request.json["title"]),
                 "image": request.json["image"],
                 "author_link": request.json["author_link"],
                 "genre": request.json["genre"],
@@ -72,7 +80,10 @@ class BookAPI:
             with open("books.json", "w") as file:
                 json.dump(self.books, file, indent=4)
 
-            return jsonify({"message": f"Book with ID:{new_id} is added successfully."}), 201
+            return (
+                jsonify({"message": f"Book with ID:{new_id} is added successfully."}),
+                201,
+            )
 
         @self.app.route("/remove/<int:book_id>", methods=["DELETE"])
         def remove_book(book_id):
@@ -107,7 +118,7 @@ class BookAPI:
                 )
 
     def run(self):
-        self.app.run(debug=True, port=5000)     # Run the Flask API on port 5000
+        self.app.run(debug=True, port=5000)  # Run the Flask API on port 5000
 
 
 if __name__ == "__main__":

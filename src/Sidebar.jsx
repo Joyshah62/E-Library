@@ -41,7 +41,7 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
   }
 
   const menus = [
-    { name: "Search", link: "/", icon: <FiSearch size={20} /> },
+    { name: "Search", link: "#", icon: <FiSearch size={20} /> },
     { name: "Home", link: "/", icon: <MdOutlineDashboard size={20} />, margin: true },
     {
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
@@ -50,7 +50,9 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
       link: user ? "/" : "/",
       icon: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ? (
         <>
-          <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt="usr-img" />
+          <div className="relative w-9 h-9">
+            <img className='rounded-full -ml-2 h-9 w-9 absolute' src={currentUser.photoURL} alt="usr-img" />
+          </div>
         </>
       ) : (
         <AiOutlineUser size={20} />
@@ -134,13 +136,13 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
                   setResultWords([""]);
                 }
 
-                if(menu.name === "Search") {
+                if (menu.name === "Search") {
 
-                  if(!searchBarVisibility){
+                  if (!searchBarVisibility) {
                     setSearchValue("");
                     setResultWords([""]);
                   }
-                  
+
                   handleSearchBarVisibility();
                 }
               }
