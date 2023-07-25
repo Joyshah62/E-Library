@@ -22,12 +22,15 @@ class BookAPI:
 
         @self.app.route("/getall", methods=["GET"])
         def get_all_books():
+            for book in self.books:
+                book["download"] = generatePdfDriveUrl(book["title"])
             return jsonify(self.books)
 
         @self.app.route("/<int:book_id>", methods=["GET"])
         def get_book_by_id(book_id):
             book = next((book for book in self.books if book["id"] == book_id), None)
             if book:
+                book["download"] = generatePdfDriveUrl(book["title"])
                 return jsonify(book)
             else:
                 return (
@@ -67,7 +70,7 @@ class BookAPI:
                 "author": request.json["author"],
                 "price": request.json["price"],
                 "rating": request.json["rating"],
-                "url": generatePdfDriveUrl(request.json["title"]),
+                "download": generatePdfDriveUrl(request.json["title"]),
                 "image": request.json["image"],
                 "author_link": request.json["author_link"],
                 "genre": request.json["genre"],

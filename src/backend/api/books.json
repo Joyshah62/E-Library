@@ -10,7 +10,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Robert_Kiyosaki",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/rich-dad-poor-dad-books.html"
     },
     {
         "id": 1,
@@ -23,7 +24,8 @@
         "author_link": "https://jamesclear.com/about",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/atomic-habits-books.html"
     },
     {
         "id": 2,
@@ -36,7 +38,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Colleen_Hoover",
         "genre": [
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/it-starts-with-us-books.html"
     },
     {
         "id": 3,
@@ -49,7 +52,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Robert_Greene_(American_author)",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-48-laws-of-power-books.html"
     },
     {
         "id": 4,
@@ -62,7 +66,8 @@
         "author_link": "https://en.wikipedia.org/wiki/James_Williams",
         "genre": [
             ""
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/dark-psychology-books.html"
     },
     {
         "id": 5,
@@ -76,7 +81,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-godfather-books.html"
     },
     {
         "id": 6,
@@ -90,7 +96,8 @@
         "genre": [
             "fiction",
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/harry-potter-books.html"
     },
     {
         "id": 7,
@@ -103,7 +110,8 @@
         "author_link": "https://hectorgarcia.org/",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/ikigai-books.html"
     },
     {
         "id": 8,
@@ -116,7 +124,8 @@
         "author_link": "https://www.goodreads.com/author/list/14810469.Shravya_Bhinder",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/something-i-never-told-you-books.html"
     },
     {
         "id": 9,
@@ -129,7 +138,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Harper_Lee",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/to-kill-a-mockingbird-books.html"
     },
     {
         "id": 10,
@@ -142,7 +152,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Stephen_King",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-shining-books.html"
     },
     {
         "id": 11,
@@ -155,7 +166,8 @@
         "author_link": "https://www.morganhousel.com/",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-psychology-of-money-books.html"
     },
     {
         "id": 12,
@@ -169,7 +181,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/shawshank-redemption-books.html"
     },
     {
         "id": 13,
@@ -182,7 +195,8 @@
         "author_link": "https://www.stutichangle.com/",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/you-only-live-once-books.html"
     },
     {
         "id": 14,
@@ -196,7 +210,8 @@
         "genre": [
             "fiction",
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-blue-umbrella-books.html"
     },
     {
         "id": 15,
@@ -209,7 +224,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Mark_Manson",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-subtle-art-of-not-giving-a-f*ck-books.html"
     },
     {
         "id": 16,
@@ -222,7 +238,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Amish_Tripathi",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-immortals-of-meluha-books.html"
     },
     {
         "id": 17,
@@ -236,7 +253,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-silence-of-the-lambs-books.html"
     },
     {
         "id": 18,
@@ -249,7 +267,8 @@
         "author_link": "https://en.wikipedia.org/wiki/George_R._R._Martin",
         "genre": [
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/a-storm-of-swords-books.html"
     },
     {
         "id": 19,
@@ -263,7 +282,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/fight-club-books.html"
     },
     {
         "id": 20,
@@ -276,7 +296,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Cormac_McCarthy",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/no-country-for-old-men-books.html"
     },
     {
         "id": 21,
@@ -290,7 +311,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/schindler's-list-books.html"
     },
     {
         "id": 22,
@@ -304,7 +326,8 @@
         "genre": [
             "fiction",
             "thriller"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-maze-runner-books.html"
     },
     {
         "id": 23,
@@ -317,7 +340,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Alan_Moore",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/v-for-vendetta-books.html"
     },
     {
         "id": 24,
@@ -330,7 +354,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Nepoleon_Hill",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/think-and-grow-rich-books.html"
     },
     {
         "id": 25,
@@ -343,7 +368,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Jeff_Keller",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/attitude-is-everything-books.html"
     },
     {
         "id": 26,
@@ -356,7 +382,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Leo_Babauta",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/mindful-zen-habits-books.html"
     },
     {
         "id": 27,
@@ -369,7 +396,8 @@
         "author_link": "https://www.google.com/search?q=arthur+l+costa&oq=arthur+l++costa&aqs=chrome..69i57j69i60.5484j0j1&sourceid=chrome&ie=UTF-8",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/habits-of-mind-books.html"
     },
     {
         "id": 28,
@@ -382,7 +410,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Joseph_Murphy_(author)",
         "genre": [
             "self-help"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-power-of-subconscious-mind-books.html"
     },
     {
         "id": 29,
@@ -395,7 +424,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Cyrano_de_Bergerac",
         "genre": [
             ""
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/a-voyage-to-the-moon-books.html"
     },
     {
         "id": 30,
@@ -408,7 +438,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
         "genre": [
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-land-that-time-forgot-books.html"
     },
     {
         "id": 31,
@@ -421,7 +452,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Francis_Bacon",
         "genre": [
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-new-atlantis-books.html"
     },
     {
         "id": 32,
@@ -435,7 +467,8 @@
         "genre": [
             "fiction",
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-war-of-the-worlds-books.html"
     },
     {
         "id": 33,
@@ -448,7 +481,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne",
         "genre": [
             ""
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-blazing-world-books.html"
     },
     {
         "id": 34,
@@ -462,7 +496,8 @@
         "genre": [
             "fiction",
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-last-man-books.html"
     },
     {
         "id": 35,
@@ -475,7 +510,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Mary_Shelley",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/frankenstein-books.html"
     },
     {
         "id": 36,
@@ -488,7 +524,8 @@
         "author_link": "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
         "genre": [
             "fiction"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-gods-of-mars-books.html"
     },
     {
         "id": 37,
@@ -502,6 +539,7 @@
         "genre": [
             "fiction",
             "novel"
-        ]
+        ],
+        "download": "https://www.pdfdrive.com/the-war-in-the-air-books.html"
     }
 ]
