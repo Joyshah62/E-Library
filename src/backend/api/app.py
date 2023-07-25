@@ -117,6 +117,41 @@ class BookAPI:
                     400,
                 )
 
+        @self.app.route("/update/<int:book_id>", methods=["PUT"])
+        def update_book(book_id):
+            book = next((book for book in self.books if book["id"] == book_id), None)
+            if not book:
+                return (
+                    jsonify({"message": "BookId not found"}),
+                    400,
+                )
+
+            if not request.json:
+                return (
+                    jsonify({"message": "Invalid JSON data provided."}),
+                    400,
+                )
+
+            # Update the book data with the provided JSON data
+            book["title"] = request.json.get("title", book["title"])
+            book["author"] = request.json.get("author", book["author"])
+            book["price"] = request.json.get("price", book["price"])
+            book["rating"] = request.json.get("rating", book["rating"])
+            book["image"] = request.json.get("image", book["image"])
+            book["author_link"] = request.json.get("author_link", book["author_link"])
+            book["genre"] = request.json.get("genre", book["genre"])
+
+            # Update the JSON file with the updated book data
+            with open("books.json", "w") as file:
+                json.dump(self.books, file, indent=4)
+
+            return (
+                jsonify(
+                    {"message": f"Book with ID:{book_id} is updated successfully."}
+                ),
+                200,
+            )
+
     def run(self):
         self.app.run(debug=True, port=5000)  # Run the Flask API on port 5000
 
