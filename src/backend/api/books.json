@@ -200,21 +200,6 @@
     },
     {
         "id": 14,
-        "title": "The Blue Umbrella",
-        "author": "Ruskin Bond",
-        "price": 72,
-        "rating": 4.5,
-        "image": "https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg",
-        "url": "https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406/ref=sr_1_17?crid=3BFHAR8KJ41SV&keywords=novels&qid=1672239339&sprefix=novel%2Caps%2C847&sr=8-17",
-        "author_link": "https://en.wikipedia.org/wiki/Ruskin_Bond",
-        "genre": [
-            "fiction",
-            "novel"
-        ],
-        "download": "https://www.pdfdrive.com/the-blue-umbrella-books.html"
-    },
-    {
-        "id": 15,
         "title": "The Subtle Art of Not Giving a F*ck",
         "author": "Mark Manson",
         "price": 276,
@@ -228,7 +213,7 @@
         "download": "https://www.pdfdrive.com/the-subtle-art-of-not-giving-a-f*ck-books.html"
     },
     {
-        "id": 16,
+        "id": 15,
         "title": "The Immortals of Meluha",
         "author": "Amish Tripathi",
         "price": 197,
@@ -242,7 +227,7 @@
         "download": "https://www.pdfdrive.com/the-immortals-of-meluha-books.html"
     },
     {
-        "id": 17,
+        "id": 16,
         "title": "The Silence of The Lambs",
         "author": "Thomas Harris",
         "price": 349,
@@ -257,7 +242,7 @@
         "download": "https://www.pdfdrive.com/the-silence-of-the-lambs-books.html"
     },
     {
-        "id": 18,
+        "id": 17,
         "title": "A Storm of Swords",
         "author": "George R. R. Martin",
         "price": 598,
@@ -271,7 +256,7 @@
         "download": "https://www.pdfdrive.com/a-storm-of-swords-books.html"
     },
     {
-        "id": 19,
+        "id": 18,
         "title": "Fight Club",
         "author": "Chuck Palahniuk",
         "price": 345,
@@ -286,7 +271,7 @@
         "download": "https://www.pdfdrive.com/fight-club-books.html"
     },
     {
-        "id": 20,
+        "id": 19,
         "title": "No Country for Old Men",
         "author": "Cormac McCarthy",
         "price": 999,
@@ -300,7 +285,7 @@
         "download": "https://www.pdfdrive.com/no-country-for-old-men-books.html"
     },
     {
-        "id": 21,
+        "id": 20,
         "title": "Schindler's List",
         "author": "Thomas Keneally",
         "price": 1052,
@@ -315,7 +300,7 @@
         "download": "https://www.pdfdrive.com/schindler's-list-books.html"
     },
     {
-        "id": 22,
+        "id": 21,
         "title": "The Maze Runner",
         "author": "James Dashner",
         "price": 264,
@@ -330,7 +315,7 @@
         "download": "https://www.pdfdrive.com/the-maze-runner-books.html"
     },
     {
-        "id": 23,
+        "id": 22,
         "title": "V for Vendetta",
         "author": "Alan Moore",
         "price": 2629,
@@ -344,7 +329,7 @@
         "download": "https://www.pdfdrive.com/v-for-vendetta-books.html"
     },
     {
-        "id": 24,
+        "id": 23,
         "title": "Think and Grow Rich",
         "author": "Napoleon Hill",
         "price": 84,
@@ -358,7 +343,7 @@
         "download": "https://www.pdfdrive.com/think-and-grow-rich-books.html"
     },
     {
-        "id": 25,
+        "id": 24,
         "title": "Attitude is Everything",
         "author": "Jeff Keller",
         "price": 105,
@@ -372,7 +357,7 @@
         "download": "https://www.pdfdrive.com/attitude-is-everything-books.html"
     },
     {
-        "id": 26,
+        "id": 25,
         "title": "Mindful Zen Habits",
         "author": "Leo Babauta",
         "price": 160,
@@ -386,7 +371,7 @@
         "download": "https://www.pdfdrive.com/mindful-zen-habits-books.html"
     },
     {
-        "id": 27,
+        "id": 26,
         "title": "Habits of Mind",
         "author": "Arthur L Costa",
         "price": 2816,
@@ -400,7 +385,7 @@
         "download": "https://www.pdfdrive.com/habits-of-mind-books.html"
     },
     {
-        "id": 28,
+        "id": 27,
         "title": "The Power of Subconscious Mind",
         "author": "Dr. Joseph Murphy",
         "price": 109,
@@ -414,7 +399,7 @@
         "download": "https://www.pdfdrive.com/the-power-of-subconscious-mind-books.html"
     },
     {
-        "id": 29,
+        "id": 28,
         "title": "A Voyage to The Moon",
         "author": "Cyrano de Bergera",
         "price": 186,
@@ -428,7 +413,7 @@
         "download": "https://www.pdfdrive.com/a-voyage-to-the-moon-books.html"
     },
     {
-        "id": 30,
+        "id": 29,
         "title": "The Land that Time Forgot",
         "author": "Edgar Rice Burroughs",
         "price": 221,
@@ -442,7 +427,7 @@
         "download": "https://www.pdfdrive.com/the-land-that-time-forgot-books.html"
     },
     {
-        "id": 31,
+        "id": 30,
         "title": "The New Atlantis",
         "author": "Francis Bacon",
         "price": 348,
@@ -456,7 +441,7 @@
         "download": "https://www.pdfdrive.com/the-new-atlantis-books.html"
     },
     {
-        "id": 32,
+        "id": 31,
         "title": "The War of The Worlds",
         "author": "H. G. Wells",
         "price": 141,
@@ -471,7 +456,7 @@
         "download": "https://www.pdfdrive.com/the-war-of-the-worlds-books.html"
     },
     {
-        "id": 33,
+        "id": 32,
         "title": "The Blazing World",
         "author": "Margaret Cavendish",
         "price": 378,
@@ -485,7 +470,7 @@
         "download": "https://www.pdfdrive.com/the-blazing-world-books.html"
     },
     {
-        "id": 34,
+        "id": 33,
         "title": "The Last Man",
         "author": "Mary Shelley",
         "price": 266,
@@ -500,7 +485,7 @@
         "download": "https://www.pdfdrive.com/the-last-man-books.html"
     },
     {
-        "id": 35,
+        "id": 34,
         "title": "Frankenstein",
         "author": "Mary Shelley",
         "price": 135,
@@ -514,7 +499,7 @@
         "download": "https://www.pdfdrive.com/frankenstein-books.html"
     },
     {
-        "id": 36,
+        "id": 35,
         "title": "The Gods Of Mars",
         "author": "Edgar Rice Burroughs",
         "price": 844,
@@ -528,7 +513,7 @@
         "download": "https://www.pdfdrive.com/the-gods-of-mars-books.html"
     },
     {
-        "id": 37,
+        "id": 36,
         "title": "The War in The Air",
         "author": "H. G. Wells",
         "price": 306,
@@ -541,5 +526,19 @@
             "novel"
         ],
         "download": "https://www.pdfdrive.com/the-war-in-the-air-books.html"
+    },
+    {
+        "id": 37,
+        "title": "The Blue Umbrella",
+        "author": "Ruskin Bond",
+        "price": 72,
+        "rating": 4.5,
+        "download": "https://www.pdfdrive.com/the-blue-umbrella-books.html",
+        "image": "https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg",
+        "author_link": "https://en.wikipedia.org/wiki/Ruskin_Bond",
+        "genre": [
+            "fiction",
+            "novel"
+        ]
     }
 ]

@@ -48,7 +48,6 @@ const Admin = () => {
   };
 
   const handleAddBook = async () => {
-    // Handle adding the book (you can implement this as per your application's logic)
     console.log('Adding book:', { bookName, authorName });
 
     try {
