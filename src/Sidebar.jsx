@@ -10,6 +10,7 @@ import { RiSettings4Line, RiLoginCircleLine } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart, FiSearch } from "react-icons/fi";
+import { RiAdminLine } from "react-icons/ri";
 
 import { useStateValue } from './StateProvider';
 import { firebaseApp, auth } from './firebase';
@@ -41,7 +42,7 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
   }
 
   const menus = [
-    { name: "Search", link: "/", icon: <FiSearch size={20} /> },
+    { name: "Search", link: "#", icon: <FiSearch size={20} /> },
     { name: "Home", link: "/", icon: <MdOutlineDashboard size={20} />, margin: true },
     {
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
@@ -50,7 +51,9 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
       link: user ? "/" : "/",
       icon: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ? (
         <>
-          <img className='rounded-full h-9 w-9' src={currentUser.photoURL} alt="usr-img" />
+          <div className="relative w-9 h-9">
+            <img className='rounded-full -ml-2 h-9 w-9 absolute' src={currentUser.photoURL} alt="usr-img" />
+          </div>
         </>
       ) : (
         <AiOutlineUser size={20} />
@@ -68,6 +71,7 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
           }}
         />
     },
+    {name: "Admin", link: "/admin", icon: <RiAdminLine size={20}/>, margin: true},
     // { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
     { name: "Cart", link: "/mybooks", icon: <FiShoppingCart size={20} />, margin: true },
     { name: "About", link: "/about", icon: <BsInfoSquare size={20} /> },
@@ -134,13 +138,13 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
                   setResultWords([""]);
                 }
 
-                if(menu.name === "Search") {
+                if (menu.name === "Search") {
 
-                  if(!searchBarVisibility){
+                  if (!searchBarVisibility) {
                     setSearchValue("");
                     setResultWords([""]);
                   }
-                  
+
                   handleSearchBarVisibility();
                 }
               }

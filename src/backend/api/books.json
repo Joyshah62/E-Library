@@ -1,0 +1,544 @@
+[
+    {
+        "id": 0,
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "price": 418,
+        "rating": 4.6,
+        "url": "https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/",
+        "image": "https://m.media-amazon.com/images/I/51A88IvtjGL.jpg",
+        "author_link": "https://en.wikipedia.org/wiki/Robert_Kiyosaki",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/rich-dad-poor-dad-books.html"
+    },
+    {
+        "id": 1,
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "price": 475,
+        "rating": 4.6,
+        "url": "https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/",
+        "image": "https://m.media-amazon.com/images/I/51-nXsSRfZL.jpg",
+        "author_link": "https://jamesclear.com/about",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/atomic-habits-books.html"
+    },
+    {
+        "id": 2,
+        "title": "It Starts With Us",
+        "author": "Colleen Hoover",
+        "price": 145,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51W-r3VQlAL.jpg",
+        "url": "https://www.amazon.in/Starts-Us-Colleen-Hoover/dp/1398518174/",
+        "author_link": "https://en.wikipedia.org/wiki/Colleen_Hoover",
+        "genre": [
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/it-starts-with-us-books.html"
+    },
+    {
+        "id": 3,
+        "title": "The 48 Laws of Power",
+        "author": "Robert Greene",
+        "price": 535,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/411yaMigwbL.jpg",
+        "url": "https://www.amazon.in/Laws-Power-Robert-Greene-Collection/dp/1861972784/",
+        "author_link": "https://en.wikipedia.org/wiki/Robert_Greene_(American_author)",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/the-48-laws-of-power-books.html"
+    },
+    {
+        "id": 4,
+        "title": "Dark Psychology",
+        "author": "James Williams",
+        "price": 1182,
+        "rating": 3.9,
+        "image": "https://m.media-amazon.com/images/I/4172DT28tgL.jpg",
+        "url": "https://www.amazon.in/Dark-Psychology-Psychological-Manipulation-Persuasion-ebook/dp/B07NRTWWJK/",
+        "author_link": "https://en.wikipedia.org/wiki/James_Williams",
+        "genre": [
+            ""
+        ],
+        "download": "https://www.pdfdrive.com/dark-psychology-books.html"
+    },
+    {
+        "id": 5,
+        "title": "The Godfather",
+        "author": "Mario Puzo",
+        "price": 899,
+        "rating": 4.7,
+        "image": "https://m.media-amazon.com/images/I/41pSXiKR39L.jpg",
+        "url": "https://www.amazon.in/Godfather-Mario-Puzo-ebook/dp/B009GJ870Q/",
+        "author_link": "https://en.wikipedia.org/wiki/Mario_Puzo",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/the-godfather-books.html"
+    },
+    {
+        "id": 6,
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "price": 299,
+        "rating": 4.7,
+        "image": "https://m.media-amazon.com/images/I/81HteEu+D6L.jpg",
+        "url": "https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/",
+        "author_link": "https://en.wikipedia.org/wiki/J._K._Rowling",
+        "genre": [
+            "fiction",
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/harry-potter-books.html"
+    },
+    {
+        "id": 7,
+        "title": "Ikigai",
+        "author": "Hector Garcia",
+        "price": 249,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/814L+vq01mL.jpg",
+        "url": "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/",
+        "author_link": "https://hectorgarcia.org/",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/ikigai-books.html"
+    },
+    {
+        "id": 8,
+        "title": "Something I Never Told You",
+        "author": "Shravya Bhinder",
+        "price": 193,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51Xjv4IzydL.jpg",
+        "url": "https://www.amazon.in/Something-I-Never-Told-You/dp/0143445901/",
+        "author_link": "https://www.goodreads.com/author/list/14810469.Shravya_Bhinder",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/something-i-never-told-you-books.html"
+    },
+    {
+        "id": 9,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 224,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51Z9p5AecCL.jpg",
+        "url": "https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/",
+        "author_link": "https://en.wikipedia.org/wiki/Harper_Lee",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/to-kill-a-mockingbird-books.html"
+    },
+    {
+        "id": 10,
+        "title": "The Shining",
+        "author": "Stephen King",
+        "price": 349,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/41nTTMoaxiL.jpg",
+        "url": "https://www.amazon.in/Shining-reissue-STEPHEN-KING/dp/B00RP5OH4S/",
+        "author_link": "https://en.wikipedia.org/wiki/Stephen_King",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/the-shining-books.html"
+    },
+    {
+        "id": 11,
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "price": 240,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/41r6F2LRf8L.jpg",
+        "url": "https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/",
+        "author_link": "https://www.morganhousel.com/",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/the-psychology-of-money-books.html"
+    },
+    {
+        "id": 12,
+        "title": "Shawshank Redemption",
+        "author": "Frank Darabont",
+        "price": 189,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/51ALMvQGyWL.jpg",
+        "url": "https://www.amazon.in/Shawshank-Redemption-Shooting-Frank-Darabont/dp/1557042462/",
+        "author_link": "https://en.wikipedia.org/wiki/Frank_Darabont",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/shawshank-redemption-books.html"
+    },
+    {
+        "id": 13,
+        "title": "You Only Live Once",
+        "author": "Stuti Changle",
+        "price": 153,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/413OgI8KzuL.jpg",
+        "url": "https://www.amazon.in/You-Only-Live-Once-Friendship/dp/0143453580/",
+        "author_link": "https://www.stutichangle.com/",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/you-only-live-once-books.html"
+    },
+    {
+        "id": 14,
+        "title": "The Subtle Art of Not Giving a F*ck",
+        "author": "Mark Manson",
+        "price": 276,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/511vJPN7p5L.jpg",
+        "url": "https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/",
+        "author_link": "https://en.wikipedia.org/wiki/Mark_Manson",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/the-subtle-art-of-not-giving-a-f*ck-books.html"
+    },
+    {
+        "id": 15,
+        "title": "The Immortals of Meluha",
+        "author": "Amish Tripathi",
+        "price": 197,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/41moQrlKZKL.jpg",
+        "url": "https://www.amazon.in/Immortals-Meluha-Shiva-Trilogy-Book/dp/9356290520",
+        "author_link": "https://en.wikipedia.org/wiki/Amish_Tripathi",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/the-immortals-of-meluha-books.html"
+    },
+    {
+        "id": 16,
+        "title": "The Silence of The Lambs",
+        "author": "Thomas Harris",
+        "price": 349,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/519n1y9Q9kL.jpg",
+        "url": "https://www.amazon.in/Silence-Lambs-Hannibal-Lecter/dp/0099532921/",
+        "author_link": "https://en.wikipedia.org/wiki/Thomas_Harris",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/the-silence-of-the-lambs-books.html"
+    },
+    {
+        "id": 17,
+        "title": "A Storm of Swords",
+        "author": "George R. R. Martin",
+        "price": 598,
+        "rating": 4.7,
+        "image": "https://m.media-amazon.com/images/I/51e6nhYq5TL.jpg",
+        "url": "https://www.amazon.in/Storm-Swords-Song-Fire-Three/dp/055357342X/",
+        "author_link": "https://en.wikipedia.org/wiki/George_R._R._Martin",
+        "genre": [
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/a-storm-of-swords-books.html"
+    },
+    {
+        "id": 18,
+        "title": "Fight Club",
+        "author": "Chuck Palahniuk",
+        "price": 345,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51CbOKu34OL.jpg",
+        "url": "https://www.amazon.in/Fight-Club-Chuck-Palahniuk/dp/0099765217/",
+        "author_link": "https://en.wikipedia.org/wiki/Chuck_Palahniuk",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/fight-club-books.html"
+    },
+    {
+        "id": 19,
+        "title": "No Country for Old Men",
+        "author": "Cormac McCarthy",
+        "price": 999,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51U6-kcsIUL.jpg",
+        "url": "https://www.amazon.in/Country-Old-Men-Vintage-International/dp/0375706674",
+        "author_link": "https://en.wikipedia.org/wiki/Cormac_McCarthy",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/no-country-for-old-men-books.html"
+    },
+    {
+        "id": 20,
+        "title": "Schindler's List",
+        "author": "Thomas Keneally",
+        "price": 1052,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/416HJgbykrL.jpg",
+        "url": "https://www.amazon.in/Schindlers-List-Thomas-Keneally/dp/1982151048/",
+        "author_link": "https://en.wikipedia.org/wiki/Thomas_Keneally",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/schindler's-list-books.html"
+    },
+    {
+        "id": 21,
+        "title": "The Maze Runner",
+        "author": "James Dashner",
+        "price": 264,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51JZHD0ac2L.jpg",
+        "url": "https://www.amazon.in/Maze-Runner-James-Dashner/dp/9351033139/",
+        "author_link": "https://en.wikipedia.org/wiki/James_Dashner",
+        "genre": [
+            "fiction",
+            "thriller"
+        ],
+        "download": "https://www.pdfdrive.com/the-maze-runner-books.html"
+    },
+    {
+        "id": 22,
+        "title": "V for Vendetta",
+        "author": "Alan Moore",
+        "price": 2629,
+        "rating": 4.8,
+        "image": "https://m.media-amazon.com/images/I/41jW+y-RCuL.jpg",
+        "url": "https://www.amazon.in/V-Vendetta-30th-Anniversary-Deluxe/dp/1401285007/",
+        "author_link": "https://en.wikipedia.org/wiki/Alan_Moore",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/v-for-vendetta-books.html"
+    },
+    {
+        "id": 23,
+        "title": "Think and Grow Rich",
+        "author": "Napoleon Hill",
+        "price": 84,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/61b5aPmEhzL.jpg",
+        "url": "https://www.amazon.in/Think-Grow-Rich-Napoleon-Hill/dp/8194790883/",
+        "author_link": "https://en.wikipedia.org/wiki/Nepoleon_Hill",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/think-and-grow-rich-books.html"
+    },
+    {
+        "id": 24,
+        "title": "Attitude is Everything",
+        "author": "Jeff Keller",
+        "price": 105,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/710jnzKlDTL.jpg",
+        "url": "https://www.amazon.in/Attitude-Everything-Change-Your-Life/dp/9351772071/",
+        "author_link": "https://en.wikipedia.org/wiki/Jeff_Keller",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/attitude-is-everything-books.html"
+    },
+    {
+        "id": 25,
+        "title": "Mindful Zen Habits",
+        "author": "Leo Babauta",
+        "price": 160,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/61GscjwicrL.jpg",
+        "url": "https://www.amazon.in/MINDFUL-ZEN-HABITS-Suffering-Happiness/dp/8129144905/",
+        "author_link": "https://en.wikipedia.org/wiki/Leo_Babauta",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/mindful-zen-habits-books.html"
+    },
+    {
+        "id": 26,
+        "title": "Habits of Mind",
+        "author": "Arthur L Costa",
+        "price": 2816,
+        "rating": 4.7,
+        "image": "https://m.media-amazon.com/images/I/71h4luymQZL.jpg",
+        "url": "https://www.amazon.in/Learning-Leading-Habits-Mind-Characteristics/dp/1416607412/",
+        "author_link": "https://www.google.com/search?q=arthur+l+costa&oq=arthur+l++costa&aqs=chrome..69i57j69i60.5484j0j1&sourceid=chrome&ie=UTF-8",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/habits-of-mind-books.html"
+    },
+    {
+        "id": 27,
+        "title": "The Power of Subconscious Mind",
+        "author": "Dr. Joseph Murphy",
+        "price": 109,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg",
+        "url": "https://www.amazon.in/Power-Your-Subconscious-Mind/dp/8194790832",
+        "author_link": "https://en.wikipedia.org/wiki/Joseph_Murphy_(author)",
+        "genre": [
+            "self-help"
+        ],
+        "download": "https://www.pdfdrive.com/the-power-of-subconscious-mind-books.html"
+    },
+    {
+        "id": 28,
+        "title": "A Voyage to The Moon",
+        "author": "Cyrano de Bergera",
+        "price": 186,
+        "rating": 3.5,
+        "image": "https://m.media-amazon.com/images/I/41juzthDmRL.jpg",
+        "url": "https://www.amazon.in/Voyage-Moon-Alma-Classics-Pages/dp/1847497993/",
+        "author_link": "https://en.wikipedia.org/wiki/Cyrano_de_Bergerac",
+        "genre": [
+            ""
+        ],
+        "download": "https://www.pdfdrive.com/a-voyage-to-the-moon-books.html"
+    },
+    {
+        "id": 29,
+        "title": "The Land that Time Forgot",
+        "author": "Edgar Rice Burroughs",
+        "price": 221,
+        "rating": 4.3,
+        "image": "https://m.media-amazon.com/images/I/719AAiDZmIL.jpg",
+        "url": "https://www.amazon.in/Land-That-Time-Forgot/dp/9390315786/",
+        "author_link": "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
+        "genre": [
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/the-land-that-time-forgot-books.html"
+    },
+    {
+        "id": 30,
+        "title": "The New Atlantis",
+        "author": "Francis Bacon",
+        "price": 348,
+        "rating": 4.1,
+        "image": "https://m.media-amazon.com/images/I/61LcxqR8HxL.jpg",
+        "url": "https://www.amazon.in/New-Atlantis-Sir-Francis-Bacon/dp/1603862862/",
+        "author_link": "https://en.wikipedia.org/wiki/Francis_Bacon",
+        "genre": [
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/the-new-atlantis-books.html"
+    },
+    {
+        "id": 31,
+        "title": "The War of The Worlds",
+        "author": "H. G. Wells",
+        "price": 141,
+        "rating": 4.3,
+        "image": "https://m.media-amazon.com/images/I/813ZwvNNKKS.jpg",
+        "url": "https://www.amazon.in/War-Worlds-H-G-Wells/dp/8175992824/",
+        "author_link": "https://en.wikipedia.org/wiki/H._G._Wells",
+        "genre": [
+            "fiction",
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/the-war-of-the-worlds-books.html"
+    },
+    {
+        "id": 32,
+        "title": "The Blazing World",
+        "author": "Margaret Cavendish",
+        "price": 378,
+        "rating": 4.3,
+        "image": "https://m.media-amazon.com/images/I/71zPftGi69L.jpg",
+        "url": "https://www.amazon.in/Blazing-World-Writings-Penguin-Classics/dp/0140433724/",
+        "author_link": "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne",
+        "genre": [
+            ""
+        ],
+        "download": "https://www.pdfdrive.com/the-blazing-world-books.html"
+    },
+    {
+        "id": 33,
+        "title": "The Last Man",
+        "author": "Mary Shelley",
+        "price": 266,
+        "rating": 4.3,
+        "image": "https://m.media-amazon.com/images/I/51XMZpX-6EL.jpg",
+        "url": "https://www.amazon.in/Last-Man-Wordsworth-Classics/dp/1840224037/",
+        "author_link": "https://en.wikipedia.org/wiki/Mary_Shelley",
+        "genre": [
+            "fiction",
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/the-last-man-books.html"
+    },
+    {
+        "id": 34,
+        "title": "Frankenstein",
+        "author": "Mary Shelley",
+        "price": 135,
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/P/1471141594.jpg",
+        "url": "https://www.amazon.in/Frankenstein-Mary-Shelley/dp/9380816251/",
+        "author_link": "https://en.wikipedia.org/wiki/Mary_Shelley",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/frankenstein-books.html"
+    },
+    {
+        "id": 35,
+        "title": "The Gods Of Mars",
+        "author": "Edgar Rice Burroughs",
+        "price": 844,
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/41fAV9m9naL.jpg",
+        "url": "https://www.amazon.in/Gods-Annotated-Sastrugi-Press-Classics/dp/164922110X/",
+        "author_link": "https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs",
+        "genre": [
+            "fiction"
+        ],
+        "download": "https://www.pdfdrive.com/the-gods-of-mars-books.html"
+    },
+    {
+        "id": 36,
+        "title": "The War in The Air",
+        "author": "H. G. Wells",
+        "price": 306,
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/41ruYhc6LlL.jpg",
+        "url": "https://www.amazon.in/War-Worlds-Air-Wordsworth-Classics/dp/1840227427/",
+        "author_link": "https://en.wikipedia.org/wiki/H._G._Wells",
+        "genre": [
+            "fiction",
+            "novel"
+        ],
+        "download": "https://www.pdfdrive.com/the-war-in-the-air-books.html"
+    },
+    {
+        "id": 37,
+        "title": "The Blue Umbrella",
+        "author": "Ruskin Bond",
+        "price": 72,
+        "rating": 4.5,
+        "download": "https://www.pdfdrive.com/the-blue-umbrella-books.html",
+        "image": "https://m.media-amazon.com/images/I/515Y-kC7EQL._SX310_BO1,204,203,200_.jpg",
+        "author_link": "https://en.wikipedia.org/wiki/Ruskin_Bond",
+        "genre": [
+            "fiction",
+            "novel"
+        ]
+    }
+]
