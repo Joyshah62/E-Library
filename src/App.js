@@ -18,6 +18,7 @@ import Payment from './Payment';
 import Orders from './Orders';
 import Searchbar from './Searchbar';
 import './App.css';
+import UserProfile from './UserProfile';
 
 const promise = loadStripe
   (
@@ -93,6 +94,10 @@ function App() {
           <Route path='/admin'>
             <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Admin />
+          </Route>
+          <Route path='/user'>
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
+            <UserProfile />
           </Route>
           <Route path="/orders">
             <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
