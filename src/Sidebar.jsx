@@ -48,7 +48,7 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
       name: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ?
         currentUser.displayName.split(' ').splice(0, 2).join(' ').toString() :
         "User",
-      link: user ? "/" : "/",
+      link: user ? "/user" : "/login",
       icon: currentUser && currentUser.providerData.some(provider => provider.providerId === 'google.com') ? (
         <>
           <div className="relative w-9 h-9">
@@ -147,6 +147,8 @@ function Sidebar({ setResultWords, setSearchValue, genre, setGenre, searchBarVis
 
                   handleSearchBarVisibility();
                 }
+
+                
               }
               }
               to={menu?.link}
