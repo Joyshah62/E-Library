@@ -10,6 +10,7 @@ import Sidebar from './Sidebar';
 import Home from './Home';
 import Mybook from './Mybook';
 import Login from './Login';
+import Newlogin from './newLogin';
 import About from './About';
 import Carousel from './Carousel';
 import Accordion from './Accordion';
@@ -101,6 +102,11 @@ function App() {
           <Route path="/login">
             <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
             <Login />
+          </Route>
+
+          <Route path="/newlogin">
+            <Sidebar setResultWords={setResultWords} setSearchValue={setSearchValue} genre={genre} setGenre={setGenre} searchBarVisibility={searchBarVisibility} handleSearchBarVisibility={handleSearchBarVisibility}></Sidebar>
+            <Newlogin />
           </Route>
 
           <Route path="/mybooks">
