@@ -1,19 +1,37 @@
 // RegistrationForm.js
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+import { motion } from 'framer-motion';
 import axios from 'axios';
 
-function Newlogin() {
+function NewLogin() {
     const [formData, setFormData] = useState({
         email: '',
         imageSequence: [],
     });
 
     const [message, setMessage] = useState('');
-    const imageFiles = require.context('/public/images/LoginImg', false, /\.(jpg|jpeg|png|gif|svg)$/);
-    const imageFilenames = Array.from({ length: 10 }).map((_, index) => `/images/LoginImg/${index + 1}.png`);
+    const [currentCategory, setCurrentCategory] = useState('animals'); // Default category
+
+    // Define image categories and their respective filenames
+    const imageCategories = {
+        animals: Array.from({ length: 10 }).map((_, index) => `/images/LoginImg/${index + 1}.png`),
+        vehicle: Array.from({ length: 10 }).map((_, index) => `/images/LoginImg/${index + 11}.png`),
+        // Add more categories as needed
+    };
+
+    // Dynamically generate filenames based on category index
+    const categories = ['animals', 'vehicle']; // Add more categories as needed
+
+    const dynamicImageCategories = {};
+    categories.forEach((category) => {
+        dynamicImageCategories[category] = Array.from({ length: 10 }).map(
+            (_, index) => `/images/LoginImg/${index + categories.indexOf(category) * 10 + 1}.png`
+        );
+    });
 
 
+    // Merge dynamicImageCategories with imageCategories
+    const mergedImageCategories = { ...imageCategories, ...dynamicImageCategories };
 
     const apiUrl = 'http://localhost:5001'; // Replace with your API URL
 
@@ -35,21 +53,19 @@ function Newlogin() {
     // Periodically shuffle the images every 15 seconds
     useEffect(() => {
         const shuffleInterval = setInterval(() => {
-            setShuffledImages(shuffleArray(shuffledImages));
-
+            console.log(mergedImageCategories[currentCategory]); // Add this line
+            setShuffledImages(shuffleArray(Array.from({ length: 10 }).map((_, index) => index + 1)));
+    
             // Deselect all images when shuffling
             setFormData({
                 ...formData,
                 imageSequence: [],
             });
-        }, 30000); // 30 seconds in milliseconds
-
-        // Clean up the interval when the component unmounts
+        }, 30000);
+    
         return () => clearInterval(shuffleInterval);
-    }, [shuffledImages]);
-
-
-
+    }, [shuffledImages, currentCategory]);
+    
     const handleImageClick = (imageId) => {
         // If the image is already selected, remove it; otherwise, add it
         const updatedSequence = formData.imageSequence.includes(imageId)
@@ -60,10 +76,6 @@ function Newlogin() {
             ...formData,
             imageSequence: updatedSequence,
         });
-
-        // Update selected image filenames based on the current sequence
-        // const selectedNames = updatedSequence.map((index) => `/images/LoginImg/${index}.png`);
-        // setSelectedImageNames(selectedNames);
     };
 
     const handleAction = async (action) => {
@@ -82,8 +94,7 @@ function Newlogin() {
                 image_sequence: formData.imageSequence.join(','), // Convert selected images to a comma-separated string
             });
 
-            // setMessage(`Selected Image Sequence: ${selectedImageNames.join(', ')}`);
-            setMessage(response.data.message)
+            setMessage(response.data.message);
         } catch (error) {
             setMessage(error.response.data.error);
         }
@@ -92,8 +103,32 @@ function Newlogin() {
     return (
         <div className="container mx-auto py-8">
             <h2 className="text-2xl font-semibold mb-4">Register or Login</h2>
+
+            {/* Add category selection */}
+            <div className="mb-4">
+                <label htmlFor="category" className="block mb-2">
+                    Select Image Category:
+                </label>
+                <select
+                    id="category"
+                    name="category"
+                    value={currentCategory}
+                    onChange={(e) => setCurrentCategory(e.target.value)}
+                    className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                >
+                    {categories.map((category) => (
+                        <option key={category} value={category}>
+                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                        </option>
+                    ))}
+                </select>
+
+            </div>
+
             <div>
-                <label htmlFor="email" className="block mb-2">Email:</label>
+                <label htmlFor="email" className="block mb-2">
+                    Email:
+                </label>
                 <input
                     type="email"
                     id="email"
@@ -104,6 +139,7 @@ function Newlogin() {
                     required
                 />
             </div>
+
             <div className="grid grid-cols-5 gap-4 mt-6">
                 {shuffledImages.map((index) => (
                     <motion.div
@@ -113,24 +149,30 @@ function Newlogin() {
                         exit={{ opacity: 0 }}
                         whileHover={{ scale: 1.05 }}
                         layout // Enable layout animation
-                        className={`relative overflow-hidden cursor-pointer ${formData.imageSequence.includes(index) ? 'opacity-50' : ''}`}
+                        className={`relative overflow-hidden cursor-pointer ${formData.imageSequence.includes(index) ? 'opacity-50' : ''
+                            }`}
                         onClick={() => handleImageClick(index)}
                     >
-                        <div className={`absolute inset-0 bg-gray-700 ${formData.imageSequence.includes(index) ? 'opacity-50' : 'hidden'}`}></div>
+                        <div
+                            className={`absolute inset-0 bg-gray-700 ${formData.imageSequence.includes(index) ? 'opacity-50' : 'hidden'
+                                }`}
+                        ></div>
                         <img
-                            src={imageFilenames[index - 1]} // Image Path
+                            src={mergedImageCategories[currentCategory] && mergedImageCategories[currentCategory][index - 1]}
                             alt={`Image ${index}`}
                             className="w-full h-auto"
                         />
                         {formData.imageSequence.includes(index) && (
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">{formData.imageSequence.indexOf(index) + 1}</span>
+                                <span className="text-white font-bold text-lg">
+                                    {formData.imageSequence.indexOf(index) + 1}
+                                </span>
                             </div>
                         )}
                     </motion.div>
                 ))}
-
             </div>
+
             <div className="mt-6 flex justify-between">
                 <button
                     onClick={() => handleAction('register')}
@@ -150,4 +192,4 @@ function Newlogin() {
     );
 }
 
-export default Newlogin;
+export default NewLogin;
